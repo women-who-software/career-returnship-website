@@ -5,17 +5,17 @@ import { PageProps, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const Announcements = (props: PageProps) => (
+const Projects = (props: PageProps) => (
   <Layout>
-    <SEO title="Announcements" />
-    <h1>You reached Announcements</h1>
-    <p>Here's the props.path: ({props.path})</p>
+    <SEO title="Projects" />
+    <h1>Hi from the Projects page</h1>
+    <p>Now for a little about us. Here's the page path: ({props.path})</p>
     <Link to="/">Homepage</Link>
     <br />
     <Link to="/about/">About Us</Link>
     <br />
-    <Link to="/projects/">Projects</Link>
+    <Link to="/announcements/">Announcements</Link>
   </Layout>
 )
 
-export default Announcements
+export default Projects

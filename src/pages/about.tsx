@@ -10,8 +10,11 @@ const AboutUs = (props: PageProps) => (
     <SEO title="About" />
     <h1>Hi from the About page</h1>
     <p>Now for a little about us. Here's the page path: ({props.path})</p>
-    <Link to="/">Go back to the homepage</Link>
-    <Link to="/announcements/">Go to Announcements</Link>
+    <Link to="/">Homepage</Link>
+    <br />
+    <Link to="/announcements/">Announcements</Link>
+    <br />
+    <Link to="/projects/">Projects</Link>
   </Layout>
 )
 
