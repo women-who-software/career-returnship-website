@@ -1,3 +1,5 @@
+This is Finn's forked version of Women Who Code's Career Returnship Website
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
