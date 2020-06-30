@@ -36,6 +36,4 @@ const InputBoxMessage = () => {
 };
 
 
-export default InputBoxName;
-export default InputBoxEmail;
-export default InputBoxMessage;
+export {InputBoxName, InputBoxEmail, InputBoxMessage}
