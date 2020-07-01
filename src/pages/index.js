@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import icon from "../images/WWC-icon.png"
+import card from "../images/WWC-card.png"
 
 const IndexPage = () => (
   <Layout>
@@ -15,6 +16,13 @@ const IndexPage = () => (
         </div>
         <div className="about-us">
           <h2>ABOUT US</h2>
+          <div className="description">
+            <div className="column">
+              <p>Kickstarting your career and re-entering the workforce after a break can be a huge challenge; together we can make this a lot easier. This initiative is a small step towards empowering those of us in technology trying to relaunch our careers.</p>
+              <button>LEARN MORE</button>
+            </div>
+            <img src={card} />
+          </div>
         </div>
       </div>  
       <div className="get-involved"></div>
@@ -37,6 +45,7 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    width: 100%;
 
     .career-returnship {
       display: flex;
@@ -62,13 +71,17 @@ const Wrapper = styled.div`
     }
 
     .about-us {
-
       h2 {
+        color: red;
         font-family: Myriad Pro, sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 42px;
         letter-spacing: 0.02em;
+      }
+
+      .description {
+        display: flex;
       }
     }
   }
