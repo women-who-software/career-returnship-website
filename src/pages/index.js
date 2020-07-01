@@ -4,11 +4,13 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = (props: PageProps) => (
+const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Wrapper>
-
+      {/* PUT YOUR SECTION's CODE HERE */}
+      {/* PUT YOUR SECTION's CODE HERE */}
+      {/* PUT YOUR SECTION's CODE HERE */}
     </Wrapper>
   </Layout>
 )
@@ -23,4 +25,12 @@ const Wrapper = styled.div`
   width: 100%;
 `
 
-export default IndexPage
+export default IndexPage;
+
+// // class App extends Component {
+//   render(){
+//     return <div>Hello, World!</div>
+//   }
+// }
+
+// ReactDOM.render(<App />, document.getElementById("root"));
