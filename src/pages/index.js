@@ -8,12 +8,13 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Wrapper>
-      {/* PUT YOUR SECTION's CODE HERE */}
-      {/* PUT YOUR SECTION's CODE HERE */}
-      {/* PUT YOUR SECTION's CODE HERE */}
+      Hello Kate and Christine and Rafna and Jen and Finn!
+      {/* CALL YOUR COMPONENT HERE */}
     </Wrapper>
   </Layout>
 )
+
+{/* DECLARE YOUR COMPONENT AS A STYLED DIV HERE */}
 
 const Wrapper = styled.div`
   align-items: center;
@@ -26,11 +27,3 @@ const Wrapper = styled.div`
 `
 
 export default IndexPage;
-
-// // class App extends Component {
-//   render(){
-//     return <div>Hello, World!</div>
-//   }
-// }
-
-// ReactDOM.render(<App />, document.getElementById("root"));
