@@ -8,9 +8,14 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Wrapper>
-      Hello Kate and Christine and Rafna and Jen and Finn! <br />
-      The header and footer are controlled by Layout.js <br />
-      {/* YOUR CODE HERE */}
+      <div className="career-returnship">
+        <img />
+        <h1>CAREER RETURNSHIP</h1>
+      </div>
+      <div className="about-us"></div>
+      <div className="get-involved"></div>
+      <div className="events"></div>
+      <div className="projects"></div>
     </Wrapper>
   </Layout>
 )
@@ -22,9 +27,31 @@ const Wrapper = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  /* max-width: ; */
-  padding: 100px 0px 55px;
   width: 100%;
+
+  .career-returnship {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 570px;
+    width: 100%;
+    background: linear-gradient(0deg, #4C4C4C, #4C4C4C), url(Hero-img.jpg);
+    background-blend-mode: multiply, normal;
+
+    
+    img {
+      height: 120px;
+      margin-right: 5px;
+    }
+
+    h1 {
+      font-family: "Montserrat";
+      font-size: 2rem;
+      font-weight: normal;
+      letter-spacing: 0.02em;
+      color: #FFFFFF;
+    }
+  }
 `
 
 export default IndexPage;

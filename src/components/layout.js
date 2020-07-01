@@ -26,18 +26,10 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          <h4 style={{color: "red"}}>CAREER RETURNSHIP</h4>
-        </footer>
-      </div>
+      <main>{children}</main>
+      <footer>
+        <h4 style={{color: "red"}}>CAREER RETURNSHIP</h4>
+      </footer>
     </>
   )
 }
