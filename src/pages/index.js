@@ -8,8 +8,9 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Wrapper>
-      Hello Kate and Christine and Rafna and Jen and Finn!
-      {/* CALL YOUR COMPONENT HERE */}
+      Hello Kate and Christine and Rafna and Jen and Finn! <br />
+      The header and footer are controlled by Layout.js <br />
+      {/* YOUR CODE HERE */}
     </Wrapper>
   </Layout>
 )
