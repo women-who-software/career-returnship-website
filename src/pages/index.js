@@ -69,6 +69,12 @@ const Wrapper = styled.div`
     }
 
     .about-us {
+      display: flex;
+      flex-direction: column;
+      max-width: 900px;
+      align-items: flex-start;
+      justify-content: center;
+
       h2 {
         color: #DA0D46;
         font-family: Myriad Pro, sans-serif;
@@ -80,7 +86,7 @@ const Wrapper = styled.div`
 
       .description {
         display: flex;
-        
+
         p {
           font-family: Montserrat, sans-serif;
           font-style: normal;
@@ -98,12 +104,8 @@ const Wrapper = styled.div`
 
         button {
           font-family: Myriad Pro, sans-serif;
-          font-style: normal;
-          font-weight: bold;
           font-size: 16px;
           line-height: 123.4%;
-          /* identical to box height, or 20px */
-
           display: flex;
           align-items: center;
           text-align: center;
