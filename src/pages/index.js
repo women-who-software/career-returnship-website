@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import icon from "../images/WWC-icon.png"
+import logo from "../images/Logo - white.svg"
 import card from "../images/WWC-card.png"
 
 const IndexPage = () => (
@@ -11,8 +11,7 @@ const IndexPage = () => (
     <Wrapper>
       <div className="landing">
         <div className="career-returnship">
-          <img src={icon}/>
-          <h1>CAREER RETURNSHIP</h1>
+          <img src={logo} alt="WWC Returnship icon" width="500" height="600"/>
         </div>
         <div className="about-us">
           <h2>ABOUT US</h2>
@@ -21,7 +20,7 @@ const IndexPage = () => (
               <p>Kickstarting your career and re-entering the workforce after a break can be a huge challenge; <span>together we can make this a lot easier</span>. This initiative is a small step towards empowering those of us in technology trying to relaunch our careers.</p>
               <button>LEARN MORE</button>
             </div>
-            <img src={card} />
+            <img src={card} alt="WWC Returnship ad" />
           </div>
         </div>
       </div>  
@@ -55,8 +54,8 @@ const Wrapper = styled.div`
       background-blend-mode: multiply, normal;
 
       img {
-        height: 120px;
-        margin-right: 5px;
+        width: 750px;
+        height: 172px;
       }
 
       h1 {
@@ -74,6 +73,7 @@ const Wrapper = styled.div`
       max-width: 900px;
       align-items: flex-start;
       justify-content: center;
+      margin-left: 200px;
 
       h2 {
         color: #DA0D46;
@@ -87,30 +87,43 @@ const Wrapper = styled.div`
       .description {
         display: flex;
 
-        p {
-          font-family: Montserrat, sans-serif;
-          font-style: normal;
-          font-weight: lighter;
-          font-size: 18px;
-          line-height: 123.4%;
-          letter-spacing: 0.02em;
-          color: #000000;
+        .column {
+            
+          p {
+            font-family: Montserrat, sans-serif;
+            font-style: normal;
+            font-weight: lighter;
+            font-size: 18px;
+            line-height: 123.4%;
+            letter-spacing: 0.02em;
+            color: #000000;
 
-          span {
-            font-weight: bold;
-            font-style: italic;
+            span {
+              font-weight: bold;
+              font-style: italic;
+            }
+          }
+
+          button {
+            font-family: Myriad Pro, sans-serif;
+            font-size: 16px;
+            line-height: 123.4%;
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #DA0D46;
+            border: 1px solid #DA0D46;
+            box-sizing: border-box;
+            border-radius: 15px;
           }
         }
 
-        button {
-          font-family: Myriad Pro, sans-serif;
-          font-size: 16px;
-          line-height: 123.4%;
-          display: flex;
-          align-items: center;
-          text-align: center;
-          letter-spacing: 0.02em;
-          color: #DA0D46;
+        img {
+          width: 272px;
+          height: 172px;
+          border-radius: 15px;    
         }
       }
     }
