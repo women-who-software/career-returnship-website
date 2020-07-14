@@ -4,14 +4,16 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import logo from "../images/Logo - white.svg"
 import card from "../images/WWC-card.png"
+import hero from "../images/Hero-subtract.png"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Wrapper>
       <div className="landing">
-        <div className="career-returnship">
-          <img src={logo} alt="WWC Returnship icon" width="500" height="600"/>
+        <div className="hero">
+          {/* <img className ="hero-img" src={hero} alt="Woman looking at a monitor" /> */}
+          <img className ="logo" src={logo} alt="WWC Returnship icon" width="500" height="600"/>
         </div>
         <div className="about-us">
           <h2>ABOUT US</h2>
@@ -20,7 +22,7 @@ const IndexPage = () => (
               <p>Kickstarting your career and re-entering the workforce after a break can be a huge challenge; <span>together we can make this a lot easier</span>. This initiative is a small step towards empowering those of us in technology trying to relaunch our careers.</p>
               <button>LEARN MORE</button>
             </div>
-            <img src={card} alt="WWC Returnship ad" />
+            <img className="card" src={card} alt="WWC Returnship ad" />
           </div>
         </div>
       </div>  
@@ -43,17 +45,22 @@ const Wrapper = styled.div`
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
+    /* background-image: url('../images/Hero-subtract.png') no-repeat fixed center; */
 
-    .career-returnship {
+    .hero {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
-      min-height: 50vh;
+      height: 75vh;
       width: 100%;
-      background: linear-gradient(0deg, #4C4C4C, #4C4C4C), url(Hero-img.jpg);
-      background-blend-mode: multiply, normal;
+      padding-top: 100px;
+      background: url("${hero}") no-repeat center;
 
-      img {
+      .hero-img {
+        max-width: 100%;
+      }
+
+      .logo {
         width: 750px;
         height: 172px;
       }
@@ -70,14 +77,15 @@ const Wrapper = styled.div`
     .about-us {
       display: flex;
       flex-direction: column;
-      max-width: 900px;
+      width: 100%
+      height: 40vh;
       align-items: flex-start;
-      justify-content: center;
-      margin-left: 200px;
+      justify-content: flex-start;
+      padding: 20px 300px;
 
       h2 {
         color: #DA0D46;
-        font-family: Myriad Pro, sans-serif;
+        font-family: 'Myriad Pro', sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 42px;
@@ -86,9 +94,12 @@ const Wrapper = styled.div`
 
       .description {
         display: flex;
+        flex-direction: row;
 
         .column {
-            
+          display: flex;
+          flex-direction: column;
+        
           p {
             font-family: Montserrat, sans-serif;
             font-style: normal;
@@ -97,6 +108,7 @@ const Wrapper = styled.div`
             line-height: 123.4%;
             letter-spacing: 0.02em;
             color: #000000;
+            padding-right: 20px;
 
             span {
               font-weight: bold;
@@ -107,16 +119,17 @@ const Wrapper = styled.div`
           button {
             font-family: Myriad Pro, sans-serif;
             font-size: 16px;
+            font-weight: bold;
             line-height: 123.4%;
             display: flex;
-            align-items: center;
-            justify-self: center;
+            align-self: center;
             text-align: center;
             letter-spacing: 0.02em;
             color: #DA0D46;
             border: 1px solid #DA0D46;
             box-sizing: border-box;
             border-radius: 15px;
+            padding: 15px 70px;
           }
         }
 
@@ -130,15 +143,19 @@ const Wrapper = styled.div`
   }
 
   .get-involved {
-
+    height: 50vh;
+    width: 100%;
+    background: #DA0D46;
   }
 
   .events {
-
+    height: 50vh;
+    width: 100%;
+    background: gray;
   }
 
   .projects {
-
+    height: 100vh;
   }
 `
 
