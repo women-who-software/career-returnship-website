@@ -26,7 +26,33 @@ const IndexPage = () => (
           </div>
         </div>
       </div>  
-      <div className="get-involved"></div>
+      <div className="get-involved">
+        <h2>WANT TO GET INVOLVED?</h2>
+        <div className="columns">
+          <div className="column1">
+            <button>BECOME A MEMBER</button>
+            <p>We meet every 2 weeks on Wednesday. 6:00-8:00pm Sign-up online with Meetup</p>
+          </div>
+          <div className="column2">
+            <button>BE A SPONSOR/VOLUNTEER</button>
+            <p>Interested in partnering with us? A few options we are currently looking to fill. Weekly Food Sponsors Host Mock Interviews Lead a Code Challenge Portfolio/Resume Review Lightening Talks Domain Sponsorship Donations</p>
+          </div>
+          <div className="column3">
+            <div className="logos-row1">
+              <img />
+              <img />
+            </div>
+            <div className="logos-row2">
+              <img />
+              <img />
+            </div>
+            <div className="logos-row3">
+              <img />
+            </div>
+          <p>Thank you sponsors!</p>
+          </div>
+        </div>
+      </div>
       <div className="events"></div>
       <div className="projects"></div>
     </Wrapper>
