@@ -125,7 +125,7 @@ const Wrapper = styled.div`
         .column {
           display: flex;
           flex-direction: column;
-        
+    
           p {
             font-family: Montserrat, sans-serif;
             font-style: normal;
@@ -134,7 +134,6 @@ const Wrapper = styled.div`
             line-height: 123.4%;
             letter-spacing: 0.02em;
             color: #000000;
-            padding-right: 20px;
 
             span {
               font-weight: bold;
@@ -172,6 +171,80 @@ const Wrapper = styled.div`
     height: 50vh;
     width: 100%;
     background: #DA0D46;
+    padding: 20px 300px;
+
+    h2 {
+      font-family: Myriad Pro, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      color: #FFFFFF;
+      /* padding-top: 30px; */
+    }
+
+    .columns {
+      direction: flex;
+      flex-direction: row;
+      width: 100%;
+
+      p {
+          font-family: Montserrat, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          color: #FFFFFF;
+        }
+
+      .column1 {
+        button {
+          font-family: Myriad Pro, sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: #FFFFFF;
+
+          background: linear-gradient(180deg, #4C4C4C 0%, #000000 100%), #4C4C4C;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 15px;
+        }
+      }
+
+      .column2 {
+        button {
+          font-family: Myriad Pro, sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: #4C4C4C;
+
+          background: linear-gradient(180deg, #FFFFFF 0%, #E9CFD6 100%);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 15px;
+        }
+      }
+
+      .column3 {
+        .logos-row1 {
+
+        }
+        .logos-row2 {
+
+        }
+        .logos-row3 {
+
+        }
+    
+        p {
+
+        }
+      }
+    }
   }
 
   .events {
