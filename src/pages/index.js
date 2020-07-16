@@ -16,10 +16,10 @@ const IndexPage = () => (
           <img className ="logo" src={logo} alt="WWC Returnship icon" width="500" height="600"/>
         </div>
         <div className="about-us">
-          <h2>ABOUT US</h2>
+          <h2>KICKSTARTING YOUR CAREER?</h2>
           <div className="description">
             <div className="column">
-              <p>Kickstarting your career and re-entering the workforce after a break can be a huge challenge; <span>together we can make this a lot easier</span>. This initiative is a small step towards empowering those of us in technology trying to relaunch our careers.</p>
+              <p>Re-entering the workforce after a break can be a huge challenge; <span>together we can</span> make this a lot easier. This initiative is a small step towards empowering those of us in technology as we relaunch our careers.</p>
               <button>LEARN MORE</button>
             </div>
             <img className="card" src={card} alt="WWC Returnship ad" />
@@ -31,23 +31,34 @@ const IndexPage = () => (
         <div className="columns">
           <div className="column1">
             <button>BECOME A MEMBER</button>
-            <p>We meet every 2 weeks on Wednesday. 6:00-8:00pm Sign-up online with Meetup</p>
+            <p>We meet every 2 weeks on Wednesday. <br /><br /> 6:00-8:00pm<br />Sign-up online with Meetup</p>
           </div>
           <div className="column2">
             <button>BE A SPONSOR/VOLUNTEER</button>
-            <p>Interested in partnering with us? A few options we are currently looking to fill. Weekly Food Sponsors Host Mock Interviews Lead a Code Challenge Portfolio/Resume Review Lightening Talks Domain Sponsorship Donations</p>
+            <p>Interested in partnering with us? We are currently looking to fill a few options:
+              <br /><br />
+              <span>
+                - Weekly Food Sponsors<br />
+                - Host Mock Interviews<br />
+                - Lead a Code Challenge<br />
+                - Portfolio/Resume Review<br />
+                - Lightening Talks<br />
+                - Domain Sponsorship<br />
+                - Donations
+              </span>
+            </p>
           </div>
           <div className="column3">
-            <div className="logos-row1">
-              <img />
-              <img />
+            <div className="logos-rows">
+              <div className="logo"></div>
+              <div className="logo"></div>
             </div>
-            <div className="logos-row2">
-              <img />
-              <img />
+            <div className="logos-rows">
+              <div className="logo"></div>
+              <div className="logo"></div>
             </div>
-            <div className="logos-row3">
-              <img />
+            <div className="logo-row">
+              <div className="logo"></div>  
             </div>
           <p>Thank you sponsors!</p>
           </div>
@@ -134,6 +145,7 @@ const Wrapper = styled.div`
             line-height: 123.4%;
             letter-spacing: 0.02em;
             color: #000000;
+            padding-right: 20px;
 
             span {
               font-weight: bold;
@@ -168,7 +180,7 @@ const Wrapper = styled.div`
   }
 
   .get-involved {
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     background: #DA0D46;
     padding: 20px 300px;
@@ -179,11 +191,10 @@ const Wrapper = styled.div`
       font-weight: bold;
       font-size: 30px;
       color: #FFFFFF;
-      /* padding-top: 30px; */
     }
 
     .columns {
-      direction: flex;
+      display: flex;
       flex-direction: row;
       width: 100%;
 
@@ -191,11 +202,14 @@ const Wrapper = styled.div`
           font-family: Montserrat, sans-serif;
           font-style: normal;
           font-weight: normal;
-          font-size: 18px;
+          font-size: 16px;
           color: #FFFFFF;
+          padding-top: 10px;
         }
 
       .column1 {
+        min-width: 280px;
+
         button {
           font-family: Myriad Pro, sans-serif;
           font-style: normal;
@@ -205,6 +219,7 @@ const Wrapper = styled.div`
           align-items: center;
           text-align: center;
           color: #FFFFFF;
+          padding: 15px 35px;
 
           background: linear-gradient(180deg, #4C4C4C 0%, #000000 100%), #4C4C4C;
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -213,6 +228,8 @@ const Wrapper = styled.div`
       }
 
       .column2 {
+        min-width: 280px;
+
         button {
           font-family: Myriad Pro, sans-serif;
           font-style: normal;
@@ -222,26 +239,46 @@ const Wrapper = styled.div`
           align-items: center;
           text-align: center;
           color: #4C4C4C;
+          padding: 15px 15px;
 
           background: linear-gradient(180deg, #FFFFFF 0%, #E9CFD6 100%);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           border-radius: 15px;
         }
+
+        span {
+          font-size: 14px;
+        }
       }
 
       .column3 {
-        .logos-row1 {
-
+        min-width: 280px;
+    
+        .logo {
+          background: #FFFFFF;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 5px;
+          width: 116px;
+          height: 40px;
         }
-        .logos-row2 {
 
+        .logos-rows {
+          display: flex;
+          justify-content: space-around;
         }
-        .logos-row3 {
 
+        .logo-row {
+          display: flex;
+          justify-content: center;
         }
     
         p {
-
+          font-family: Noteworthy;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 26px;
+          text-align: center;
+          padding-top: 20px;
         }
       }
     }
