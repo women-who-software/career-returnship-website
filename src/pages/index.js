@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import logo from "../images/Logo - white.svg"
 import card from "../images/WWC-card.png"
 import hero from "../images/Hero-subtract.png"
-
+import nanno from "../images/Sponsors-nanno.png"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -50,15 +50,15 @@ const IndexPage = () => (
           </div>
           <div className="column3">
             <div className="logos-rows">
-              <div className="logo"></div>
-              <div className="logo"></div>
+              <img className="logo" src={nanno} alt="WWC Returnship ad" />
+              {/* <img className="logo" src={snapdocs} alt="WWC Returnship ad" /> */}
             </div>
             <div className="logos-rows">
-              <div className="logo"></div>
-              <div className="logo"></div>
+              {/* <img className="logo" src={workability} alt="WWC Returnship ad" /> */}
+              {/* <img className="logo" src={namecom} alt="WWC Returnship ad" /> */}
             </div>
             <div className="logo-row">
-              <div className="logo"></div>  
+              {/* <img className="logo" src={radial} alt="WWC Returnship ad" />   */}
             </div>
           <p>Thank you sponsors!</p>
           </div>
@@ -255,7 +255,6 @@ const Wrapper = styled.div`
         min-width: 280px;
     
         .logo {
-          background: #FFFFFF;
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           border-radius: 5px;
           width: 116px;
