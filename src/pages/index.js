@@ -6,6 +6,11 @@ import logo from "../images/Logo - white.svg"
 import card from "../images/WWC-card.png"
 import hero from "../images/Hero-subtract.png"
 import nanno from "../images/Sponsors-nanno.png"
+import snapdocs from "../images/Sponsors-snapdocs.png"
+import workability from "../images/Sponsors-workability.png"
+import namecom from "../images/Sponsors-name.png"
+import radial from "../images/Sponsors-radial.png"
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -50,15 +55,15 @@ const IndexPage = () => (
           </div>
           <div className="column3">
             <div className="logos-rows">
-              <img className="logo" src={nanno} alt="WWC Returnship ad" />
-              {/* <img className="logo" src={snapdocs} alt="WWC Returnship ad" /> */}
+              <img className="logo" src={nanno} alt="Nanno logo" />
+              <img className="logo" src={snapdocs} alt="Snapdocs logo" />
             </div>
             <div className="logos-rows">
-              {/* <img className="logo" src={workability} alt="WWC Returnship ad" /> */}
-              {/* <img className="logo" src={namecom} alt="WWC Returnship ad" /> */}
+              <img className="logo" src={workability} alt="WWC Returnship ad" />
+              <img className="logo" src={namecom} alt="WWC Returnship ad" />
             </div>
             <div className="logo-row">
-              {/* <img className="logo" src={radial} alt="WWC Returnship ad" />   */}
+              <img className="logo" src={radial} alt="WWC Returnship ad" />  
             </div>
           <p>Thank you sponsors!</p>
           </div>
