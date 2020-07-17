@@ -71,7 +71,15 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-      <div className="events"></div>
+      <div className="events">
+        <h2>NETWORKING / EVENTS</h2>
+        <div className="columns">
+          <div className="column1"></div>
+          <div className="column2"></div>
+          <div className="column3"></div>
+        </div>
+        <a className="link-more" href="https://www.meetup.com/Women-Who-Code-Boulder-Denver/events/fnbxtrybckbdc/">view more upcoming events</a>
+      </div>
       <div className="projects"></div>
     </Wrapper>
   </Layout>
