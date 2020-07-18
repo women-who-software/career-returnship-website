@@ -44,15 +44,17 @@ const IndexPage = () => (
             <button>BE A SPONSOR/VOLUNTEER</button>
             <p>Interested in partnering with us? We are currently looking to fill a few options:
               <br /><br />
-              <span>
-                - Weekly Food Sponsors<br />
-                - Host Mock Interviews<br />
-                - Lead a Code Challenge<br />
-                - Portfolio/Resume Review<br />
-                - Lightening Talks<br />
-                - Domain Sponsorship<br />
-                - Donations
-              </span>
+              <ul style={'list-style-type:circle;'}>
+                <span>
+                  <li>Weekly Food Sponsors</li>
+                  <li>Host Mock Interviews</li>
+                  <li>Lead a Code Challenge</li>
+                  <li>Portfolio/Resume Review</li>
+                  <li>Lightening Talks</li>
+                  <li>Domain Sponsorship</li>
+                  <li>Donations</li>
+                </span>
+              </ul>
             </p>
           </div>
           <div className="column3">
@@ -299,9 +301,10 @@ const Wrapper = styled.div`
   }
 
   .events {
-    height: 50vh;
+    height: 60vh;
     width: 100%;
-    background: gray;
+    background: url("${hero}");
+    padding: 20px 300px;
   }
 
   .projects {
