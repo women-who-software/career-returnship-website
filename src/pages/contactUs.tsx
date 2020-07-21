@@ -1,10 +1,11 @@
-import React from 'react';
-import InputBoxName from '../components/inputBoxContactUs';
-import InputBoxEmail from '../components/inputBoxContactUs';
-import InputBoxMessage from '../components/inputBoxContactUs';
+import React from "react"
+import {
+  InputBoxName,
+  InputBoxEmail,
+  InputBoxMessage,
+} from "../components/inputBoxContactUs"
 
 const ContactUS = () => {
-
   return (
     <div>
       <InputBoxName />
@@ -12,8 +13,8 @@ const ContactUS = () => {
       <InputBoxEmail />
       <br />
       <InputBoxMessage />
-     </div>
+    </div>
   )
 }
 
-export default ContactUS;
+export default ContactUS
