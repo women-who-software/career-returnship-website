@@ -42,20 +42,16 @@ const IndexPage = () => (
           </div>
           <div className="column2">
             <button>BE A SPONSOR/VOLUNTEER</button>
-            <p>Interested in partnering with us? We are currently looking to fill a few options:
-              <br /><br />
-              <ul style={'list-style-type:circle;'}>
-                <span>
-                  <li>Weekly Food Sponsors</li>
-                  <li>Host Mock Interviews</li>
-                  <li>Lead a Code Challenge</li>
-                  <li>Portfolio/Resume Review</li>
-                  <li>Lightening Talks</li>
-                  <li>Domain Sponsorship</li>
-                  <li>Donations</li>
-                </span>
+            <p>Interested in partnering with us? We are currently looking to fill a few options: </p>
+              <ul>
+                <li>Weekly Food Sponsors</li>
+                <li>Host Mock Interviews</li>
+                <li>Lead a Code Challenge</li>
+                <li>Portfolio/Resume Review</li>
+                <li>Lightening Talks</li>
+                <li>Domain Sponsorship</li>
+                <li>Donations</li>
               </ul>
-            </p>
           </div>
           <div className="column3">
             <div className="logos-rows">
@@ -263,8 +259,11 @@ const Wrapper = styled.div`
           border-radius: 15px;
         }
 
-        span {
+        ul {
+          list-style-type:circle;
           font-size: 14px;
+          color: white;
+          line-height: 15px;
         }
       }
 
