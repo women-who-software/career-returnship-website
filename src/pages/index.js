@@ -77,7 +77,7 @@ const IndexPage = () => (
   </Layout>
 )
 
-const Wrapper = styled.div`
+const Wrapper = Styled.div`
   align-items: center;
   box-sizing: border-box;
   display: flex;
