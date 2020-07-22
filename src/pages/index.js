@@ -42,7 +42,7 @@ const IndexPage = () => (
           </div>
           <div className="column2">
             <button>BE A SPONSOR/VOLUNTEER</button>
-            <p>Interested in partnering with us? We are currently looking to fill a few options: </p>
+            <p>Interested in partnering with us? A few options we are currently looking to fill. </p>
               <ul>
                 <li>Weekly Food Sponsors</li>
                 <li>Host Mock Interviews</li>
@@ -245,8 +245,6 @@ const Wrapper = styled.div`
 
         button {
           font-family: Myriad Pro, sans-serif;
-          font-style: normal;
-          font-weight: bold;
           font-size: 16px;
           display: flex;
           align-items: center;
@@ -263,7 +261,8 @@ const Wrapper = styled.div`
           list-style-type:circle;
           font-size: 14px;
           color: white;
-          line-height: 15px;
+          line-height: 5px;
+          font-family: Montserrat, sans-serif;
         }
       }
 
