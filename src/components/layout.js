@@ -28,19 +28,12 @@ const Layout = ({ children }) => {
     <>
     <Navbar />
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
+
         <main>{children}</main>
         <footer>
           <h4 style={{color: "#DA0D46"}}>CAREER RETURNSHIP</h4>
         </footer>
-      </div>
+    
     </>
   )
 }
