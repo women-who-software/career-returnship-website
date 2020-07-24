@@ -1,8 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import logo from "../images/Logo - white.svg"
 import card from "../images/WWC-card.png"
@@ -65,7 +63,7 @@ const IndexPage = () => (
             <div className="logo-row">
               <img className="logo" src={radial} alt="WWC Returnship ad" />  
             </div>
-          <p>Thank you sponsors!</p>
+            <p>Thank you sponsors!</p>
           </div>
         </div>
       </div>
@@ -193,7 +191,7 @@ const Wrapper = styled.div`
   }
 
   .get-involved {
-    height: 60vh;
+    height: 54vh;
     width: 100%;
     background: #DA0D46;
     padding: 20px 300px;
@@ -263,6 +261,7 @@ const Wrapper = styled.div`
           color: white;
           line-height: 5px;
           font-family: Montserrat, sans-serif;
+          letter-spacing: 0.02em;
         }
       }
 
@@ -272,6 +271,7 @@ const Wrapper = styled.div`
         .logo {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           border-radius: 5px;
+          /* padding: 7px 15px; */
           width: 116px;
           height: 40px;
         }
