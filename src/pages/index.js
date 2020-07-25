@@ -1,9 +1,9 @@
 import React from "react"
-import styled from "styled-components"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Styled from "styled-components"
 import logo from "../images/Logo - white.svg"
 import card from "../images/WWC-card.png"
 import hero from "../images/Hero-subtract.png"
@@ -32,7 +32,7 @@ const IndexPage = () => (
             <img className="card" src={card} alt="WWC Returnship ad" />
           </div>
         </div>
-      </div>  
+      </div>
       <div className="get-involved">
         <h2>WANT TO GET INVOLVED?</h2>
         <div className="columns">
@@ -65,7 +65,7 @@ const IndexPage = () => (
               <img className="logo" src={namecom} alt="WWC Returnship ad" />
             </div>
             <div className="logo-row">
-              <img className="logo" src={radial} alt="WWC Returnship ad" />  
+              <img className="logo" src={radial} alt="WWC Returnship ad" />
             </div>
           <p>Thank you sponsors!</p>
           </div>
@@ -77,7 +77,7 @@ const IndexPage = () => (
   </Layout>
 )
 
-const Wrapper = styled.div`
+const Wrapper = Styled.div`
   align-items: center;
   box-sizing: border-box;
   display: flex;
@@ -143,7 +143,7 @@ const Wrapper = styled.div`
         .column {
           display: flex;
           flex-direction: column;
-    
+
           p {
             font-family: Montserrat, sans-serif;
             font-style: normal;
@@ -180,7 +180,7 @@ const Wrapper = styled.div`
         img {
           width: 272px;
           height: 172px;
-          border-radius: 15px;    
+          border-radius: 15px;
         }
       }
     }
@@ -260,7 +260,7 @@ const Wrapper = styled.div`
 
       .column3 {
         min-width: 280px;
-    
+
         .logo {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           border-radius: 5px;
@@ -277,7 +277,7 @@ const Wrapper = styled.div`
           display: flex;
           justify-content: center;
         }
-    
+
         p {
           font-family: Noteworthy;
           font-style: normal;
