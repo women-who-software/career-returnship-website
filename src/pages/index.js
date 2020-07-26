@@ -301,8 +301,28 @@ const Wrapper = styled.div`
   .events {
     height: 60vh;
     width: 100%;
-    background: url("${hero}");
+    background: gray;
     padding: 20px 300px;
+    color: #54BBCE;
+
+    .columns {
+
+      .column1 {
+
+      }
+
+      .column2 {
+
+      }
+
+      .column3 {
+
+      }
+    }
+
+    .link-more {
+      
+    }
   }
 
   .projects {
