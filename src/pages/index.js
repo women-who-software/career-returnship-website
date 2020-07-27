@@ -78,7 +78,11 @@ const IndexPage = () => (
             <EventBlurb />
             <EventBlurb />
           </div>
-          <div className="column2"></div>
+          <div className="column2">
+            <EventBlurb />  
+            <EventBlurb />
+            <EventBlurb />
+          </div>
         </div>
         <a className="link-more" href="https://www.meetup.com/Women-Who-Code-Boulder-Denver/events/fnbxtrybckbdc/">view more upcoming events</a>
       </div>
@@ -214,6 +218,7 @@ const Wrapper = styled.div`
       display: flex;
       flex-direction: row;
       width: 100%;
+      justify-content: space-between;
 
       p {
           font-family: Montserrat, sans-serif;
@@ -310,24 +315,35 @@ const Wrapper = styled.div`
     background: gray;
     padding: 20px 300px;
     color: #54BBCE;
+    display: flex;
+    flex-direction: column;
 
     .columns {
+      display: flex;
+      align-items: space-around;
+      width: 100%;
 
       img {
         border-radius: 15px;
       }
 
       .column1 {
-
       }
 
       .column2 {
-
       }
     }
 
     .link-more {
-      
+      text-decoration: none;
+      font-family: Montserrat, sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 123.4%;
+      letter-spacing: 0.02em;
+      color: #FFFFFF;
+      align-self: center;
+      margin-top: 20px;
     }
   }
 
