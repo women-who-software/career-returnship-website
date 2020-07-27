@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import EventBlurb from "../components/event-blurb"
 import logo from "../images/Logo - white.svg"
 import card from "../images/WWC-card.png"
 import hero from "../images/Hero-subtract.png"
@@ -71,11 +72,13 @@ const IndexPage = () => (
       <div className="events">
         <h2>NETWORKING / EVENTS</h2>
         <div className="columns">
+          <img clssName="meetup-info" src={meetupInfo} alt="Meetup logo with event information"/>
           <div className="column1">
-            <img clssName="meetup-info" src={meetupInfo} alt="Meetup logo with event information"/>
+            <EventBlurb />
+            <EventBlurb />
+            <EventBlurb />
           </div>
           <div className="column2"></div>
-          <div className="column3"></div>
         </div>
         <a className="link-more" href="https://www.meetup.com/Women-Who-Code-Boulder-Denver/events/fnbxtrybckbdc/">view more upcoming events</a>
       </div>
@@ -310,15 +313,15 @@ const Wrapper = styled.div`
 
     .columns {
 
+      img {
+        border-radius: 15px;
+      }
+
       .column1 {
 
       }
 
       .column2 {
-
-      }
-
-      .column3 {
 
       }
     }
