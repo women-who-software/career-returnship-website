@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import EventBlurb from "../components/event-blurb"
+import ProjectCard from "../components/project-card"
 import logo from "../images/Logo - white.svg"
 import card from "../images/WWC-card.png"
 import hero from "../images/Hero-subtract.png"
@@ -86,7 +87,15 @@ const IndexPage = () => (
         </div>
         <a className="link-more" href="https://www.meetup.com/Women-Who-Code-Boulder-Denver/events/fnbxtrybckbdc/">view more upcoming events</a>
       </div>
-      <div className="projects"></div>
+      <div className="projects">
+        <h2>PROJECTS</h2>
+        <div className="cards">
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+        </div>
+        <button className="project-button">HAVE A PROJECT FOR US?</button>
+      </div>
     </Wrapper>
   </Layout>
 )
@@ -320,17 +329,21 @@ const Wrapper = styled.div`
 
     .columns {
       display: flex;
-      align-items: space-around;
+      flex-direction: row;
       width: 100%;
+      justify-content: space-between;
 
       img {
         border-radius: 15px;
+        min-width: 280px;
       }
 
       .column1 {
+        min-width: 280px;
       }
 
       .column2 {
+        min-width: 280px;
       }
     }
 
@@ -348,7 +361,23 @@ const Wrapper = styled.div`
   }
 
   .projects {
-    height: 100vh;
+    height: 54vh;
+    width: 100%;
+    background: #FFFFFF;
+    padding: 20px 300px;
+    color: #DA0D46;
+
+    h2 {
+
+    }
+
+    .cards {
+      display: flex;
+    }
+
+    .project-button {
+
+    }
   }
 `
 
