@@ -10,6 +10,7 @@ import snapdocs from "../images/Sponsors-snapdocs.png"
 import workability from "../images/Sponsors-workability.png"
 import namecom from "../images/Sponsors-name.png"
 import radial from "../images/Sponsors-radial.png"
+import meetupInfo from "../images/Meetup-info-temp.png"
 
 const IndexPage = () => (
   <Layout>
@@ -70,7 +71,9 @@ const IndexPage = () => (
       <div className="events">
         <h2>NETWORKING / EVENTS</h2>
         <div className="columns">
-          <div className="column1"></div>
+          <div className="column1">
+            <img clssName="meetup-info" src={meetupInfo} alt="Meetup logo with event information"/>
+          </div>
           <div className="column2"></div>
           <div className="column3"></div>
         </div>
