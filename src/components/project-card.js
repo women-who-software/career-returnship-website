@@ -10,8 +10,8 @@ const ProjectCard = () => {
         Tools Used: Figma, Adobe Photoshop, Javascript, HTML, CSS, RESTful APIs, React, Node.JS, MongoDB
       </p>
       <div className="toggle-buttons">
-        <button>GITHUB</button>
-        <button>PROTOTYPE</button>
+        <button className="github-button">GITHUB</button>
+        <button className="prototype-button">PROTOTYPE</button>
       </div>
     </ProjectCardWrapper>
   )
@@ -62,6 +62,30 @@ const ProjectCardWrapper = styled.div`
 
   .toggle-buttons {
     padding: 20px;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 123.4%;
+    /* or 17px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    
+    .github-button {
+      background: #017A8E;
+      color: white;
+      padding: 7px 20px;
+    }
+
+    .prototype-button {
+      color: #017A8E;
+      border: 2px solid #017A8E;
+      padding: 7px 3px;
+    }
   }
 }
 `
