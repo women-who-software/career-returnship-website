@@ -89,12 +89,14 @@ const IndexPage = () => (
       </div>
       <div className="projects">
         <h2>PROJECTS</h2>
-        <div className="cards">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+        <div className="projects-button">
+          <div className="cards">
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+          </div>
+          <button className="project-button">HAVE A PROJECT FOR US?</button>
         </div>
-        <button className="project-button">HAVE A PROJECT FOR US?</button>
       </div>
     </Wrapper>
   </Layout>
@@ -336,10 +338,12 @@ const Wrapper = styled.div`
       img {
         border-radius: 15px;
         min-width: 280px;
+        margin-right: 30px;
       }
 
       .column1 {
         min-width: 280px;
+        margin-right: 30px;
       }
 
       .column2 {
@@ -361,7 +365,7 @@ const Wrapper = styled.div`
   }
 
   .projects {
-    height: 54vh;
+    height: 85vh;
     width: 100%;
     background: #FFFFFF;
     padding: 20px 300px;
@@ -371,12 +375,32 @@ const Wrapper = styled.div`
 
     }
 
-    .cards {
+    .projects-button {
       display: flex;
-    }
+      flex-direction: column;
+      align-items: center;
+    
+      .cards {
+        display: flex;
+      }
 
-    .project-button {
+      .project-button {
+        font-family: Myriad Pro, sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background: #DA0D46;
+        color: #FFFFFF;
+        padding: 15px 35px;
+        margin-top: 50px;
+        margin-bottom: 50px;
 
+        background: linear-gradient(180deg, #DA0D46 0%, #000000 100%), #4C4C4C;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+      }
     }
   }
 `

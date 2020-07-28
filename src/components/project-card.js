@@ -1,10 +1,11 @@
 import React from "react"
 import styled from "styled-components"
+import siteImage from "../images/site-image-temp.png"
 
 const ProjectCard = () => {
   return (
     <ProjectCardWrapper>
-      <img className="project-image" src="" alt="Cover for Project" />
+      <img className="project-image" src={siteImage} alt="Cover for Project" />
       <h3>CAREER RETURNSHIP WEBSITE</h3>
       <p>A very short description describing the project.  Project purpose statement or tag line.<br /><br />
         Tools Used: Figma, Adobe Photoshop, Javascript, HTML, CSS, RESTful APIs, React, Node.JS, MongoDB
@@ -22,7 +23,6 @@ const ProjectCardWrapper = styled.div`
   flex-direction: column;
   background-color: #FFFFFF;
   border-radius: 10px;
-  padding: 10px 10px;
   margin: 0px 10px;
   color: black;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5), 0px 4px 4px rgba(0, 0, 0, 0.25);
