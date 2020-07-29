@@ -2,6 +2,7 @@ import React from 'react';
 import InputBoxName from '../components/inputBoxContactUs';
 import InputBoxEmail from '../components/inputBoxContactUs';
 import InputBoxMessage from '../components/inputBoxContactUs';
+import { Link } from "gatsby"
 
 const ContactUS = () => {
 
