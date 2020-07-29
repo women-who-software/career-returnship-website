@@ -1,5 +1,5 @@
 import React from "react"
-import styled from "styled-components"
+import Styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import EventBlurb from "../components/event-blurb"
@@ -46,7 +46,7 @@ const IndexPage = () => (
   </Layout>
 )
 
-const Wrapper = styled.div`
+const Wrapper = Styled.div`
   align-items: center;
   box-sizing: border-box;
   display: flex;
@@ -83,7 +83,6 @@ const Wrapper = styled.div`
         min-width: 280px;
       }
     }
-
     .link-more {
       text-decoration: none;
       font-family: Montserrat, sans-serif;
@@ -129,7 +128,6 @@ const Wrapper = styled.div`
         padding: 15px 35px;
         margin-top: 50px;
         margin-bottom: 50px;
-
         background: linear-gradient(180deg, #DA0D46 0%, #000000 100%), #4C4C4C;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 15px;
