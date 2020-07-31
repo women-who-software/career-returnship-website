@@ -10,7 +10,7 @@ const Landing = () => {
       <div className="landing">
         <div className="hero">
           {/* <img className ="hero-img" src={hero} alt="Woman looking at a monitor" /> */}
-          <img className ="logo" src={logo} alt="WWC Returnship icon" width="500" height="600"/>
+          <img className ="logo" src={logo} alt="WWC Returnship icon" />
         </div>
         <div className="about-us">
           <h2>KICKSTARTING YOUR CAREER?</h2>
@@ -29,7 +29,29 @@ const Landing = () => {
 
 const LandingWrapper = Styled.div`
   @media (max-width: 700px) {
+    .landing {
+      .hero {
+        .hero-img {
+        }
+        
+        .logo {
+          background: orange;
+          width: 500; 
+        }
+      }
 
+      .about-us {
+        padding: 20px 20px;
+
+        h2 {
+
+        }
+
+        .description {
+
+        }
+      }
+    }
   }
 
   .landing {
@@ -53,17 +75,17 @@ const LandingWrapper = Styled.div`
       }
 
       .logo {
-        width: 750px;
-        height: 172px;
+        width: 300px;
+        
       }
 
-      h1 {
+      /* h1 {
         font-family: Montserrat, sans-serif;
         font-size: 2rem;
         font-weight: lighter;
         letter-spacing: 0.02em;
         color: #FFFFFF;
-      }
+      } */
     }
 
     .about-us {

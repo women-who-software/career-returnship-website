@@ -20,11 +20,10 @@ const IndexPage = () => (
 )
 
 const Wrapper = Styled.div`
-  align-items: center;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+align-items: center;
+display: flex;
+flex-direction: column;
+width: 100%;
 `
 
 export default IndexPage;
