@@ -1,5 +1,5 @@
 import React from "react"
-import styled from "styled-components"
+import Styled from "styled-components"
 import logo from "../images/Logo - white.svg"
 import card from "../images/WWC-card.png"
 import hero from "../images/Hero-subtract.png"
@@ -27,7 +27,7 @@ const Landing = () => {
   )
 }
 
-const LandingWrapper = styled.div`
+const LandingWrapper = Styled.div`
   @media (max-width: 700px) {
 
   }

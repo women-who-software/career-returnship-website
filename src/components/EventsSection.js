@@ -1,6 +1,6 @@
 import React from "react"
 import Styled from "styled-components"
-import EventBlurb from "../components/event-blurb"
+import EventBlurb from "../components/EventBlurb"
 import meetupInfo from "../images/Meetup-info-temp.png"
 
 const Events = () => (

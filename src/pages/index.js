@@ -2,9 +2,10 @@ import React from "react"
 import Styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Involved from "../components/involved-section"
-import Landing from "../components/landing-section"
-import Events from "../components/events-section"
+import Involved from "../components/InvolvedSection"
+import Landing from "../components/LandingSection"
+import Events from "../components/EventsSection"
+import Projects from "../components/ProjectsSection"
 
 const IndexPage = () => (
   <Layout>
@@ -13,6 +14,7 @@ const IndexPage = () => (
       <Landing />
       <Involved />
       <Events />
+      <Projects />
     </Wrapper>
   </Layout>
 )

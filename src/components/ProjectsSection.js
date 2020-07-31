@@ -1,6 +1,6 @@
 import React from "react"
 import Styled from "styled-components"
-import ProjectCard from "../components/project-card"
+import ProjectCard from "../components/ProjectCard"
 
 const Projects = () => (
   <ProjectsWrapper>
