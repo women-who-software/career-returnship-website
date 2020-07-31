@@ -28,6 +28,10 @@ const Landing = () => {
 }
 
 const LandingWrapper = styled.div`
+  @media (max-width: 700px) {
+
+  }
+
   .landing {
     display: flex;
     flex-direction: column;

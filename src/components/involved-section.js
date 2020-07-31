@@ -1,5 +1,5 @@
 import React from "react"
-import styled from "styled-components"
+import Styled from "styled-components"
 import nanno from "../images/Sponsors-nanno.png"
 import snapdocs from "../images/Sponsors-snapdocs.png"
 import workability from "../images/Sponsors-workability.png"
@@ -49,7 +49,11 @@ const InvolvedSection = () => {
   )
 }
 
-const InvolvedWrapper = styled.div`
+const InvolvedWrapper = Styled.div`
+  @media (max-width: 700px) {
+
+  }
+
   .get-involved {
       height: 54vh;
       width: 100%;
