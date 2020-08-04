@@ -1,6 +1,6 @@
 import React from "react"
 import Styled from "styled-components"
-import siteImage from "../images/site-image-temp.png"
+import siteImage from "../images/tempProjectImage.png"
 
 const ProjectCard = () => {
   return (
