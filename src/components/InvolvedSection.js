@@ -1,10 +1,10 @@
 import React from "react"
 import Styled from "styled-components"
-import nanno from "../images/Sponsors-nanno.png"
-import snapdocs from "../images/Sponsors-snapdocs.png"
-import workability from "../images/Sponsors-workability.png"
-import namecom from "../images/Sponsors-name.png"
-import radial from "../images/Sponsors-radial.png"
+import nanno from "../images/sponsorNanno.png"
+import snapdocs from "../images/sponsorSnapdocs.png"
+import workability from "../images/sponsorWorkability.png"
+import namecom from "../images/sponsorName.png"
+import radial from "../images/sponsorRadial.png"
 
 const InvolvedSection = () => {
   return (

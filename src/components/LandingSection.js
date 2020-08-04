@@ -1,8 +1,8 @@
 import React from "react"
 import Styled from "styled-components"
-import logo from "../images/Logo - white.svg"
-import card from "../images/WWC-card.png"
-import hero from "../images/Hero-subtract.png"
+import logo from "../images/logoWhite.svg"
+import card from "../images/wwcCard.png"
+import hero from "../images/heroSubtract.png"
 
 const Landing = () => {
   return (
