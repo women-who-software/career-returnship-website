@@ -26,6 +26,7 @@ const NavItem = Styled(Link)`
 
   :hover {
     color: black;
+    text-transform: uppercase;
     ::after {
       width: 100%;
     }
