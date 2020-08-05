@@ -9,7 +9,7 @@ const Navigation = Styled.nav`
   background-color: #fff;
   position: relative;
   justify-content: space-between;
-  text-transform: uppercase;
+  text-transform: capitalize;
   border-bottom: 2px solid #33333320;
   margin: 0 auto;
   padding: 0 5vw;
