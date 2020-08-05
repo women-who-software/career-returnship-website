@@ -10,6 +10,7 @@ const Navigation = Styled.nav`
   position: relative;
   justify-content: space-between;
   text-transform: capitalize;
+  font-family: Montserrat, Myriad Pro, sans-serif;
   border-bottom: 2px solid #33333320;
   margin: 0 auto;
   padding: 0 5vw;
