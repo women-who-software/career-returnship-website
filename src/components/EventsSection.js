@@ -8,7 +8,7 @@ const Events = () => (
     <div className="events">
       <h2>NETWORKING / EVENTS</h2>
       <div className="columns">
-        <img clssName="meetup-info" src={meetupInfo} alt="Meetup logo with event information"/>
+        <img className="meetup-info" src={meetupInfo} alt="Meetup logo with event information"/>
         <div className="column1">
           <EventBlurb />
           <EventBlurb />

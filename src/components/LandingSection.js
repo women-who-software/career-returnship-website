@@ -75,8 +75,8 @@ const LandingWrapper = Styled.div`
       }
 
       .logo {
-        width: 300px;
-        
+        width: 800px;
+        margin-top: 25px;
       }
 
       /* h1 {
