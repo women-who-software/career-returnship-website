@@ -95,7 +95,7 @@ const Wrapper = Styled.div`
       display: flex;
       align-items: flex-start;
       justify-content: center;
-      height: 75vh;
+      height: 50vh;
       width: 100%;
       padding-top: 100px;
       background: url("${hero}") no-repeat center;
