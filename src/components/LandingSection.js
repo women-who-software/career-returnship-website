@@ -1,23 +1,25 @@
-// Node Modules
-import React from "react"
-import styled from "styled-components"
-//relative imports
-import logo from "../images/logoWhite.svg"
-import card from "../images/wwcCard.png"
-import hero from "../images/heroSubtract.png"
+// Node modules.
+import React from 'react'
+import styled from 'styled-components'
+// Relative imports.
+import card from '../images/wwcCard.png'
+import hero from '../images/heroSubtract.png'
+import logo from '../images/logoWhite.svg'
 
 const LandingSection = () => (
   <LandingWrapper>
     <div className="hero">
       <img className="hero-image" src={hero} alt="background" />
-      <img className ="logo" src={logo} alt="WWC Returnship icon" />
+      <img className="logo" src={logo} alt="WWC Returnship icon" />
     </div>
     <div className="about-us">
       <h2>KICKSTARTING YOUR CAREER?</h2>
       <div className="row">
         <div className="column">
           <p>
-            Re-entering the workforce after a break can be a huge challenge; <strong>together we can</strong> make this a lot easier. This initiative is a small step towards empowering those of us in technology as we relaunch our careers.
+            Re-entering the workforce after a break can be a huge challenge;{' '}
+            <strong>together we can</strong> make this a lot easier. This initiative is a small step towards empowering
+            those of us in technology as we relaunch our careers.
           </p>
           <img alt="WWC Returnship ad" className="card-mobile" src={card} />
           <button type="button">LEARN MORE</button>
@@ -29,7 +31,6 @@ const LandingSection = () => (
 )
 
 const LandingWrapper = styled.div`
-  .landing {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -38,14 +39,14 @@ const LandingWrapper = styled.div`
     width: 100%;
 
     .hero {
-      display: flex;
       align-items: flex-start;
       background: #ffffff;
+      display: flex;
       justify-content: center;
       min-height: 75vh;
       position: relative;
       width: 100%;
-      
+
       .hero-image {
         position: absolute;
         height: 100%;
@@ -68,14 +69,13 @@ const LandingWrapper = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      padding: 0px 20px;
+      padding: 0 20px;
       margin: 0 0 50px;
       max-width: 900px;
       width: 100%;
 
       h2 {
         color: #DA0D46;
-        font-family: 'Myriad Pro', sans-serif;
         font-weight: 600;
         font-size: 2.4rem;
       }
@@ -85,7 +85,7 @@ const LandingWrapper = styled.div`
 
         @media screen and (max-width: 600px) {
           align-items: center;
-          flex-direction: column; 
+          flex-direction: column;
           width: 100%;
         }
 
@@ -109,10 +109,10 @@ const LandingWrapper = styled.div`
             align-self: center;
             background: #ffffff;
             border-radius: 15px;
+            border: 1px solid #da0d46;
             box-sizing: border-box;
-            color: #DA0D46;
+            color: #da0d46;
             display: flex;
-            font-family: Myriad Pro, sans-serif;
             font-size: 1.05rem;
             font-weight: bold;
             margin-top: 20px;
@@ -122,7 +122,7 @@ const LandingWrapper = styled.div`
         }
 
         .card {
-          border-radius: 15px;    
+          border-radius: 15px;
           height: 172px;
 
           @media screen and (max-width: 600px) {
@@ -143,4 +143,4 @@ const LandingWrapper = styled.div`
   }
 `
 
-export default LandingSection;
+export default LandingSection

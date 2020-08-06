@@ -1,13 +1,16 @@
 html {
-  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+* {
+  font-family: "Montserrat", sans-serif;
 }
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 100%;
 }
 article,
 aside,
@@ -116,6 +119,9 @@ textarea {
 }
 optgroup {
   font-weight: 700;
+}
+button {
+  font-family: "Myriad Pro", sans-serif;
 }
 button,
 input {
