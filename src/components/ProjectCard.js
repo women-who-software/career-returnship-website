@@ -1,6 +1,6 @@
 import React from "react"
-import styled from "styled-components"
-import siteImage from "../images/site-image-temp.png"
+import Styled from "styled-components"
+import siteImage from "../images/tempProjectImage.png"
 
 const ProjectCard = () => {
   return (
@@ -18,7 +18,7 @@ const ProjectCard = () => {
   )
 }
 
-const ProjectCardWrapper = styled.div`
+const ProjectCardWrapper = Styled.div`
   display: flex;
   flex-direction: column;
   background-color: #FFFFFF;

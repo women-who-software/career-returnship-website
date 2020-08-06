@@ -1,7 +1,11 @@
 html {
-  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+* {
+  font-family: "Montserrat", sans-serif;
 }
 body {
   margin: 0;
@@ -115,6 +119,9 @@ textarea {
 }
 optgroup {
   font-weight: 700;
+}
+button {
+  font-family: "Myriad Pro", sans-serif;
 }
 button,
 input {
@@ -615,8 +622,8 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
   }
-}
+} */

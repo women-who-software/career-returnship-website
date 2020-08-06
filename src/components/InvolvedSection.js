@@ -1,10 +1,10 @@
 import React from "react"
-import styled from "styled-components"
-import nanno from "../images/Sponsors-nanno.png"
-import snapdocs from "../images/Sponsors-snapdocs.png"
-import workability from "../images/Sponsors-workability.png"
-import namecom from "../images/Sponsors-name.png"
-import radial from "../images/Sponsors-radial.png"
+import Styled from "styled-components"
+import nanno from "../images/sponsorNanno.png"
+import snapdocs from "../images/sponsorSnapdocs.png"
+import workability from "../images/sponsorWorkability.png"
+import namecom from "../images/sponsorName.png"
+import radial from "../images/sponsorRadial.png"
 
 const InvolvedSection = () => {
   return (
@@ -49,7 +49,11 @@ const InvolvedSection = () => {
   )
 }
 
-const InvolvedWrapper = styled.div`
+const InvolvedWrapper = Styled.div`
+  @media (max-width: 700px) {
+
+  }
+
   .get-involved {
       height: 54vh;
       width: 100%;
@@ -130,7 +134,7 @@ const InvolvedWrapper = styled.div`
           min-width: 280px;
       
           .logo {
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
             border-radius: 5px;
             /* padding: 7px 15px; */
             width: 116px;

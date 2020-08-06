@@ -1,5 +1,5 @@
 import React from "react"
-import styled from "styled-components"
+import Styled from "styled-components"
 
 const EventBlurb = () => {
   return (
@@ -10,7 +10,7 @@ const EventBlurb = () => {
   )
 }
 
-const EventBlurbWrapper = styled.div`
+const EventBlurbWrapper = Styled.div`
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
