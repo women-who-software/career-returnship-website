@@ -6,7 +6,7 @@ import logo from "../images/logoWhite.svg"
 import card from "../images/wwcCard.png"
 import hero from "../images/heroSubtract.png"
 
-const Landing = () => (
+const LandingSection = () => (
   <LandingWrapper>
     <div className="hero">
       <img className="hero-image" src={hero} alt="background" />
@@ -21,7 +21,7 @@ const Landing = () => (
           </p>
           <img alt="WWC Returnship ad" className="card-mobile" src={card} />
           <button type="button">LEARN MORE</button>
-        </div>      
+        </div>
         <img alt="WWC Returnship ad" className="card" src={card} />
       </div>
     </div>
@@ -30,107 +30,117 @@ const Landing = () => (
 
 const LandingWrapper = styled.div`
   .landing {
+    align-items: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
     width: 100%;
-    /* background-image: url('../images/Hero-subtract.png') no-repeat fixed center; */
 
     .hero {
       display: flex;
       align-items: flex-start;
+      background: #ffffff;
       justify-content: center;
-      height: 75vh;
+      min-height: 75vh;
+      position: relative;
       width: 100%;
-      padding-top: 100px;
-      background: url("${hero}") no-repeat center;
+      
+      .hero-image {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+      }
 
       .logo {
-        width: 800px;
-        margin-top: 25px;
-
-        @media (max-width: 375px) {
-          width: 275px;
-        }
+        max-width: 800px;
+        padding: 0 20px;
+        position: absolute;
+        top: 120px;
+        width: 100%;
+        z-index: 2;
       }
     }
 
     .about-us {
+      align-items: flex-start;
       display: flex;
       flex-direction: column;
-      width: 100%;
-      height: 40vh;
-      align-items: flex-start;
       justify-content: flex-start;
-      padding: 20px 300px;
+      padding: 0px 20px;
+      margin: 0 0 50px;
+      max-width: 900px;
+      width: 100%;
 
       h2 {
         color: #DA0D46;
         font-family: 'Myriad Pro', sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 42px;
-        letter-spacing: 0.02em;
-
-        @media (max-width: 375px) {
-          text-align: center;
-        }
+        font-weight: 600;
+        font-size: 2.4rem;
       }
 
-      .description {
+      .row {
         display: flex;
-        flex-direction: row;
 
-        @media (max-width: 375px) {
-          flex-direction: column;
+        @media screen and (max-width: 600px) {
+          align-items: center;
+          flex-direction: column; 
           width: 100%;
         }
 
         .column {
+          align-items: center;
           display: flex;
           flex-direction: column;
-          width: 100%;
-    
-          p {
-            font-family: Montserrat, sans-serif;
-            font-style: normal;
-            font-weight: lighter;
-            font-size: 18px;
-            line-height: 123.4%;
-            letter-spacing: 0.02em;
-            color: #000000;
-            padding-right: 20px;
+          margin-right: 20px;
 
-            span {
-              font-weight: bold;
+          p {
+            color: #000000;
+            font-size: 1.2rem;
+            letter-spacing: 0.02em;
+
+            strong {
               font-style: italic;
             }
           }
 
           button {
-            font-family: Myriad Pro, sans-serif;
-            font-size: 16px;
-            font-weight: bold;
-            line-height: 123.4%;
-            display: flex;
             align-self: center;
-            text-align: center;
-            letter-spacing: 0.02em;
-            color: #DA0D46;
-            border: 1px solid #DA0D46;
-            box-sizing: border-box;
+            background: #ffffff;
             border-radius: 15px;
+            box-sizing: border-box;
+            color: #DA0D46;
+            display: flex;
+            font-family: Myriad Pro, sans-serif;
+            font-size: 1.05rem;
+            font-weight: bold;
+            margin-top: 20px;
             padding: 15px 70px;
+            text-align: center;
           }
         }
 
-        img {
-          width: 272px;
-          height: 172px;
+        .card {
           border-radius: 15px;    
+          height: 172px;
+
+          @media screen and (max-width: 600px) {
+            display: none;
+          }
+        }
+
+        .card-mobile {
+          border-radius: 15px;
+          height: 172px;
+
+          @media screen and (min-width: 600px) {
+            display: none;
+          }
         }
       }
     }
   }
 `
 
-export default Landing;
+export default LandingSection;
