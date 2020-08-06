@@ -22,7 +22,7 @@ const Landing = () => {
             <img className="card" src={card} alt="WWC Returnship ad" />
           </div>
         </div>
-      </div>  
+      </div>
     </LandingWrapper>
   )
 }
@@ -39,7 +39,7 @@ const LandingWrapper = styled.div`
       display: flex;
       align-items: flex-start;
       justify-content: center;
-      height: 75vh;
+      height: 50vh;
       width: 100%;
       padding-top: 100px;
       background: url("${hero}") no-repeat center;
@@ -87,7 +87,7 @@ const LandingWrapper = styled.div`
         .column {
           display: flex;
           flex-direction: column;
-    
+
           p {
             font-family: Montserrat, sans-serif;
             font-style: normal;
@@ -124,7 +124,7 @@ const LandingWrapper = styled.div`
         img {
           width: 272px;
           height: 172px;
-          border-radius: 15px;    
+          border-radius: 15px;
         }
       }
     }
