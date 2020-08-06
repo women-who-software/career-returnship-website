@@ -28,36 +28,9 @@ const Landing = () => {
 }
 
 const LandingWrapper = Styled.div`
-  @media (max-width: 700px) {
-    .landing {
-      .hero {
-        .hero-img {
-        }
-        
-        .logo {
-          background: orange;
-          width: 500; 
-        }
-      }
-
-      .about-us {
-        padding: 20px 20px;
-
-        h2 {
-
-        }
-
-        .description {
-
-        }
-      }
-    }
-  }
-
   .landing {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     width: 100%;
     /* background-image: url('../images/Hero-subtract.png') no-repeat fixed center; */
 
@@ -70,28 +43,20 @@ const LandingWrapper = Styled.div`
       padding-top: 100px;
       background: url("${hero}") no-repeat center;
 
-      .hero-img {
-        max-width: 100%;
-      }
-
       .logo {
         width: 800px;
         margin-top: 25px;
-      }
 
-      /* h1 {
-        font-family: Montserrat, sans-serif;
-        font-size: 2rem;
-        font-weight: lighter;
-        letter-spacing: 0.02em;
-        color: #FFFFFF;
-      } */
+        @media (max-width: 375px) {
+          width: 275px;
+        }
+      }
     }
 
     .about-us {
       display: flex;
       flex-direction: column;
-      width: 100%
+      width: 100%;
       height: 40vh;
       align-items: flex-start;
       justify-content: flex-start;
@@ -104,15 +69,25 @@ const LandingWrapper = Styled.div`
         font-weight: bold;
         font-size: 42px;
         letter-spacing: 0.02em;
+
+        @media (max-width: 375px) {
+          text-align: center;
+        }
       }
 
       .description {
         display: flex;
         flex-direction: row;
 
+        @media (max-width: 375px) {
+          flex-direction: column;
+          width: 100%;
+        }
+
         .column {
           display: flex;
           flex-direction: column;
+          width: 100%;
     
           p {
             font-family: Montserrat, sans-serif;
