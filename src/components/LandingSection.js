@@ -1,33 +1,34 @@
+// Node Modules
 import React from "react"
-import Styled from "styled-components"
+import styled from "styled-components"
+//relative imports
 import logo from "../images/logoWhite.svg"
 import card from "../images/wwcCard.png"
 import hero from "../images/heroSubtract.png"
 
-const Landing = () => {
-  return (
-    <LandingWrapper>
-      <div className="landing">
-        <div className="hero">
-          {/* <img className ="hero-img" src={hero} alt="Woman looking at a monitor" /> */}
-          <img className ="logo" src={logo} alt="WWC Returnship icon" />
-        </div>
-        <div className="about-us">
-          <h2>KICKSTARTING YOUR CAREER?</h2>
-          <div className="description">
-            <div className="column">
-              <p>Re-entering the workforce after a break can be a huge challenge; <span>together we can</span> make this a lot easier. This initiative is a small step towards empowering those of us in technology as we relaunch our careers.</p>
-              <button>LEARN MORE</button>
-            </div>
-            <img className="card" src={card} alt="WWC Returnship ad" />
-          </div>
-        </div>
-      </div>  
-    </LandingWrapper>
-  )
-}
+const Landing = () => (
+  <LandingWrapper>
+    <div className="hero">
+      <img className="hero-image" src={hero} alt="background" />
+      <img className ="logo" src={logo} alt="WWC Returnship icon" />
+    </div>
+    <div className="about-us">
+      <h2>KICKSTARTING YOUR CAREER?</h2>
+      <div className="row">
+        <div className="column">
+          <p>
+            Re-entering the workforce after a break can be a huge challenge; <strong>together we can</strong> make this a lot easier. This initiative is a small step towards empowering those of us in technology as we relaunch our careers.
+          </p>
+          <img alt="WWC Returnship ad" className="card-mobile" src={card} />
+          <button type="button">LEARN MORE</button>
+        </div>      
+        <img alt="WWC Returnship ad" className="card" src={card} />
+      </div>
+    </div>
+  </LandingWrapper>
+)
 
-const LandingWrapper = Styled.div`
+const LandingWrapper = styled.div`
   .landing {
     display: flex;
     flex-direction: column;
