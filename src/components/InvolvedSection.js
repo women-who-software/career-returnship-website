@@ -1,53 +1,57 @@
+//node modules
 import React from "react"
-import Styled from "styled-components"
+import styled from "styled-components"
+//relative imports
 import nanno from "../images/sponsorNanno.png"
 import snapdocs from "../images/sponsorSnapdocs.png"
 import workability from "../images/sponsorWorkability.png"
 import namecom from "../images/sponsorName.png"
 import radial from "../images/sponsorRadial.png"
 
-const InvolvedSection = () => {
-  return (
+const InvolvedSection = () => (
     <InvolvedWrapper>
-      <div className="get-involved">
+      <div className="content">
         <h2>WANT TO GET INVOLVED?</h2>
-        <div className="columns">
-          <div className="column1">
-            <button>BECOME A MEMBER</button>
-            <p>We meet every 2 weeks on Wednesday. <br /><br /> 6:00-8:00pm<br />Sign-up online with Meetup</p>
+        <div className="row">
+          <div className="column">
+            <button className="become-member-button" type="button">
+              BECOME A MEMBER
+            </button>
+            <p>
+              We meet every 2 weeks on Wednesday. <br />
+              <br /> 6:00-8:00pm
+              <br />Sign up online with Meetup
+            </p>
           </div>
-          <div className="column2">
-            <button>BE A SPONSOR/VOLUNTEER</button>
+          <div className="column">
+            <button className="become-sponsor-button" type="button">
+              BE A SPONSOR/VOLUNTEER
+            </button>
             <p>Interested in partnering with us? A few options we are currently looking to fill. </p>
-              <ul>
-                <li>Weekly Food Sponsors</li>
-                <li>Host Mock Interviews</li>
-                <li>Lead a Code Challenge</li>
-                <li>Portfolio/Resume Review</li>
-                <li>Lightening Talks</li>
-                <li>Domain Sponsorship</li>
-                <li>Donations</li>
-              </ul>
+            <ul>
+              <li>Weekly Food Sponsors</li>
+              <li>Host Mock Interviews</li>
+              <li>Lead a Code Challenge</li>
+              <li>Portfolio/Resume Review</li>
+              <li>Lightening Talks</li>
+              <li>Domain Sponsorship</li>
+              <li>Donations</li>
+            </ul>
+        </div>
+        <div className="column">
+          <div className="logos">
+            <img className="logo" src={nanno} alt="Nanno logo" />
+            <img className="logo" src={snapdocs} alt="Snapdocs logo" />
+            <img className="logo" src={workability} alt="WWC Returnship ad" />
+            <img className="logo" src={namecom} alt="WWC Returnship ad" />
+            <img className="logo" src={radial} alt="WWC Returnship ad" />  
           </div>
-          <div className="column3">
-            <div className="logos-rows">
-              <img className="logo" src={nanno} alt="Nanno logo" />
-              <img className="logo" src={snapdocs} alt="Snapdocs logo" />
-            </div>
-            <div className="logos-rows">
-              <img className="logo" src={workability} alt="WWC Returnship ad" />
-              <img className="logo" src={namecom} alt="WWC Returnship ad" />
-            </div>
-            <div className="logo-row">
-              <img className="logo" src={radial} alt="WWC Returnship ad" />  
-            </div>
-            <p>Thank you sponsors!</p>
-          </div>
+          <p className="thank-you">Thank you sponsors!</p>
         </div>
       </div>
-    </InvolvedWrapper>
-  )
-}
+    </div>
+  </InvolvedWrapper>
+)
 
 const InvolvedWrapper = Styled.div`
   @media (max-width: 700px) {
