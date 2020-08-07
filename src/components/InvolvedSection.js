@@ -46,127 +46,136 @@ const InvolvedSection = () => (
             <img className="logo" src={namecom} alt="WWC Returnship ad" />
             <img className="logo" src={radial} alt="WWC Returnship ad" />  
           </div>
-          <p className="thank-you">Thank you sponsors!</p>
+          <p className="thank-you">Thank you Sponsors!</p>
         </div>
       </div>
     </div>
   </InvolvedWrapper>
 )
 
-const InvolvedWrapper = Styled.div`
-  @media (max-width: 700px) {
-
+const InvolvedWrapper = styled.div`
+  align-items: center;
+  background: #DA0D46;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+  @media screen and (max-width: 900px) {
+    text-align: center;
   }
 
-  .get-involved {
-      height: 54vh;
-      width: 100%;
-      background: #DA0D46;
-      padding: 20px 300px;
+  .content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    padding: 0 20px;
+    width: 100%;
+  }
 
-      h2 {
-        font-family: Myriad Pro, sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 30px;
-        color: #FFFFFF;
+  h2 {
+    align-self: flex-start;
+    font-size: 2.5rem;
+    margin: 40px 0;
+    width: 100%;
+  }
+
+  .row {
+    display: flex;
+    margin: 0 0 100px;
+    width: 100%;
+
+    @media screen and (max-width: 900px) {
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .column {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      margin: 0 30px;
+
+      &:first-of-type {
+        margin-left: 0;
       }
 
-      .columns {
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      .become-member-button {
+        align-items: center;
+        background: linear-gradient(180deg, #4C4C4C 0%, #000000 100%), #4C4C4C;
+        border-radius: 15px;
+        border: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        color: #FFFFFF;
         display: flex;
-        flex-direction: row;
+        height: 45px;
+        justify-content: center;
+        margin: 0 0 30px;
+        outline: none;
         width: 100%;
-        justify-content: space-between;
+      }
 
-        p {
-            font-family: Montserrat, sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            color: #FFFFFF;
-            padding-top: 10px;
-          }
+      .become-sponsor-button {
+        align-items: center;
+        background: linear-gradient(180deg, #ffffff 0%, #e9cfd6 100%);
+        border-radius: 15px;
+        border: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        color: #4c4c4c;
+        display: flex;
+        height: 45px;
+        justify-content: center;
+        margin: 0 0 30px;
+        outline: none;
+        width: 100%;
+      }
 
-        .column1 {
-          min-width: 280px;
+      .logos {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 0 0 30px;
+        width: 100%;
 
-          button {
-            font-family: Myriad Pro, sans-serif;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 16px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            color: #FFFFFF;
-            padding: 15px 35px;
-
-            background: linear-gradient(180deg, #4C4C4C 0%, #000000 100%), #4C4C4C;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 15px;
-          }
+        img {
+          height: 40px;
+          margin: 0 0 5px;
+          overflow: hidden;
+          width: 115px;
         }
+      }
 
-        .column2 {
-          min-width: 280px;
+      .thank-you {
+        font-size: 1.5rem;
+        font-family: Noteworthy;
+      }
 
-          button {
-            font-family: Myriad Pro, sans-serif;
-            font-size: 16px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            color: #4C4C4C;
-            padding: 15px 15px;
+      ul {
+        margin: 0;
+      }
 
-            background: linear-gradient(180deg, #FFFFFF 0%, #E9CFD6 100%);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 15px;
-          }
-
-          ul {
-            list-style-type:circle;
-            font-size: 14px;
-            color: white;
-            line-height: 5px;
-            font-family: Montserrat, sans-serif;
-            letter-spacing: 0.02em;
-          }
-        }
-
-        .column3 {
-          min-width: 280px;
-      
-          .logo {
-            /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
-            border-radius: 5px;
-            /* padding: 7px 15px; */
-            width: 116px;
-            height: 40px;
-          }
-
-          .logos-rows {
-            display: flex;
-            justify-content: space-around;
-          }
-
-          .logo-row {
-            display: flex;
-            justify-content: center;
-          }
-      
-          p {
-            font-family: Noteworthy;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 26px;
-            text-align: center;
-            padding-top: 20px;
-          }
-        }
+      li {
+        list-style-type: '□';
+        margin: 0;
+        padding: 0 0 0 10px;
       }
     }
   }
 `
+/* p {
+  font-family: Noteworthy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  text-align: center;
+  padding-top: 20px;
+    } */
+        
 
 export default InvolvedSection;
