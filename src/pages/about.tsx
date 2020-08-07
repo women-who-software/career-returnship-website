@@ -15,6 +15,8 @@ const AboutUs = (props: PageProps) => (
     <Link to="/announcements/">Announcements</Link>
     <br />
     <Link to="/projects/">Projects</Link>
+
+
   </Layout>
 )
 
