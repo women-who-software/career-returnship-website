@@ -1,25 +1,29 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import Styled from "styled-components"
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Involved from "../components/InvolvedSection"
+import Landing from "../components/LandingSection"
+import Events from "../components/EventsSection"
+import Projects from "../components/ProjectsSection"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Boulder/Denver Women Who Code Tech Returnship Program</h1>
-    <p>Ignite your tech trajectory through community</p>
-    <p>Now let's build something great together.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/about/">About Us</Link>
-    <br />
-    <Link to="/announcements/">Announcements</Link>
-    <br />
-    <Link to="/projects/">Projects</Link>
+    <Wrapper>
+      <Landing />
+      <Involved />
+      <Events />
+      <Projects />
+    </Wrapper>
   </Layout>
 )
 
-export default IndexPage
+const Wrapper = Styled.div`
+align-items: center;
+display: flex;
+flex-direction: column;
+width: 100%;
+`
+
+export default IndexPage;

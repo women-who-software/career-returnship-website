@@ -9,14 +9,15 @@ const Navigation = Styled.nav`
   background-color: #fff;
   position: relative;
   justify-content: space-between;
-  text-transform: uppercase;
+  font-family: Montserrat, Myriad Pro, sans-serif;
+  text-transform: capitalize;
   border-bottom: 2px solid #33333320;
   margin: 0 auto;
   padding: 0 5vw;
   z-index: 2;
   align-self: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: 700px) {
     position: sticky;
     height: 8vh;
     top: 0;
@@ -32,7 +33,7 @@ const Toggle = Styled.div`
   cursor: pointer;
   padding: 0 10vw;
 
-  @media (max-width: 768px) {
+  @media (max-width: 700px) {
     display: flex;
   }
 `
@@ -43,7 +44,7 @@ const Navbox = Styled.div`
   justify-content: flex-end;
   align-items: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: 700px) {
     flex-direction: column;
     position: fixed;
     width: 100%;
