@@ -67,7 +67,7 @@ const EventsWrapper = styled.div`
         display: flex;
         flex-direction: column;
         flex: 1;
-        margin: 0 30px;
+        margin: 0px;
 
         img {
           border-radius: 15px;
