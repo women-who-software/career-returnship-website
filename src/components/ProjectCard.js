@@ -1,5 +1,5 @@
 import React from "react"
-import Styled from "styled-components"
+import styled from "styled-components"
 import siteImage from "../images/tempProjectImage.png"
 
 const ProjectCard = () => {
@@ -18,8 +18,9 @@ const ProjectCard = () => {
   )
 }
 
-const ProjectCardWrapper = Styled.div`
+const ProjectCardWrapper = styled.div`
   display: flex;
+  flex: 1;
   flex-direction: column;
   background-color: #FFFFFF;
   border-radius: 10px;
@@ -63,7 +64,6 @@ const ProjectCardWrapper = Styled.div`
   .toggle-buttons {
     padding: 20px;
     font-family: Montserrat, sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 123.4%;
@@ -74,7 +74,7 @@ const ProjectCardWrapper = Styled.div`
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    
+  
     .github-button {
       background: #017A8E;
       color: white;

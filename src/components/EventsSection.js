@@ -57,17 +57,13 @@ const EventsWrapper = styled.div`
       margin: 0 0 100px;
       width: 100%;
 
-      @media screen and (max-width: 900px) {
-        align-items: center;
-        flex-direction: column;
-      }
 
       .column {
         align-items: center;
         display: flex;
         flex-direction: column;
         flex: 1;
-        margin: 0px;
+        margin: 0 30px;
 
         img {
           border-radius: 15px;
@@ -79,6 +75,15 @@ const EventsWrapper = styled.div`
 
         &:last-of-type {
           margin-right: 0;
+        }
+      }
+      
+      @media screen and (max-width: 900px) {
+        align-items: center;
+        flex-direction: column;
+
+        .column { 
+          margin: 0px;
         }
       }
     }

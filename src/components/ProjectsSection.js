@@ -54,13 +54,12 @@ const ProjectsWrapper = styled.div`
 
         .cards {
           display: flex;
-          flex-flow: row;
-          justify-content: center;
-          width: 100%
+          margin: 0 0 50px;
+          width: 100%;
         
           @media screen and (max-width: 900px) {
-           flex-direction: row wrap;
-          }       
+           flex-flow: row wrap;
+          }      
         }
 
         /* NEXT: flex flow needs to be row wrap for responsiveness but it makes the desktop version all weird
