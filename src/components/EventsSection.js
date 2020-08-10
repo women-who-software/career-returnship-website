@@ -1,9 +1,9 @@
 import React from "react"
-import Styled from "styled-components"
+import styled from "styled-components"
 import EventBlurb from "../components/EventBlurb"
 import meetupInfo from "../images/tempMeetupInfo.png"
 
-const Events = () => (
+const EventsSection = () => (
   <EventsWrapper>
     <div className="content">
       <h2>NETWORKING / EVENTS</h2>
@@ -25,7 +25,7 @@ const Events = () => (
   </EventsWrapper>
 )
 
-const EventsWrapper = Styled.div`
+const EventsWrapper = styled.div`
   align-items: center;
   background: gray;
   color: #54BBCE;
@@ -34,30 +34,56 @@ const EventsWrapper = Styled.div`
   width: 100%;
 
   @media screen and (max-width: 900px) {
-
+    text-align: center;
   }
 
-  .columns {
+  .content {
+    align-items: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    max-width: 900px;
+    padding: 0 20px;
     width: 100%;
-    justify-content: space-between;
 
-    img {
-      border-radius: 15px;
-      min-width: 280px;
-      margin-right: 30px;
-    }
+    h2 {
+    align-self: flex-start;
+    font-size: 2.5rem;
+    margin: 40px 0;
+    width: 100%;
+    }  
 
-    .column1 {
-      min-width: 280px;
-      margin-right: 30px;
-    }
+    .row {
+      display: flex;
+      margin: 0 0 100px;
+      width: 100%;
 
-    .column2 {
-      min-width: 280px;
+      @media screen and (max-width: 900px) {
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .column {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin: 0 30px;
+
+        img {
+          border-radius: 15px;
+        }
+
+        &:first-of-type {
+            margin-left: 0;
+          }
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
     }
   }
+
   .link-more {
     text-decoration: none;
     font-family: Montserrat, sans-serif;
@@ -71,4 +97,4 @@ const EventsWrapper = Styled.div`
   }
 `
 
-export default Events;
+export default EventsSection;
