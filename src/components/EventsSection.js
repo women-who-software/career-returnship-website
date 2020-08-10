@@ -74,8 +74,8 @@ const EventsWrapper = styled.div`
         }
 
         &:first-of-type {
-            margin-left: 0;
-          }
+          margin-left: 0;
+        }
 
         &:last-of-type {
           margin-right: 0;
