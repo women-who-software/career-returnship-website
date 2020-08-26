@@ -6,12 +6,55 @@
 <h1 align="center">
   Career Returnship Website
 </h1>
-<p>To contribute to this project,
-1- set up your development environment as described here <a href="https://www.gatsbyjs.org/tutorial/part-zero/">Instructions to set up your development environment</a> and clone this repo.
-2- Find a non assigned issue which you want to work and self assign your name.
-3- Before making any changes, create a branch in your name with issue number and start coding. Once you finish making changes, push your commit to your branch.
-After reviewing, your changes will be merged to the master branch. For more details about Gatsby and its default starter, continue reading...</p>
-<p>Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.</p>
+
+##Project set up
+
+Set up your development environment as described here <a href="https://www.gatsbyjs.org/tutorial/part-zero/">Instructions to set up your development environment</a>
+
+##How to contribute to this project
+
+1. Find a non assigned issue which you want to work and self assign your name.
+
+2. Clone this repo.
+```shell
+git clone https://github.com/wwcodecolorado/career-returnship-website.git
+```
+
+3. Navigate into home directory and run the project by
+```shell
+cd career-returnship-website
+gatsby develop
+```
+
+4. If your setup has no issues, you will see a message
+```shell
+Your site is now running at `http://localhost:8000`!
+```
+Open your browser and go to http://localhost:8000 to see the website.
+
+5. Before making any changes, create a branch in your name with issue number. Eg: rafna/#1 or rafna/1-name-of-the-issue.
+```shell
+#to create a branch
+git branch name-of-the-branch
+```
+
+6. Navigate to your branch and start coding/editing.
+```shell
+#to navigate to the new branch
+git checkout branch-name
+```
+
+7. Once you finish making changes, push your commits to your branch.
+```shell
+git commit -m "your message"
+git push your-branch
+```
+
+8. Go to github repo, navigate to your branch and on the right side under the Code button, create a pull request.
+After reviewing, your changes will be merged to the master branch.
+
+For more details about Gatsby and its default starter, continue reading...
+Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
