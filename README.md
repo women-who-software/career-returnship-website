@@ -7,11 +7,11 @@
   Career Returnship Website
 </h1>
 
-##Project set up
+## Project set up
 
 Set up your development environment as described here <a href="https://www.gatsbyjs.org/tutorial/part-zero/">Instructions to set up your development environment</a>
 
-##How to contribute to this project
+## How to contribute to this project
 
 1. Find a non assigned issue which you want to work and self assign your name.
 
