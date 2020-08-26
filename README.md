@@ -1,14 +1,13 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+    <img alt="iconColor" src="src/images/logoColor.png" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  Career Returnship Website
 </h1>
 <p>To contribute to this project,
-1- set up your development environment as described here <a href="https://www.gatsbyjs.org/tutorial/part-zero/">Instructions to set up your development environment</a> and clone this repo. 
+1- set up your development environment as described here <a href="https://www.gatsbyjs.org/tutorial/part-zero/">Instructions to set up your development environment</a> and clone this repo.
 2- Find a non assigned issue which you want to work and self assign your name.
 3- Before making any changes, create a branch in your name with issue number and start coding. Once you finish making changes, push your commit to your branch.
 After reviewing, your changes will be merged to the master branch. For more details about Gatsby and its default starter, continue reading...</p>
