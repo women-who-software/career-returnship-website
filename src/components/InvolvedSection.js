@@ -9,34 +9,34 @@ import namecom from "../images/sponsorName.png"
 import radial from "../images/sponsorRadial.png"
 
 const InvolvedSection = () => (
-    <InvolvedWrapper>
-      <div className="content">
-        <h2>WANT TO GET INVOLVED?</h2>
-        <div className="row">
-          <div className="column">
-            <button className="become-member-button" type="button">
-              BECOME A MEMBER
-            </button>
-            <p>
-              We meet every 2 weeks on Wednesday. <br />
-              <br /> 6:00-8:00pm
-              <br />Sign up online with Meetup
-            </p>
-          </div>
-          <div className="column">
-            <button className="become-sponsor-button" type="button">
-              BE A SPONSOR/VOLUNTEER
-            </button>
-            <p>Interested in partnering with us? A few options we are currently looking to fill. </p>
-            <ul>
-              <li>Weekly Food Sponsors</li>
-              <li>Host Mock Interviews</li>
-              <li>Lead a Code Challenge</li>
-              <li>Portfolio/Resume Review</li>
-              <li>Lightening Talks</li>
-              <li>Domain Sponsorship</li>
-              <li>Donations</li>
-            </ul>
+  <InvolvedWrapper>
+    <div className="content">
+      <h2>WANT TO GET INVOLVED?</h2>
+      <div className="row">
+        <div className="column">
+          <button className="become-member-button" type="button">
+            BECOME A MEMBER
+          </button>
+          <p>
+            We meet every 2 weeks on Wednesday. <br />
+            <br /> 6:00-8:00pm
+            <br />Sign up online with Meetup
+          </p>
+        </div>
+        <div className="column">
+          <button className="become-sponsor-button" type="button">
+            BE A SPONSOR/VOLUNTEER
+          </button>
+          <p>Interested in partnering with us? A few options we are currently looking to fill. </p>
+          <ul>
+            <li>Weekly Food Sponsors</li>
+            <li>Host Mock Interviews</li>
+            <li>Lead a Code Challenge</li>
+            <li>Portfolio/Resume Review</li>
+            <li>Lightening Talks</li>
+            <li>Domain Sponsorship</li>
+            <li>Donations</li>
+          </ul>
         </div>
         <div className="column">
           <div className="logos">
@@ -168,14 +168,5 @@ const InvolvedWrapper = styled.div`
     }
   }
 `
-/* p {
-  font-family: Noteworthy;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 26px;
-  text-align: center;
-  padding-top: 20px;
-    } */
-        
 
 export default InvolvedSection;
