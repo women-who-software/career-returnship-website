@@ -1,6 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-    <img alt="iconColor" src="src/images/logoColor.png" width="60" />
+    <img alt="iconColor" src="src/images/logoColor.png" width="500" />
   </a>
 </p>
 <h1 align="center">
