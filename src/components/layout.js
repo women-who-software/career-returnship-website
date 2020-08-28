@@ -26,14 +26,14 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    <Navbar />
+      <Navbar />
       <Header siteTitle={data.site.siteMetadata.title} />
 
-        <main>{children}</main>
-        <footer>
-          <h4 style={{color: "#DA0D46"}}>CAREER RETURNSHIP</h4>
-        </footer>
-    
+      <main>{children}</main>
+      <footer>
+        <h4 style={{ color: "#DA0D46" }}>CAREER RETURNSHIP</h4>
+      </footer>
+
     </>
   )
 }
