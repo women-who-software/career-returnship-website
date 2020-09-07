@@ -1,4 +1,6 @@
 import React from "react"
+import Layout from "../components/layout"
+
 import {
   InputBoxName,
   InputBoxEmail,
@@ -7,13 +9,15 @@ import {
 
 const ContactUS = () => {
   return (
-    <div>
-      <InputBoxName />
-      <br />
-      <InputBoxEmail />
-      <br />
-      <InputBoxMessage />
-    </div>
+    <Layout>
+      <div>
+        <InputBoxName />
+        <br />
+        <InputBoxEmail />
+        <br />
+        <InputBoxMessage />
+      </div>
+    </Layout>
   )
 }
 
