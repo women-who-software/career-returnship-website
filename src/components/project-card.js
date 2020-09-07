@@ -74,7 +74,7 @@ const ProjectCardWrapper = styled.div`
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    
+
     .github-button {
       background: #017A8E;
       color: white;

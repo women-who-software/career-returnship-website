@@ -7,6 +7,7 @@ import Landing from "../components/LandingSection"
 import Events from "../components/EventsSection"
 import Projects from "../components/ProjectsSection"
 
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -15,6 +16,7 @@ const IndexPage = () => (
       <Involved />
       <Events />
       <Projects />
+
     </Wrapper>
   </Layout>
 )

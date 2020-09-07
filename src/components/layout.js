@@ -12,6 +12,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./Header"
 import "./layout.css"
 import Navbar from "./Navbar/Navbar"
+import Footer from "./footer.js"
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -30,9 +32,9 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
 
       <main>{children}</main>
-      <footer>
-        <h4 style={{ color: "#DA0D46" }}>CAREER RETURNSHIP</h4>
-      </footer>
+      <Footer />
+
+
 
     </>
   )
