@@ -158,10 +158,7 @@ width: 100%;
         padding-right: 10px;
         text-decoration: none;
     }
-    .info ul li:last-child {
-        border: 0;
-        margin: 0;
-    }
+
     .copy {
         margin: 0 auto;
         font-size: 10px;
@@ -177,7 +174,7 @@ width: 100%;
         width: 80%;
     }
     .career-logo {
-margin-left: -130px;
+        margin-left: -130px;
     }
     .info {
         margin: 10px;
