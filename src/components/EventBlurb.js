@@ -15,8 +15,10 @@ const EventBlurbWrapper = Styled.div`
     flex-direction: column;
     background-color: #FFFFFF;
     border-radius: 10px;
-    padding: 10px 10px;
-    margin-bottom: 10px;
+    padding: 10px;
+
+    margin: 10px;
+    width: 90%;
 
     h3 {
       font-family: Myriad Pro, sans-serif;
@@ -35,6 +37,7 @@ const EventBlurbWrapper = Styled.div`
       color: #000000;
       margin: 0px;
     }
+
 `
 
 export default EventBlurb;

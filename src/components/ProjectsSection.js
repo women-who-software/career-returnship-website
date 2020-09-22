@@ -81,73 +81,87 @@ const ProjectsWrapper = styled.div`
   color: #54bbce;
   display: flex;
   flex-direction: column;
+  margin: 0;
   width: 100%;
+  padding-bottom: 20px;
+  @media screen and (min-width: 700px) {
 
-  @media screen and (max-width: 900px) {
-    text-align: center;
+    margin: 0 auto;
   }
 
   .content {
     align-items: center;
     display: flex;
     flex-direction: column;
-    max-width: 900px;
-    padding: 0 20px;
+    margin: 0;
+    padding: 20px 0;
     width: 100%;
 
     h2 {
-      align-self: flex-start;
+
       font-size: 2.5rem;
-      margin: 40px 0;
+      text-align: center;
       width: 100%;
     }
 
     .row {
       display: flex;
-      margin: 0 0 100px;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
       width: 100%;
 
       .column {
         align-items: center;
         display: flex;
         flex-direction: column;
-        flex: 1;
-        margin: 0 30px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        margin: 20px auto;
+        padding-bottom: 20px;
+        text-align: center;
+        width: 70%;
 
         img {
-          border-radius: 15px;
+        border-radius: 15px 15px 0px 0px;
+        object-fit: contain;
+        width: 100%;
         }
-
-        &:first-of-type {
-          margin-left: 0;
+        p, h3 {
+         color: #000000;
+         padding: 20px;
         }
-
-        &:last-of-type {
-          margin-right: 0;
+        h3 {
+          font-size: 16px;
+          margin: 0;
+          padding: 0;
         }
       }
 
-      @media screen and (max-width: 900px) {
+      @media screen and (min-width: 700px) {
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
 
         .column {
-          margin: 0px;
+          margin: 20px;
+          max-width: 400px;
+          width: 100%;
         }
       }
     }
   }
 
-  .link-more {
-    text-decoration: none;
-    font-family: Montserrat, sans-serif;
-    font-weight: bold;
-    font-size: 14px;
+  .project-button {
+    background: linear-gradient(180deg, #DA0D46 0%, #570018 100%), #DA0D46;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    font-size: 16px;
     line-height: 123.4%;
     letter-spacing: 0.02em;
     color: #ffffff;
     align-self: center;
-    margin-top: 20px;
+    padding: 20px;
   }
 `
 
