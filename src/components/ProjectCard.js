@@ -1,6 +1,6 @@
 import React from "react"
 import Styled from "styled-components"
-import siteImage from "../images/tempProjectImage.png"
+import siteImage from "../images/iconColorSvg.svg"
 
 const ProjectCard = () => {
   return (
@@ -74,7 +74,7 @@ const ProjectCardWrapper = Styled.div`
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    
+
     .github-button {
       background: #017A8E;
       color: white;
