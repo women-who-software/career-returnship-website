@@ -9,7 +9,7 @@
 
 ## Project set up
 
-Set up your development environment as described here <a href="https://www.gatsbyjs.org/tutorial/part-zero/">Instructions to set up your development environment</a>
+Set up your development environment as described here: <a href="https://www.gatsbyjs.org/tutorial/part-zero/">Instructions to set up your development environment</a>
 
 ## How to contribute to this project
 
@@ -53,7 +53,7 @@ git push your-branch
 8. Go to github repo, navigate to your branch and on the right side under the Code button, create a pull request.
 After reviewing, your changes will be merged to the master branch.
 
-For more details about Gatsby and its default starter, continue reading...
+**For more details about Gatsby and its default starter, continue reading...**
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
