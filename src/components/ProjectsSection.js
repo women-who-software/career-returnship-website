@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import siteImage from "../images/tempProjectImage.png"
+import siteImage from "../images/logoColor.png"
 
 const Projects = () => (
   <ProjectsWrapper>
