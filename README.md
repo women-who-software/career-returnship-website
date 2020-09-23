@@ -53,6 +53,15 @@ git push your-branch
 8. Go to github repo, navigate to your branch and on the right side under the Code button, create a pull request.
 After reviewing, your changes will be merged to the master branch.
 
+9. If you see a merge has been made to the master branch, update your own branch to reflect the changes by following steps:
+```shell
+#from master branch
+git fetch origin
+git checkout your-branch
+git merge master
+```
+this will make changes to the files in your branch according to the recent merge.
+
 **For more details about Gatsby and its default starter, continue reading...**
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
