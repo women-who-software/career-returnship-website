@@ -1,66 +1,168 @@
 import React from "react"
-import Styled from "styled-components"
-import ProjectCard from "../components/ProjectCard"
+import styled from "styled-components"
+import siteImage from "../images/tempProjectImage.png"
 
 const Projects = () => (
   <ProjectsWrapper>
-    <div className="projects">
+    <div className="content">
       <h2>PROJECTS</h2>
-      <div className="projects-button">
-        <div className="cards">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+      <div className="row">
+        <div className="column">
+          <img
+            className="project-image"
+            src={siteImage}
+            alt="Cover for Project"
+          />
+          <h3>CAREER RETURNSHIP WEBSITE</h3>
+          <p>
+            A very short description describing the project. Project purpose
+            statement or tag line.
+            <br />
+            <br />
+            Tools Used: Figma, Adobe Photoshop, Javascript, HTML, CSS, RESTful
+            APIs, React, Node.JS, MongoDB
+          </p>
+          <div className="toggle-buttons">
+            <button className="github-button">GITHUB</button>
+            <button className="prototype-button">PROTOTYPE</button>
+          </div>
         </div>
-        <button className="project-button">HAVE A PROJECT FOR US?</button>
+
+        <div className="column">
+          <img
+            className="project-image"
+            src={siteImage}
+            alt="Cover for Project"
+          />
+          <h3>CAREER RETURNSHIP WEBSITE</h3>
+          <p>
+            A very short description describing the project. Project purpose
+            statement or tag line.
+            <br />
+            <br />
+            Tools Used: Figma, Adobe Photoshop, Javascript, HTML, CSS, RESTful
+            APIs, React, Node.JS, MongoDB
+          </p>
+          <div className="toggle-buttons">
+            <button className="github-button">GITHUB</button>
+            <button className="prototype-button">PROTOTYPE</button>
+          </div>
+        </div>
+
+        <div className="column">
+          <img
+            className="project-image"
+            src={siteImage}
+            alt="Cover for Project"
+          />
+          <h3>CAREER RETURNSHIP WEBSITE</h3>
+          <p>
+            A very short description describing the project. Project purpose
+            statement or tag line.
+            <br />
+            <br />
+            Tools Used: Figma, Adobe Photoshop, Javascript, HTML, CSS, RESTful
+            APIs, React, Node.JS, MongoDB
+          </p>
+          <div className="toggle-buttons">
+            <button className="github-button">GITHUB</button>
+            <button className="prototype-button">PROTOTYPE</button>
+          </div>
+        </div>
       </div>
+      <button className="project-button">HAVE A PROJECT FOR US?</button>
     </div>
   </ProjectsWrapper>
 )
 
-const ProjectsWrapper = Styled.div`
-  @media (max-width: 700px) {
+const ProjectsWrapper = styled.div`
+  align-items: center;
+  background: gray;
+  color: #54bbce;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+  padding-bottom: 20px;
+  @media screen and (min-width: 700px) {
 
+    margin: 0 auto;
   }
 
-  .projects {
-    height: 85vh;
+  .content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px 0;
     width: 100%;
-    background: #FFFFFF;
-    padding: 20px 300px;
-    color: #DA0D46;
 
     h2 {
 
+      font-size: 2.5rem;
+      text-align: center;
+      width: 100%;
     }
 
-    .projects-button {
+    .row {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      justify-content: center;
+      margin: 0;
+      width: 100%;
 
-      .cards {
+      .column {
+        align-items: center;
         display: flex;
+        flex-direction: column;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        margin: 20px auto;
+        padding-bottom: 20px;
+        text-align: center;
+        width: 70%;
+
+        img {
+        border-radius: 15px 15px 0px 0px;
+        object-fit: contain;
+        width: 100%;
+        }
+        p, h3 {
+         color: #000000;
+         padding: 20px;
+        }
+        h3 {
+          font-size: 16px;
+          margin: 0;
+          padding: 0;
+        }
       }
 
-      .project-button {
-        font-family: Myriad Pro, sans-serif;
-        font-weight: bold;
-        font-size: 16px;
-        display: flex;
+      @media screen and (min-width: 700px) {
         align-items: center;
-        text-align: center;
-        background: #DA0D46;
-        color: #FFFFFF;
-        padding: 15px 35px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        background: linear-gradient(180deg, #DA0D46 0%, #000000 100%), #4C4C4C;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 15px;
+        flex-direction: row;
+
+        .column {
+          margin: 20px;
+          max-width: 400px;
+          width: 100%;
+        }
       }
     }
   }
+
+  .project-button {
+    background: linear-gradient(180deg, #DA0D46 0%, #570018 100%), #DA0D46;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 123.4%;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    align-self: center;
+    padding: 20px;
+  }
 `
 
-export default Projects;
+export default Projects

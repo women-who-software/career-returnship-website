@@ -9,12 +9,13 @@ const LogoWrap = Styled.div`
 
   @media (max-width: 768px) and (orientation: landscape) {
     flex: 0 1 25px;
+
   }
 `
 const Logo = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(name: { eq: "Icon-color" }, extension: { eq: "png" }) {
+      file(name: { eq: "iconColor" }, extension: { eq: "png" }) {
         childImageSharp {
           fluid(maxWidth: 50, pngQuality: 80) {
             ...GatsbyImageSharpFluid
