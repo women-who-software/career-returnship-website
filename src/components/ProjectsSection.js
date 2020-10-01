@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "styled-components"
-import siteImage from "../images/logoColor.png"
+import project1 from "../images/tempProjectImage1.png"
+import project2 from "../images/tempProjectImage2.png"
+import project3 from "../images/tempProjectImage3.png"
 
 const Projects = () => (
   <ProjectsWrapper>
@@ -10,7 +12,7 @@ const Projects = () => (
         <div className="column">
           <img
             className="project-image"
-            src={siteImage}
+            src={project1}
             alt="Cover for Project"
           />
           <h3>CAREER RETURNSHIP WEBSITE</h3>
@@ -31,7 +33,7 @@ const Projects = () => (
         <div className="column">
           <img
             className="project-image"
-            src={siteImage}
+            src={project2}
             alt="Cover for Project"
           />
           <h3>CAREER RETURNSHIP WEBSITE</h3>
@@ -52,7 +54,7 @@ const Projects = () => (
         <div className="column">
           <img
             className="project-image"
-            src={siteImage}
+            src={project3}
             alt="Cover for Project"
           />
           <h3>CAREER RETURNSHIP WEBSITE</h3>
@@ -77,8 +79,8 @@ const Projects = () => (
 
 const ProjectsWrapper = styled.div`
   align-items: center;
-  background: gray;
-  color: #54bbce;
+  background: #E5E5E5;
+  color: #DA0D46;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -100,7 +102,7 @@ const ProjectsWrapper = styled.div`
     h2 {
 
       font-size: 2.5rem;
-      text-align: center;
+      margin-left: 50px; 
       width: 100%;
     }
 

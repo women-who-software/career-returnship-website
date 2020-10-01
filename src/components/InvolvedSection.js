@@ -20,7 +20,7 @@ const InvolvedSection = () => (
           <p>
             We meet every 2 weeks on Wednesday. <br />
             <br /> 6:00-8:00pm
-            <br />Sign up online with Meetup
+
           </p>
         </div>
         <div className="column">
@@ -55,6 +55,7 @@ const InvolvedSection = () => (
 
 const InvolvedWrapper = styled.div`
   align-items: center;
+ 
   background: #DA0D46;
   color: #ffffff;
   display: flex;
@@ -68,10 +69,11 @@ const InvolvedWrapper = styled.div`
 
   .content {
     align-items: center;
+    
     display: flex;
     flex-direction: column;
     max-width: 900px;
-    margin: 0 30px;
+    margin: 0 auto;
     width: 100%;
   }
   @media (min-width: 700px) {
