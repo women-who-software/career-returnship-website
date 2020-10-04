@@ -1,23 +1,23 @@
 // Gatsby supports TypeScript natively!
 import React from "react"
-import { PageProps, Link } from "gatsby"
-
+import Styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const AboutUs = (props: PageProps) => (
+const AboutPage = () => (
   <Layout>
     <SEO title="About" />
-    <h1>Hi from the About page</h1>
-    <p>Now for a little about us. Here's the page path: ({props.path})</p>
-    <Link to="/">Homepage</Link>
-    <br />
-    <Link to="/announcements/">Announcements</Link>
-    <br />
-    <Link to="/projects/">Projects</Link>
-
-
+    <Wrapper>
+      <div>Hello World</div>
+    </Wrapper>
   </Layout>
 )
 
-export default AboutUs
+const Wrapper = Styled.div`
+align-items: center;
+display: flex;
+flex-direction: column;
+width: 100%;
+`
+
+export default AboutPage
