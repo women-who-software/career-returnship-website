@@ -34,7 +34,12 @@ const Layout = ({ children }) => {
       <main>{children}</main>
 
       <footer>
-        Copyright {new Date().getFullYear()} Career Returnship.  All rights reserved.
+        <p>
+        Women Who Code isn’t just for women, anyone is welcome!!
+        <br/>Connect with #WWCode Boulder/Denver via:
+        <br/><a href="https://linktr.ee/wwcodecolorado">https://linktr.ee/wwcodecolorado</a>
+        <br/><br/>Copyright {new Date().getFullYear()} Career Returnship.  All rights reserved.
+        </p>
       </footer>
 
     </>
