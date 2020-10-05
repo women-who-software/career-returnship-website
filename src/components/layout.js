@@ -33,8 +33,9 @@ const Layout = ({ children }) => {
 
       <main>{children}</main>
 
-
-
+      <footer>
+        Copyright {new Date().getFullYear()} Career Returnship.  All rights reserved.
+      </footer>
 
     </>
   )
