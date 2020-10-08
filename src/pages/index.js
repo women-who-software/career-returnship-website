@@ -16,7 +16,6 @@ const IndexPage = () => (
       <Involved />
       <Events />
       <Projects />
-
     </Wrapper>
   </Layout>
 )
