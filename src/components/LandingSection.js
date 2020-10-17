@@ -35,7 +35,7 @@ const LandingWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh;
+    
     width: 100%;
 
     .hero {
@@ -43,13 +43,13 @@ const LandingWrapper = styled.div`
       background: #ffffff;
       display: flex;
       justify-content: center;
-      min-height: 75vh;
-      position: relative;
+     
+      
       width: 100%;
 
       .hero-image {
-        position: absolute;
-        height: 100%;
+        background-position: center;
+        background-size: cover;
         width: 100%;
         z-index: 1;
       }
@@ -58,8 +58,8 @@ const LandingWrapper = styled.div`
         max-width: 800px;
         padding: 0 20px;
         position: absolute;
-        top: 120px;
-        width: 100%;
+        margin: 50px auto;
+        width: 80%;
         z-index: 2;
       }
     }

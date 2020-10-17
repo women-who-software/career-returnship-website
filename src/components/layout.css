@@ -9,6 +9,7 @@ html {
 }
 body {
   margin: 0;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -451,7 +452,6 @@ blockquote {
   margin-bottom: 1.45rem;
 }
 
-
 noscript {
   margin-left: 0;
   margin-right: 0;
@@ -616,7 +616,6 @@ pre tt:after {
 }
 
 /**Footer**/
-
 
 /* @media only screen and (max-width: 480px) {
   html {
