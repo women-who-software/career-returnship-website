@@ -18,7 +18,10 @@ aside,
 details,
 figcaption,
 figure,
-footer,
+footer {
+  background-color: #F4F4F4;
+  text-align:center;
+  },
 header,
 main,
 menu,

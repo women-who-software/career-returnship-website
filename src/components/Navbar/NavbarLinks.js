@@ -45,7 +45,7 @@ const NavbarLinks = () => {
       <NavItem to="/announcements">Networking</NavItem>
       <NavItem to="/">Sponsors</NavItem>
       <NavItem to="/contactUs">Contact Us</NavItem>
-      <NavItem to="/contactUs">Become a Member</NavItem>
+      <NavItem to="https://form.jotform.com/202678202320041">Become a Member</NavItem>
       <NavItem to="/projects">Projects</NavItem>
     </>
   )
