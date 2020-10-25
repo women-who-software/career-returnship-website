@@ -69,16 +69,18 @@ const InvolvedWrapper = styled.div`
 
   .content {
     align-items: center;
-    
     display: flex;
     flex-direction: column;
-    max-width: 900px;
-    margin: 0 auto;
-    width: 100%;
+    /* max-width: 900px; */
+    margin: 10px 40px;
+    padding-left: 70px;
+    width: 80%; 
+    @media (min-width: 700px) {
+      padding-left: 40px;
+      margin: 0;
+    }
   }
-  @media (min-width: 700px) {
-    max-width: 100%;
-  }
+ 
 
   h2 {
     align-self: flex-start;
@@ -102,22 +104,19 @@ const InvolvedWrapper = styled.div`
       display: flex;
       flex-direction: column;
       width: 100%;
-
+      margin: 10px;
       text-align: justify;
     }
-      @media(min-width: 700px) {
+    @media(min-width: 700px) {
         align-items: space-between;
-      margin-left: 50px;
         flex-direction: row;
+    
       }
     p{
       text-align: justify;
       padding-top: 10px;
-      width: 70%;
-      @media ( min-width: 700px) {
-        width: 80%;
-
-      }
+      width: 80%;
+     
     }
 
       .become-member-button {
@@ -198,13 +197,6 @@ const InvolvedWrapper = styled.div`
         text-align: justify;
       }
     }
-    @media (min-width: 700px) {
-
-      margin: 0 auto;
-
-
-
-
   }
 `
 

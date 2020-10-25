@@ -108,6 +108,7 @@ const EventsWrapper = styled.div`
   justify-content: flex-start;
   flex-direction: row;
   margin: 0;
+  padding-left: -90px;
   width: 100%
 }
 .column {

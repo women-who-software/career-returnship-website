@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import Styled from "styled-components"
 import NavbarLinks from "./NavbarLinks"
-import Logo from "./Logo"
+import Logo from "../../images/logoColorSvg.svg"
 
 const Navigation = Styled.nav`
   height: 10vh;
@@ -16,7 +16,9 @@ const Navigation = Styled.nav`
   padding: 0 5vw;
   z-index: 2;
   align-self: center;
-
+  .project-image {
+    margin: 10px 0;
+  }
   @media (max-width: 700px) {
     position: sticky;
     height: 8vh;
@@ -78,7 +80,7 @@ const Hamburger = Styled.div`
 
   ::before {
     transform: ${props =>
-      props.open ? "rotate(-90deg) translate(-10px, 0px)" : "rotate(0deg)"};
+    props.open ? "rotate(-90deg) translate(-10px, 0px)" : "rotate(0deg)"};
     top: -10px;
   }
 
@@ -93,7 +95,11 @@ const Navbar = () => {
 
   return (
     <Navigation>
-      <Logo />
+      <img
+        className="project-image"
+        src={Logo}
+        alt="Cover for Project"
+      />
       <Toggle
         navbarOpen={navbarOpen}
         onClick={() => setNavbarOpen(!navbarOpen)}
@@ -105,10 +111,10 @@ const Navbar = () => {
           <NavbarLinks />
         </Navbox>
       ) : (
-        <Navbox open>
-          <NavbarLinks />
-        </Navbox>
-      )}
+          <Navbox open>
+            <NavbarLinks />
+          </Navbox>
+        )}
     </Navigation>
   )
 }
