@@ -9,25 +9,28 @@ const AboutPage = () => (
     <SEO title="About" />
     <Wrapper>
       <div className="description">
-        <div className="title">ABOUT US</div>
+        <h2 className="title">ABOUT US</h2>
         <div className="text">
           Kickstarting your career and reentering the workforce after a break
           can be a huge challenge; together we can make this a lot easier. This
           initiative is a small step towards empowering those of us in
-          technology trying to relaunch our careers. <br />
+          technology trying to relaunch our careers.
+          <br />
+          <br />
           Join us in this biweekly event series where we learn, network, engage
           in meaningful projects and crack the interviews together.
+          <br />
           <br />
           Who should attend: If you are thinking about restarting your career or
           if you are currently struggling alone in the process, this program is
           for you. If you are currently working, we would love your insights to
           help the community.
         </div>
-        <button className="become-member-button" type="button">
-          BECOME A MEMBER
+        <button className="join-us-button" type="button">
+          JOIN US
         </button>
         <button className="become-sponsor-button" type="button">
-          BE A SPONSOR/VOLUNTEER
+          BE A SPONSOR/PARTNER
         </button>
       </div>
       <div className="links">Hello World</div>
@@ -42,17 +45,33 @@ flex-direction: column;
 width: 100%;
 
 .description {
-  .title {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  margin: 0 0 50px;
+  max-width: 900px;
+  width: 100%;
+
+  h2 {
     color: #DA0D46; 
-    font-weight: 600;
-    font-size: 2.4rem;
+    font-family: Myriad Pro, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0px;
+    padding: 20px 0px 20px;
   }
 
   .text {
-    
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 20px 0px 20px 20px;
   }
 
-  .become-member-button {
+  .join-us-button {
 
   }
 
