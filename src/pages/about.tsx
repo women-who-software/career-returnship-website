@@ -55,7 +55,7 @@ width: 100%;
   width: 100%;
 
   h2 {
-    color: #DA0D46; 
+    color: #DA0D46;
     font-family: Myriad Pro, sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -64,7 +64,7 @@ width: 100%;
   }
 
   .text {
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
@@ -72,11 +72,36 @@ width: 100%;
   }
 
   .join-us-button {
-
+    align-items: center;
+    background: linear-gradient(180deg, #4C4C4C 0%, #000000 100%), #4C4C4C;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    outline: none;
+    width: 60%;
   }
 
   .become-sponsor-button {
-
+    background: linear-gradient(180deg, #DA0D46 0%, #570018 100%), #DA0D46;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 123.4%;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    align-self: center;
+    padding: 20px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
   }
 }
 
