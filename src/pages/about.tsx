@@ -64,7 +64,7 @@ width: 100%;
   }
 
   .text {
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
