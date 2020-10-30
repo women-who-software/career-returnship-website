@@ -68,7 +68,7 @@ width: 100%;
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
-    margin: 20px 0px 20px 20px;
+    margin: 0px 20px 20px 20px;
   }
 
   .join-us-button {
@@ -79,29 +79,35 @@ width: 100%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #FFFFFF;
     display: flex;
-    height: 45px;
+    font-family: Myriad Pro, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    height: 50px;
     justify-content: center;
-    margin: 0 auto;
+    margin: 15px auto 15px;
     padding: 0;
     outline: none;
-    width: 60%;
+    width: 230px;
   }
 
   .become-sponsor-button {
+    align-items: center;
     background: linear-gradient(180deg, #DA0D46 0%, #570018 100%), #DA0D46;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
-    font-size: 16px;
+    color: #ffffff;
+    display: flex;
+    font-family: Myriad Pro, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    height: 50px;
+    justify-content: center;
     line-height: 123.4%;
     letter-spacing: 0.02em;
-    color: #ffffff;
-    align-self: center;
+    margin: 15px auto 15px;
+    outline: none;
     padding: 20px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
+    width: 230px;
   }
 }
 

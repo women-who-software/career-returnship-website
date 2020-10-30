@@ -33,13 +33,10 @@ module.exports = {
       options: {
         fonts: [
           `montserrat`,
-          `myriad pro`, // you can also specify font weights and styles
+          `myriad pro`,
         ],
         display: 'swap'
       }
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
