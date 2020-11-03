@@ -1,6 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -8,6 +9,7 @@ const Header = ({ siteTitle }) => (
       height: `0vh`,
     }}
   >
+   
     <div
       style={{
         margin: `0 auto`,

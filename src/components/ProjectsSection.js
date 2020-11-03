@@ -85,6 +85,7 @@ const ProjectsWrapper = styled.div`
   flex-direction: column;
   margin: 0;
   width: 100%;
+  padding-left: 20px;
   padding-bottom: 20px;
   @media screen and (min-width: 700px) {
 
@@ -100,7 +101,7 @@ const ProjectsWrapper = styled.div`
     width: 100%;
 
     h2 {
-
+     text-align: center;
       font-size: 2.5rem;
       margin-left: 50px; 
       width: 100%;
@@ -123,7 +124,7 @@ const ProjectsWrapper = styled.div`
         margin: 20px auto;
         padding-bottom: 20px;
         text-align: center;
-        width: 70%;
+        width: 80%;
 
         img {
         border-radius: 15px 15px 0px 0px;
@@ -146,7 +147,7 @@ const ProjectsWrapper = styled.div`
         flex-direction: row;
 
         .column {
-          margin: 20px;
+          margin: 20px 0 0 50px;
           max-width: 400px;
           width: 100%;
         }

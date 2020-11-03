@@ -14,10 +14,10 @@ export default [
         date: '10-23-20',
         time: '6pm',
         type: 'online',
-        title: 'A WWCode Boulder/ Denver Fall Networking Social',
-        subtitle: 'Social Networking Event',
-        description: 'Join us for a casual online social and networking event. Zoom link will be posted 30 minutes before the event!',
-        link: 'https://www.meetup.com/Women-Who-Code-Boulder-Denver/events/273766271/'
+        title: 'Candor',
+        subtitle: 'Hiring Companies',
+        description: 'Living hiring website',
+        link: 'https://candor.co/hiring-freezes'
     },
     {
         id: 3,
