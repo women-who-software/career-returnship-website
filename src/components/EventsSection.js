@@ -55,7 +55,7 @@ const EventsWrapper = styled.div`
       flex-direction: column;
       justify-content: center;
       margin: 0 auto;
-      width: 100 %;
+      width: 100%;
 
     .column {
       align-items: center;
@@ -126,14 +126,12 @@ align-items: flex-end;
 .meetup-info {
   margin: 0 60px 0 0;
   padding: 0;
-
-}
-.meetup-info img {
-  margin: 0;
+width: 70%;
 }
 
-}
 
+}
+  }
 `
 
 

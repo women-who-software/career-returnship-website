@@ -72,15 +72,17 @@ const InvolvedWrapper = styled.div`
     display: flex;
     flex-direction: column;
     /* max-width: 900px; */
-    margin: 10px 40px;
-    padding-left: 70px;
-    width: 80%; 
+    margin: 0 auto;
+    /* padding-left: 70px; */
+    width: 100%; 
     @media (min-width: 700px) {
       padding-left: 40px;
       margin: 0;
     }
   }
- 
+ p {
+   text-align: center;
+ }
 
   h2 {
     align-self: flex-start;
@@ -197,7 +199,7 @@ const InvolvedWrapper = styled.div`
         text-align: justify;
       }
     }
-  }
+  
 `
 
 export default InvolvedSection;
