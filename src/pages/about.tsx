@@ -3,6 +3,7 @@ import React from "react"
 import Styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import about from "../images/aboutMountains.png"
 
 const AboutPage = () => (
   <Layout>
@@ -33,7 +34,12 @@ const AboutPage = () => (
           BE A SPONSOR/PARTNER
         </button>
       </div>
-      <div className="links">Hello World</div>
+      <div className="gray-section">
+        <img className="about-image" src={about} alt="women smiling" />
+        <a className="link" href="https://www.womenwhocode.com/" target="_blank">WOMEN WHO CODE</a>
+        <a className="link" href="https://www.womenwhocode.com/boulder-denver" target="_blank">WWC - DENVER/BOULDER</a>
+        <a className="link" href="https://www.w3schools.com" target="_blank">CONTACT US</a>
+      </div>
     </Wrapper>
   </Layout>
 )
@@ -111,8 +117,32 @@ width: 100%;
   }
 }
 
-.links {
+.gray-section {
+  display: flex;
+  flex-direction: column;
 
+  .about-image {
+    width: 375px;
+    height: 204px;
+    margin: 0px 0px 5px;
+    top-left-radius: 15px;
+    top-right-radius: 15px;
+  }
+
+  .link {
+    width: 100%;
+    height: 85px;
+    background-color: #A8C4C8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    font-family: Myriad Pro, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0px 0px 4px;
+  }
 }
 `
 
