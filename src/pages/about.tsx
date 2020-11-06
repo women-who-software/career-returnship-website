@@ -1,6 +1,7 @@
 // Gatsby supports TypeScript natively!
 import React from "react"
 import Styled from "styled-components"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import about from "../images/aboutMountains.png"
@@ -38,7 +39,7 @@ const AboutPage = () => (
         <img className="about-image" src={about} alt="women smiling" />
         <a className="link" href="https://www.womenwhocode.com/" target="_blank">WOMEN WHO CODE</a>
         <a className="link" href="https://www.womenwhocode.com/boulder-denver" target="_blank">WWC - DENVER/BOULDER</a>
-        <a className="link" href="https://www.w3schools.com" target="_blank">CONTACT US</a>
+        <Link className="link" to="/contactUs">CONTACT US</Link>
       </div>
     </Wrapper>
   </Layout>
