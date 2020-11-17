@@ -85,8 +85,8 @@ const ProjectsWrapper = styled.div`
   flex-direction: column;
   margin: 0;
   width: 100%;
-  padding-left: 20px;
-  padding-bottom: 20px;
+  /* padding-left: 20px;
+  padding-bottom: 20px; */
   @media screen and (min-width: 700px) {
 
     margin: 0 auto;
@@ -165,6 +165,7 @@ const ProjectsWrapper = styled.div`
     color: #ffffff;
     align-self: center;
     padding: 20px;
+    margin-top: 20px;
   }
 `
 
