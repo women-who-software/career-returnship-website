@@ -45,9 +45,9 @@ const AboutPage = () => (
             <Link className="link" to="/contactUs">CONTACT US</Link>
           </div>
         </div>
-        <button className="find-meeting-button">
+        <a className="find-meeting-button" href="https://www.meetup.com/Women-Who-Code-Boulder-Denver/events/" target="_blank">
           FIND OUR NEXT MEETING
-        </button>
+        </a>
       </div>
     </Wrapper>
   </Layout>
@@ -213,6 +213,7 @@ width: 100%;
     justify-content: center;
     margin: 40px auto 40px;
     padding: 0;
+    text-decoration: none;
     outline: none;
     width: 230px;    
 
