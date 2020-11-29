@@ -10,7 +10,7 @@ export default function EventsSection() {
   return (
     < EventsWrapper >
       <div className="content" style={{ backgroundImage: 'url(' + bkgImg + ')', backgroundSize: "cover" }}>
-        <h2>NETWORKING / EVENTS</h2>
+        <h2 className="title_Page">NETWORKING / EVENTS</h2>
         <div className="row">
           <div className="column" >
             <img className="meetup-info" src={meetupInfo} alt="Meetup logo with event information" />
@@ -28,109 +28,52 @@ export default function EventsSection() {
 }
 
 const EventsWrapper = styled.div`
-    align-items: center;
-    display: flex;
     margin: 0;
-    flex-direction: column;
     width: 100%;
     color: #54BBCE;
-
-  .content {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 0 20px;
-    width: 100%;
-  h2 {
-    
-    margin: 0;
-    padding: 10px 0;
-    font-size: 1.2rem;
+  
+  .row {
+    text-align: center;
   }
+.title_Page {
+  text-align: center;
+  padding-top: 1rem;
+}
+  @media (min-width: 700px) {
+   
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 10rem; */
+    width: 100%;
+  }
+  .column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 10rem;
+  }
+  .eventItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    /* padding: 0 2rem; */
+}
 
-
-    .row {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin: 0 auto;
-      width: 100%;
-
-    .column {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin: 0 auto;
-      width: 80%;
-      img {
-        border-radius: 15px;
-      }
- 
-    }
-    .eventItem {
-     margin: 0 30px;
-      width: 100%;
-    }
-    .eventItem P {
-      padding: 10px 0;
-    }
+  }
+  .link-more{
+    margin-left: 3rem;
     
+    text-decoration: none;
+    color: white;
+    @media (min-width: 700px) {
+      margin: 0 40rem;
     }
-
-  .link-more {
-  text-decoration: none;
-  font-family: Montserrat, sans - serif;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 123.4 %;
-  letter-spacing: 0.02em;
-  color: #FFFFFF;
-  align-self: center;
-  margin-top: 20px;
-}
-
-@media (min-width: 700px) {
-  
-  .content h2 {
-  font-size: 1.2rem;
-  margin: 0;
-  
-}
-.eventItem h2, .eventItem h3 {
-  width: 80%;
-}
-.eventItem p{
-  width: 80%;
-}
-.row {
-  justify-content: flex-start;
-  flex-direction: row;
-  margin: 0;
-  padding-left: -90px;
-  width: 100%
-}
-.column {
-align-items: flex-end;
-  margin: 0;
-  padding: 0;
-  
-  width: 40%;
-}
-.blurb {
-  display: flex;
-  flex-wrap: wrap;
-  width: 415px;
-}
-.meetup-info {
-  margin: 0 60px 0 0;
-  padding: 0;
-width: 70%;
-}
-
-
-}
+   
   }
 `
 

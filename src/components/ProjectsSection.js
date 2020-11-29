@@ -84,10 +84,11 @@ const ProjectsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0;
+  padding-bottom: 3rem;
   width: 100%;
   /* padding-left: 20px;
   padding-bottom: 20px; */
-  @media screen and (min-width: 700px) {
+  @media (min-width: 700px) {
 
     margin: 0 auto;
   }
@@ -101,18 +102,25 @@ const ProjectsWrapper = styled.div`
     width: 100%;
 
     h2 {
-     text-align: center;
+      
       font-size: 2.5rem;
-      margin-left: 50px; 
+      margin-left: 8rem;
       width: 100%;
+      @media (min-width: 700px) {
+        margin-left: 23rem; 
+      }
     }
 
     .row {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin: 0;
-      width: 100%;
+      width: 95%;
+      @media (min-width: 700px) {
+      margin-left: 3rem;
+      width: 80%;
+      }
+      
 
       .column {
         align-items: center;
@@ -124,7 +132,7 @@ const ProjectsWrapper = styled.div`
         margin: 20px auto;
         padding-bottom: 20px;
         text-align: center;
-        width: 80%;
+        width: 100%;
 
         img {
         border-radius: 15px 15px 0px 0px;
@@ -142,19 +150,26 @@ const ProjectsWrapper = styled.div`
         }
       }
 
-      @media screen and (min-width: 700px) {
+      @media  (min-width: 700px) {
         align-items: center;
         flex-direction: row;
-
+        h2 {
+          margin-left: 20rem; 
+        }
         .column {
-          margin: 20px 0 0 50px;
-          max-width: 400px;
-          width: 100%;
+          margin: 0 10px;
+          width: 70%;
         }
       }
     }
   }
-
+.github-button {
+  background: #017A8E;
+  border: 2px solid #017A8E;
+}
+.prototype-button {
+  border: 2px solid #017A8E;
+}
   .project-button {
     background: linear-gradient(180deg, #DA0D46 0%, #570018 100%), #DA0D46;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
