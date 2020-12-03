@@ -207,15 +207,15 @@ width: 100%;
     color: #FFFFFF;
     display: flex;
     font-family: Myriad Pro, sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
-    height: 50px;
+    height: 60px;
     justify-content: center;
-    margin: 40px auto 40px;
+    margin: 80px auto 40px;
     padding: 0;
     text-decoration: none;
     outline: none;
-    width: 230px;    
+    width: 300px;    
 
     @media ( max-width: 700px) {
       display: none;
