@@ -32,12 +32,12 @@ const AboutPage = () => (
             for you. If you are currently working, we would love your insights to
             help the community.
           </div>
-          <button className="join-us-button" type="button">
+          <a className="join-us-button" href="https://form.jotform.com/203243227290043" target="_blank">
             JOIN US
-          </button>
-          <button className="become-sponsor-button" type="button">
-            BE A SPONSOR/PARTNER
-          </button>
+          </a>
+          <a className="become-sponsor-button" href="https://form.jotform.com/203324916543150" target="_blank">
+            SPONSOR/PARTNER
+          </a>
           <div className="column gray-section">
             <img className="about-image" src={about} alt="women smiling" />
             <a className="link" href="https://www.womenwhocode.com/" target="_blank">WOMEN WHO CODE</a>
@@ -73,9 +73,9 @@ width: 100%;
     color: #DA0D46;
     font-family: Myriad Pro, sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 30px;
     margin: 0px;
-    padding: 20px 0px 20px;
+    padding: 30px 0px 30px;
 
     @media ( min-width: 700px) {
       align-self: flex-start;
@@ -100,7 +100,7 @@ width: 100%;
       font-size: 18px;
       font-weight: 400;
       line-height: 22px;
-      margin: 0px 20px 20px 20px;
+      margin: 0px 20px 0px;
     
       .strong {
         font-weight: 700;
@@ -120,9 +120,10 @@ width: 100%;
       font-weight: 700;
       height: 50px;
       justify-content: center;
-      margin: 15px auto 15px;
+      margin: 35px auto 15px;
       padding: 0;
       outline: none;
+      text-decoration: none;
       width: 230px;
 
       @media ( min-width: 700px) {
@@ -147,6 +148,7 @@ width: 100%;
       margin: 15px auto 15px;
       outline: none;
       padding: 20px;
+      text-decoration: none;
       width: 230px;
 
       @media ( min-width: 700px) {
