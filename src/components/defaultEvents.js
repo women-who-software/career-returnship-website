@@ -12,31 +12,27 @@ export default [
     {
         id: 2,
         date: '10-23-20',
-        time: '6pm',
-        type: 'online',
+      
         title: 'Candor',
-        subtitle: 'Hiring Companies',
-        description: 'Living hiring website',
+       
+        description: 'Maintained list of companies freezing their hiring.',
         link: 'https://candor.co/hiring-freezes'
     },
     {
         id: 3,
         date: '10-28-20',
-        time: '6pm',
-        type: 'online',
-        title: 'Career Returnship',
-        subtitle: 'Bi-Monthly Meeting',
-        description: 'Kickstarting your career and reentering the workforce after a break can be a huge challenge; together we can make this a lot easier. This initiative is a small step towards empowering those of us in technology trying to relaunch our careers.',
-        link: 'https://www.meetup.com/Women-Who-Code-Boulder-Denver/events/nxbkxrybcnbsb/'
+     
+        title: 'Levels',
+  
+        description: 'Below is a list of companies still hiring. We are checking regularly with companies directly to keep this live list up-to-date.',
+        link: 'ttps://www.levels.fyi/still-hiring/ '
     },
     {
         id: 4,
         date: '11-11-20',
-        time: '6pm',
-        type: 'online',
-        title: 'Career Returnship',
-        subtitle: 'Bi-Monthly Meeting',
-        description: 'description of event',
-        link: 'https://www.meetup.com/Women-Who-Code-Boulder-Denver/events/nxbkxrybcnbsb/'
+        title: 'Tech Jobs for Good',
+      
+        description: 'Tech Jobs for Good helps organizations working on social and environmental issues hire tech talent looking for purposeful work.',
+        link: 'https://techjobsforgood.com'
     }
 ]

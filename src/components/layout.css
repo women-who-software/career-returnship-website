@@ -3,13 +3,17 @@ html {
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
   font-size: 16px;
+  
 }
-* {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
 body {
   margin: 0;
-
+width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

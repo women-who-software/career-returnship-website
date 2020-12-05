@@ -11,7 +11,7 @@ import radial from "../images/sponsorRadial.png"
 const InvolvedSection = () => (
   <InvolvedWrapper>
     <div className="content">
-      <h2>WANT TO GET INVOLVED?</h2>
+      <h2 className="page_title">WANT TO GET INVOLVED?</h2>
       <div className="row">
         <div className="column">
           <button className="become-member-button" type="button">
@@ -54,115 +54,111 @@ const InvolvedSection = () => (
 )
 
 const InvolvedWrapper = styled.div`
-  align-items: center;
- 
   background: #DA0D46;
   color: #ffffff;
-  display: flex;
-  flex-direction: column;
   width: 100%;
 
-  @media (min-width: 700px) {
+  /* @media (min-width: 700px) {
     align-items: flex-start;
 
-  }
+  } */
 
   .content {
-    align-items: center;
-    display: flex;
+   
     flex-direction: column;
-    /* max-width: 900px; */
-    margin: 0 auto;
-    /* padding-left: 70px; */
-    width: 100%; 
+    padding-top: 2rem;
+    width: 100%;  
     @media (min-width: 700px) {
-      padding-left: 40px;
+      display: flex;
       margin: 0;
+      width: 100%;
     }
   }
- p {
-   text-align: center;
- }
-
-  h2 {
-    align-self: flex-start;
-    font-size: 1.5rem;
-    margin: 40px 0;
-    text-align: center;
-    width: 100%;
+.page_title {
+ margin-left: 2rem;
+ font-size: 1.4rem;
+  @media (min-width: 700px) {
+  margin-left: 17rem;
   }
-
+}
   .row {
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
     margin: 0 auto;
-    width: 100%;
+    width: 80%;
 
 
 
     .column {
       align-items: center;
       display: flex;
+      padding-bottom: 1rem;
       flex-direction: column;
-      width: 100%;
-      margin: 10px;
+      margin: 0;
       text-align: justify;
+      width: 100%;
     }
     @media(min-width: 700px) {
-        align-items: space-between;
+        margin-left: 12rem;
         flex-direction: row;
-    
+        width: 70%;
       }
     p{
+      margin: 0;
+      letter-spacing: 0;
+      padding-top: 0;
+      padding-left: 0;
+      width: 80%;
+      @media(min-width: 700px) {
       text-align: justify;
-      padding-top: 10px;
+      padding-top: 2rem;
+      padding-left:2rem;
+      margin: 0 7rem;
       width: 80%;
      
     }
+    }
 
-      .become-member-button {
-        align-items: center;
+     .become-member-button {
+        
         background: linear-gradient(180deg, #4C4C4C 0%, #000000 100%), #4C4C4C;
         border-radius: 15px;
         border: none;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         color: #FFFFFF;
-        display: flex;
-        height: 45px;
-        justify-content: center;
-        margin: 0 auto;
-        padding: 0;
+        padding: .5rem .7rem;
         outline: none;
-        width: 60%;
-        @media ( min-width: 700px) {
         width: 80%;
-
+        
+        @media ( min-width: 700px) {
+          padding: .5rem .2rem;
+          margin: 0;
+          width: 60%;
       }
       }
-
+      
       .become-sponsor-button {
-        align-items: center;
-        background: linear-gradient(180deg, #ffffff 0%, #e9cfd6 100%);
+       font-size: 17px;
+        /* background: linear-gradient(180deg, #ffffff 0%, #e9cfd6 100%); */
         border-radius: 15px;
         border: none;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        color: #4c4c4c;
-        display: flex;
-        font-size: 16px;
-        height: 45px;
-        justify-content: center;
+       
         line-height: 123.4%;
-
+        /* padding: 1rem 1rem; */
         margin: 0 0 30px;
         outline: none;
-        width: 60%;
+        padding: .5rem 0;
+        width: 90%;
 
       @media ( min-width: 700px) {
-        padding: 0;
+        padding: .5rem 1rem;
+        color: white;
         margin: 0;
-        width: 80%;
-
+        width: 75%;
+        background: none;
+        border: 1px solid #FFFFFF;
       }
     }
 
@@ -170,15 +166,17 @@ const InvolvedWrapper = styled.div`
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        margin: 0 0 30px;
+        margin: 0 0 30px 0;
         padding-top: 20px;
-        width: 80%;
+        width: 100%;
 
         img {
+          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+          border-radius: 5px;
           height: 40px;
-          margin: 0 0 5px;
+          /* margin: 0 5px 5px; */
           overflow: hidden;
-          width: 115px;
+          width: 125px;
         }
       }
 
@@ -197,7 +195,7 @@ const InvolvedWrapper = styled.div`
 
         padding: 0 0 0 10px;
         text-align: justify;
-      }
+      } 
     }
   
 `
