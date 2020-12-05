@@ -53,7 +53,7 @@ const EventsWrapper = styled.div`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-left: 10rem;
+    margin-left: 12rem;
   }
   .eventItem {
     display: flex;

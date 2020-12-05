@@ -118,7 +118,7 @@ const ProjectsWrapper = styled.div`
       width: 95%;
       @media (min-width: 700px) {
       margin-left: 3rem;
-      width: 80%;
+      width: 78%;
       }
       
 
