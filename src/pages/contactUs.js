@@ -40,7 +40,7 @@ export default function Contact() {
                 <h1>Contact Us</h1>
                 <form
                     name="contact"
-                    method="post"
+                    method="POST"
                     data-netlify-recaptcha="true"
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
@@ -125,7 +125,7 @@ width: 100%;
           max-width: 1100px;
           width: 60%;
         }
-       
+
         input, textarea {
           background: #E5E5E5;
           border: 1px solid #F4F4ED;
@@ -138,9 +138,9 @@ width: 100%;
         .info {
           width: 350px;
           margin: 0;
-          
+
 }
-        
+
         textarea {
           height: 100%;
           padding: 10px;
@@ -162,24 +162,24 @@ width: 100%;
         .hidden {
           display: none;
         }
-        
+
 
       @media (max-width: 400px) {
-          
+
           .hidden {
             display: flex;
             flex-direction: column;
             margin: 20px;
-            
+
             width: 90%;
           }
-          form { 
+          form {
             display: none;
           }
           h1 {
             margin: 0;
             text-align: center;
-            font-size: 24px; 
+            font-size: 24px;
           }
           p {
               font-size: 18px;
