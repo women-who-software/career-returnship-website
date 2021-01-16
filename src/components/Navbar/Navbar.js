@@ -89,17 +89,21 @@ const Hamburger = Styled.div`
     transform: ${props => (props.open ? "rotate(90deg) " : "rotate(0deg)")};
     top: 10px;
   }
+  a {
+    margin-top: 1rem;
+  }
 `
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
 
   return (
     <Navigation>
-      <img
+      <a href="/"><img
         className="project-image"
         src={Logo}
         alt="Cover for Project"
-      />
+        
+      /></a>
       <Toggle
         navbarOpen={navbarOpen}
         onClick={() => setNavbarOpen(!navbarOpen)}

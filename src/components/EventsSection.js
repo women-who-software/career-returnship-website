@@ -45,36 +45,35 @@ const EventsWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-left: 10rem; */
     width: 100%;
   }
   .column {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-left: 12rem;
+   
+    margin-left: 6rem;
+    
   }
   .eventItem {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 70%;
-    /* padding: 0 2rem; */
+    width: 80%;
+  }
+  
+   
 }
 
   }
   .link-more{
-    margin-left: 3rem;
-    
+    margin-left: 2rem;
+    font-size: .7rem;
     text-decoration: none;
     color: white;
     @media (min-width: 700px) {
-      margin: 0 40rem;
+      margin: 0 25rem;
     }
    
-  }
+  
 `
 
 

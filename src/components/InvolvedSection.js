@@ -14,9 +14,9 @@ const InvolvedSection = () => (
       <h2 className="page_title">WANT TO GET INVOLVED?</h2>
       <div className="row">
         <div className="column">
-          <button className="become-member-button" type="button">
+          <a className="become-member-button" type="button"  rel="noreferrer" href="https://form.jotform.com/203243227290043" target="_blank">
             BECOME A MEMBER
-          </button>
+          </a>
           <p>
             We meet every 2 weeks on Wednesday. <br />
             <br /> 6:00-8:00pm
@@ -24,9 +24,9 @@ const InvolvedSection = () => (
           </p>
         </div>
         <div className="column">
-          <button className="become-sponsor-button" type="button">
-            BE A SPONSOR/VOLUNTEER
-          </button>
+         <a className="become-sponsor-button" type="button"  rel="noreferrer" href="https://form.jotform.com/203324916543150" target="_blank">BE A SPONSOR/VOLUNTEER</a>
+            
+      
           <p>Interested in partnering with us? A few options we are currently looking to fill. </p>
           <ul>
             <li>Weekly Food Sponsors</li>
@@ -58,10 +58,6 @@ const InvolvedWrapper = styled.div`
   color: #ffffff;
   width: 100%;
 
-  /* @media (min-width: 700px) {
-    align-items: flex-start;
-
-  } */
 
   .content {
    
@@ -75,10 +71,10 @@ const InvolvedWrapper = styled.div`
     }
   }
 .page_title {
- margin-left: 2rem;
+ margin-left: 1rem;
  font-size: 1.4rem;
   @media (min-width: 700px) {
-  margin-left: 17rem;
+  margin-left: 20rem;
   }
 }
   .row {
@@ -97,7 +93,7 @@ const InvolvedWrapper = styled.div`
       flex-direction: column;
       margin: 0;
       text-align: justify;
-      width: 100%;
+      width: 80%;
     }
     @media(min-width: 700px) {
         margin-left: 12rem;
@@ -105,11 +101,9 @@ const InvolvedWrapper = styled.div`
         width: 70%;
       }
     p{
-      margin: 0;
-      letter-spacing: 0;
-      padding-top: 0;
-      padding-left: 0;
-      width: 80%;
+      font-size: .8rem;
+     
+      
       @media(min-width: 700px) {
       text-align: justify;
       padding-top: 2rem;
@@ -118,6 +112,7 @@ const InvolvedWrapper = styled.div`
       width: 80%;
      
     }
+    
     }
 
      .become-member-button {
@@ -127,36 +122,38 @@ const InvolvedWrapper = styled.div`
         border: none;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         color: #FFFFFF;
-        padding: .5rem .7rem;
+        padding: .2rem .5rem;
         outline: none;
-        width: 80%;
+        width: 70%;
+        text-decoration: none;
+        
         
         @media ( min-width: 700px) {
           padding: .5rem .2rem;
-          margin: 0;
-          width: 60%;
+          margin: 0 ;
+          width: 65%;
+          text-align: center;
       }
       }
       
       .become-sponsor-button {
-       font-size: 17px;
-        /* background: linear-gradient(180deg, #ffffff 0%, #e9cfd6 100%); */
+        font-size: 15px;  
         border-radius: 15px;
         border: none;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-       
+        text-decoration: none;
         line-height: 123.4%;
-        /* padding: 1rem 1rem; */
         margin: 0 0 30px;
         outline: none;
         padding: .5rem 0;
-        width: 90%;
+        width: 80%;
 
       @media ( min-width: 700px) {
-        padding: .5rem 1rem;
+        padding: .5rem 1.2rem;
         color: white;
         margin: 0;
-        width: 75%;
+        text-align: center;
+        width: 70%;
         background: none;
         border: 1px solid #FFFFFF;
       }
@@ -168,7 +165,7 @@ const InvolvedWrapper = styled.div`
         justify-content: center;
         margin: 0 0 30px 0;
         padding-top: 20px;
-        width: 100%;
+        width: 95%;
 
         img {
           box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
@@ -187,12 +184,13 @@ const InvolvedWrapper = styled.div`
 
       ul {
         margin: 0;
+        
       }
 
       li {
         list-style-type: '□';
-        margin-right: 20px;
-
+        margin-right: 18px;
+        font-size: .9rem;
         padding: 0 0 0 10px;
         text-align: justify;
       } 

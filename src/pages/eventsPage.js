@@ -18,7 +18,7 @@ export default function EventsPage() {
                 <div className="row">
                     <div className="column" >
                         < img className="meetup-info" src={meetupInfo} alt="Meetup logo with event information" />
-                        <a className="join-button" href="https://www.meetup.com/Women-Who-Code-Boulder-Denver">Join Us</a>
+                        <a className="join-button" href="https://www.meetup.com/Women-Who-Code-Boulder-Denver">RSVP to the Next Event</a>
                     </div >
 
                     <div className="eventItem">
@@ -34,59 +34,62 @@ export default function EventsPage() {
 
 
 const EventStyles = styled.div`
-    background: #DA0D46;
     margin: 0;
-    padding: 0 20px;
     width: 100%;
-h1{
-    color: #ffff;
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 700;
-    padding: 10px 0;
+    color: #fff;
+    background: #DA0D46;
+    height: 100%;
     text-align: center;
-}
-  .row {
-      margin: 0;
-      width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    padding: 2rem 0;
+  
+  .column {
+    margin-left: o auto;
+    padding-bottom: 1rem;
   }
-      .join-button {
-        background: linear-gradient(180deg, #4C4C4C 0%, #000000 100%), #4C4C4C;
-        border-radius: 15px;
-        border: none;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        color: #FFFFFF;
-        text-transform: uppercase;
-        text-align: center;
-        text-decoration: none;
-        height: 45px;
-        display: flex;
-        align-content: center;
-        justify-items: center;
-        padding: 10px 60px;
-        outline: none;
-        width: 80%;
-        margin: 0 20px;
-      }
-      a {
-          text-align: center;
-      }
-    .eventItem {
-        margin-left: 60px;
-        padding-top: 20px;
-        width: 100%;
-    }
-    @media(min-width: 700px) {
-        .row{
-        flex-direction: row;
-        margin-left: 50px;
-        padding-bottom: 50px;
-        }
-        .join-button {
-            padding: 10px 40px;
-        }
-    }
-    `;
+.meetup-info {
+  padding-top: 2rem;
+    width: 70%;
+}
+.join-button{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size:.8rem;
+    text-decoration: none;
+    background: linear-gradient(180deg, #4C4C4C 0%, #000000 100%), #4C4C4C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    color: #fff;
+    padding: .5rem;
+  }
+  @media (min-width: 700px) {
+   
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+  }
+  .column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 6rem;
+    
+  }
+  .eventItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+   
+}
+.join-button{
+padding: 1rem;
+}
+
+  }
+  
+`
