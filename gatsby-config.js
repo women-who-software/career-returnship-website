@@ -32,8 +32,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `montserrat`,
-          `myriad pro`,
+            'Montserrat\:400,700,900',
+            'Myriad Pro\:400,700,900'
         ],
         display: 'swap'
       }
