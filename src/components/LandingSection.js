@@ -23,7 +23,7 @@ const LandingSection = () => (
             those of us in technology as we relaunch our careers.
           </p>
           <img alt="WWC Returnship ad" className="card-mobile" src={card} />
-          <button type="button">LEARN MORE</button>
+          <a className="button" type="button" href="/about">LEARN MORE</a>
         </div>
         <img alt="WWC Returnship ad" className="card" src={card} />
       </div>
@@ -126,7 +126,7 @@ const LandingWrapper = styled.div`
           }
           }
 
-          button {
+          .button {
             align-self: center;
             background: #ffffff;
             border-radius: 15px;
@@ -137,8 +137,10 @@ const LandingWrapper = styled.div`
             font-size: 1.05rem;
             font-weight: bold;
             margin-top: 20px;
-            padding: 15px 70px;
+            padding: 10px  25px;
             text-align: center;
+            text-decoration: none;
+            width: 25%;
           }
         }
 

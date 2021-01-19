@@ -37,15 +37,20 @@ const NavItem = Styled(Link)`
     font-size: 1.5rem;
     z-index: 6;
   }
+  .become {
+  color: yellow;
+  border: 2px solid #DA0D46;
+}
 `
+
 const NavbarLinks = () => {
   return (
     <>
       <NavItem to="/about">About Us</NavItem>
-      <NavItem to="/announcements">Networking</NavItem>
+      <NavItem to="/eventsPage">Networking</NavItem>
       <NavItem to="/">Sponsors</NavItem>
       <NavItem to="/contactUs">Contact Us</NavItem>
-      <NavItem to="https://form.jotform.com/202678202320041">Become a Member</NavItem>
+      <NavItem to="https://form.jotform.com/203243227290043">Become a Member</NavItem>
       <NavItem to="/projects">Projects</NavItem>
     </>
   )
