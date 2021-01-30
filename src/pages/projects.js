@@ -79,6 +79,7 @@ const Projects = () => (
         </div>
       </div>
       <a className="project-button" href="https://form.jotform.com/203324916543150">HAVE A PROJECT FOR US?</a>
+      <div className="carousel"></div>
     </div>
     </ProjectPage>
   </Layout>
