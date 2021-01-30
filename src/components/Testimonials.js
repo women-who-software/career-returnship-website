@@ -2,6 +2,8 @@ import React from "react";
 
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
+import bed from "../images/temp-bedWomanCoding.jpg";
+import happy from "../images/temp-happyWomenCoding.jpg";
 // import barn from '../assets/images/barn.jpeg';
 // import Cutie from '../assets/images/Annaandande2.jpg';
 // import pasture from '../assets/images/backfield2.jpg';
@@ -32,7 +34,7 @@ export default function Slider() {
         </div>
         <img
           className="sliderimg"
-          src={Cutie}
+          src={happy}
           alt="Anna and Ande enjoying our pasture turnout at Taft Hill Acres"
           
         />
@@ -55,7 +57,7 @@ export default function Slider() {
 
         <img
           className="sliderimg"
-          src={pasture}
+          src={bed}
           alt="Boarding Horse enjoying the grass turned out in our pasture."
           
         />
