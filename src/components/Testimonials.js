@@ -2,32 +2,33 @@ import React from "react";
 
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
-import barn from '../assets/images/barn.jpeg';
-import Cutie from '../assets/images/Annaandande2.jpg';
-import pasture from '../assets/images/backfield2.jpg';
-import bale from '../assets/images/Bale.jpg'
-import bike from '../assets/images/bikepath4.jpg'
-import frontfield from '../assets/images/frontfield.jpg'
-import isopen from '../assets/images/ISOpen.jpg'
+// import barn from '../assets/images/barn.jpeg';
+// import Cutie from '../assets/images/Annaandande2.jpg';
+// import pasture from '../assets/images/backfield2.jpg';
+// import bale from '../assets/images/Bale.jpg'
+// import bike from '../assets/images/bikepath4.jpg'
+// import frontfield from '../assets/images/frontfield.jpg'
+// import isopen from '../assets/images/ISOpen.jpg'
 
 export default function Slider() {
   return (
-    <div arial-label="Testimonials about Taft Hill Acres" className="Slider">
+    <div arial-label="Testimonials about Women Who Code" className="Slider">
       <AliceCarousel autoPlay autoHeight infinite autoPlayInterval="5000">
         <div className="intro-text left-0 text-center bg-faded p-2 rounded">
           <h4 className="mb-3">
-            The horses here are so happy and so well taken care of! My old mare was really struggling at her old barn. I was on the waitlist for Taft Hill and Meg was able to find us a spot to get my old lady into a better situation. Since moving, she is acting like a completely different horse. She is bright, interested in her surroundings, and acting like herself again. I am so thankful to have her at Taft Hill Acres and highly recommend the barn!
-            </h4>
+            Working on a website project with a team of Women Who Code volunteers gave me experience in real-world dev collaboration that I couldn't get anywhere else.""
+          </h4>
           <h2 className="section-heading mb-4">
-            <span className="section-heading-upper">~Sam</span>
+            <span className="section-heading-upper">~Finn Thye, Returnship Volunteer</span>
           </h2>
           <div className="intro-text left-0 text-center bg-secondary p-1 rounded">
-            <h4 className="text-primary mt-5 mb-3">
-              Such a wonderful and friendly horse enviroment. It's been such a pleasure to board here. The property is always clean and very mellow and everyone is so friendly!
+          <h4 className="text-primary mt-5 mb-3">
+            The returnship is a stimulating exercise in creativity and preparation for the unknown.  I love it!
           </h4>
             <h2 className="section-heading mb-4">
-              <span className=" text-primary section-heading-upper">~Jenna</span>
-            </h2></div>
+              <span className=" text-primary section-heading-upper">~Rafna Bash, Returnship Director</span>
+            </h2>
+          </div>
         </div>
         <img
           className="sliderimg"
@@ -59,7 +60,7 @@ export default function Slider() {
           
         />
 
-        <div className="intro-text left-0 text-center bg-faded p-2 rounded">
+        {/* <div className="intro-text left-0 text-center bg-faded p-2 rounded">
           <h4 className="mb-3">
             This is the best boarding facility I have ever had my horses at. Meg, Rene and Anna are great people, and it has been a pleasure to have them take care of my animals. I am extremely picky about the care of my horses, having taken care of horses professionally. This barn has an amazing group of boarders. In the long time that I've been here, there has never been any drama. Meg is excellent at addressing any issues that may arise in a prompt and efficient manner. I highly recommend this barn.
             </h4>
@@ -184,7 +185,7 @@ export default function Slider() {
               <span className="text-primary section-heading-upper">~Kristie</span>
             </h2>
           </div>
-        </div>
+        </div> */}
       </AliceCarousel>
     </div>
   );
