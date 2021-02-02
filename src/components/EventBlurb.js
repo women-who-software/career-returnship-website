@@ -45,3 +45,19 @@ const EventBlurbWrapper = Styled.div`
 `
 
 export default EventBlurb;
+
+export const pageQuery = graphql`
+query  {
+  markdownRemark {
+    id
+    frontmatter {
+      date(formatString: "MMMM DD, YYYY")
+      slug
+      title
+    }
+    internal {
+      content
+    }
+  }
+}
+`

@@ -1,90 +1,51 @@
-// Gatsby supports TypeScript natively!
 import React from "react"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import project1 from "../images/tempProjectImage1.png"
-import project2 from "../images/tempProjectImage2.png"
-import project3 from "../images/tempProjectImage3.png"
 
-const Projects = () => (
+
+const ProjectsPage = ({data}) => {
+  
+  
+  return (
   <Layout>
     <SEO title="Projects" />
-    <ProjectPage>
-    <div className="content">
+    <ProjectStyle>
     <h2>PROJECTS</h2>
+    <div className="content">
+    
+    {data.allMarkdownRemark.edges.map((edge) => {
+      return(
       <div className="row">
+        
         <div className="column">
-          <img
-            className="project-image"
-            src={project1}
-            alt="Cover for Project"
-          />
-          <h3>CAREER RETURNSHIP WEBSITE</h3>
-          <p>
-            A very short description describing the project. Project purpose
-            statement or tag line.
-            <br />
-            <br />
-            Tools Used: Figma, Adobe Photoshop, Javascript, HTML, CSS, RESTful
-            APIs, React, Node.JS, MongoDB
-          </p>
+        
+          <h3>{edge.node.frontmatter.title}</h3>
+          <p>Tools Used: {edge.node.frontmatter.tools}</p>
+         {/* <img src={edge.node.frontmatter.thumbnail} alt={edge.node.frontmatter.title}/> */}
+         {/* <div
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: html }}
+          /> */}
           <div className="toggle-buttons">
             <button className="github-button">GITHUB</button>
-            <button className="prototype-button">PROTOTYPE</button>
+            <button className="prototype-button"><a href={edge.node.frontmatter.url}>Project Page</a></button>
           </div>
         </div>
-
-        <div className="column">
-          <img
-            className="project-image"
-            src={project2}
-            alt="Cover for Project"
-          />
-          <h3>CAREER RETURNSHIP WEBSITE</h3>
-          <p>
-            A very short description describing the project. Project purpose
-            statement or tag line.
-            <br />
-            <br />
-            Tools Used: Figma, Adobe Photoshop, Javascript, HTML, CSS, RESTful
-            APIs, React, Node.JS, MongoDB
-          </p>
-          <div className="toggle-buttons">
-            <button className="github-button">GITHUB</button>
-            <button className="prototype-button">PROTOTYPE</button>
-          </div>
-        </div>
-
-        <div className="column">
-          <img
-            className="project-image"
-            src={project3}
-            alt="Cover for Project"
-          />
-          <h3>CAREER RETURNSHIP WEBSITE</h3>
-          <p>
-            A very short description describing the project. Project purpose
-            statement or tag line.
-            <br />
-            <br />
-            Tools Used: Figma, Adobe Photoshop, Javascript, HTML, CSS, RESTful
-            APIs, React, Node.JS, MongoDB
-          </p>
-          <div className="toggle-buttons">
-            <button className="github-button">GITHUB</button>
-            <button className="prototype-button">PROTOTYPE</button>
-          </div>
-        </div>
+       
       </div>
-      <a className="project-button" href="https://form.jotform.com/203324916543150">HAVE A PROJECT FOR US?</a>
+    )
+      })}
+       <a className="project-button" href="https://form.jotform.com/203324916543150">HAVE A PROJECT FOR US?</a>
     </div>
-    </ProjectPage>
+    </ProjectStyle>
   </Layout>
-)
+  
+  )
+}
 
-const ProjectPage = styled.div`
+const ProjectStyle = styled.div`
   align-items: center;
   background: #E5E5E5;
   color: #DA0D46;
@@ -192,5 +153,27 @@ const ProjectPage = styled.div`
   }
 `
 
-export default Projects
+ export default ProjectsPage
 
+export const projectQuery = graphql`
+query {
+  allMarkdownRemark(
+    filter: {fileAbsolutePath: {eq: "projects/slug"}}
+    sort: {fields: frontmatter___date, order: DESC}) {
+    edges {
+      node {
+        id
+        frontmatter {
+          title
+          date(formatString: "MMMM DD, YYYY")
+          slug
+          tools
+          url 
+        }
+        html
+      }
+    }
+    distinct(field: id)
+  }
+}
+`

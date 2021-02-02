@@ -48,10 +48,10 @@ const NavbarLinks = () => {
     <>
       <NavItem to="/about">About Us</NavItem>
       <NavItem to="/eventsPage">Networking</NavItem>
-      <NavItem to="/">Sponsors</NavItem>
+      <NavItem href="https://form.jotform.com/203324916543150" target="_blank">Sponsors</NavItem>
       <NavItem to="/contactUs">Contact Us</NavItem>
-      <NavItem to="https://form.jotform.com/203243227290043">Become a Member</NavItem>
-      <NavItem to="/projects">Projects</NavItem>
+      <NavItem href="https://form.jotform.com/203243227290043" target="_blank">Become a Member</NavItem>
+      <NavItem to="/projectsPage">Projects</NavItem>
     </>
   )
 }

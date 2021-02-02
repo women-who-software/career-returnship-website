@@ -3,12 +3,13 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import meetupInfo from "../images/tempMeetupInfo.png"
-import defaultEvents from '../components/defaultEvents'
-import EventBlurb from "../components/EventBlurb"
+// import defaultEvents from '../components/defaultEvents'
+// import EventBlurb from "../components/EventBlurb"
 
 
-export default function EventsPage() {
-    const eventItems = defaultEvents.map(event => <EventBlurb key={event.id} date={event.date} time={event.time} title={event.title} link={event.link} description={event.description} />)
+const EventsPage = ({data}) => {
+
+    
 
     return (
         <Layout>
@@ -16,14 +17,19 @@ export default function EventsPage() {
             < EventStyles >
                 <h1 >Networking/Events</h1>
                 <div className="row">
+                
                     <div className="column" >
                         < img className="meetup-info" src={meetupInfo} alt="Meetup logo with event information" />
-                        <a className="join-button" href="https://www.meetup.com/Women-Who-Code-Boulder-Denver">RSVP to the Next Event</a>
+                        {/* <a className="join-button" href="https://www.meetup.com/Women-Who-Code-Boulder-Denver">RSVP to the Next Event</a> */}
                     </div >
-
+                    {data.allMarkdownRemark.edges.map((edge) => {
+                  return (
                     <div className="eventItem">
-                        {eventItems}
+                       <h1>{edge.node.frontmatter.title}</h1>
+                       <h3>{edge.node.frontmatter.date}</h3>
                     </div>
+                  )}
+                )}
                 </div>
             </ EventStyles>
 
@@ -92,4 +98,27 @@ padding: 1rem;
 
   }
   
+`
+
+export default EventsPage
+
+export const eventQuery = graphql`
+query eventQuery {
+  allMarkdownRemark(
+    filter: {id: {eq: "event"}}, 
+    sort: {fields: frontmatter___date, order: DESC}) {
+    edges {
+      node {
+        id
+        frontmatter {
+          title
+          date(formatString: "MMMM DD, YYYY")
+          slug
+          tools
+          url
+        }
+      }
+    }
+  }
+}
 `
