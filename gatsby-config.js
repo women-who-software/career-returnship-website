@@ -18,15 +18,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `markdown-pages`,
-        path: `${__dirname}/src/pages/events`,
+        name: `events`,
+        path: `${__dirname}/src/content/events`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `markdown-pages`,
-        path: `${__dirname}/src/pages/projects`,
+        name: `projects`,
+        path: `${__dirname}/src/content/projects`,
       },
     },
     `gatsby-transformer-remark`,
@@ -44,6 +44,22 @@ module.exports = {
         icon: `src/images/iconColor.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-transformer-remark",
+          options: {
+            "excerpt_separator": `<!-- endexcerpt -->`,
+            plugins: [
+              `gatsby-remark-relative-images-v2`,
+              {
+                resolve: `gatsby-remark-images`,
+                options: {
+                    maxWidth: 750,
+                    linkImagesToOriginal: false
+                },
+              },
+            ],
+          },
+        },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {

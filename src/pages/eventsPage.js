@@ -3,37 +3,27 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import meetupInfo from "../images/tempMeetupInfo.png"
-// import defaultEvents from '../components/defaultEvents'
-// import EventBlurb from "../components/EventBlurb"
+import Event from "../components/Event"
 
 
-const EventsPage = ({data}) => {
-
-    
+const EventsPage = () => {
 
     return (
-        <Layout>
-            <SEO title="Events" />
-            < EventStyles >
-                <h1 >Networking/Events</h1>
-                <div className="row">
-                
-                    <div className="column" >
-                        < img className="meetup-info" src={meetupInfo} alt="Meetup logo with event information" />
-                        {/* <a className="join-button" href="https://www.meetup.com/Women-Who-Code-Boulder-Denver">RSVP to the Next Event</a> */}
-                    </div >
-                    {data.allMarkdownRemark.edges.map((edge) => {
-                  return (
-                    <div className="eventItem">
-                       <h1>{edge.node.frontmatter.title}</h1>
-                       <h3>{edge.node.frontmatter.date}</h3>
-                    </div>
-                  )}
-                )}
-                </div>
-            </ EventStyles>
+      <Layout>
+      <SEO title="Events" />
+      < EventStyles >
+          <h1 >Networking/Events</h1>
+          <div className="row">
+              <div className="column" >
+                  < img className="meetup-info" src={meetupInfo} alt="Meetup logo with event information" />
+                  <a className="join-button" href="https://www.meetup.com/Women-Who-Code-Boulder-Denver">RSVP to the Next Event</a>
+              </div >
 
-        </Layout >
+              <Event />
+          </div>
+      </ EventStyles>
+
+  </Layout >
     )
 
 }
@@ -102,23 +92,3 @@ padding: 1rem;
 
 export default EventsPage
 
-export const eventQuery = graphql`
-query eventQuery {
-  allMarkdownRemark(
-    filter: {id: {eq: "event"}}, 
-    sort: {fields: frontmatter___date, order: DESC}) {
-    edges {
-      node {
-        id
-        frontmatter {
-          title
-          date(formatString: "MMMM DD, YYYY")
-          slug
-          tools
-          url
-        }
-      }
-    }
-  }
-}
-`

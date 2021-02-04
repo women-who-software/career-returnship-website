@@ -1,24 +1,69 @@
 import React from "react"
 import styled from "styled-components"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Project from "../components/Project"
+import { useStaticQuery, graphql } from "gatsby"
+// import Img from "gatsby-image"
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 
-const ProjectsPage = () => {
-  return (
-  <Layout>
-    <SEO title="Projects" />
+const Project = () => {
+    const data = useStaticQuery(graphql`
+        query {
+            allMarkdownRemark(
+                filter: {fields: {collections: {eq: "projects"}}}
+                sort: {fields: frontmatter___date, order: DESC}) {
+            edges {
+                node {
+                    id
+                    frontmatter {
+                        title
+                        date(formatString: "MMMM DD, YYYY")
+                        slug
+                        tools
+                        Project_url 
+                        GitHub_url
+                        Project_Image {
+                            childImageSharp {
+                            fluid(maxWidth: 250, maxHeight: 250, quality: 100) {
+                            ...GatsbyImageSharpFluid
+                            }
+                  }
+                }
+              }
+              html
+            }
+          }
+        }
+      }
+      `)
+
+  return(
     <ProjectStyle>
-    <h2>PROJECTS</h2>
-    <div className="content">
-    <Project />
-    
-       <a className="project-button" href="https://form.jotform.com/203324916543150">HAVE A PROJECT FOR US?</a>
-    </div>
-    </ProjectStyle>
-  </Layout>
-  
+    {data.allMarkdownRemark.edges.map((edge) => {
+      return(
+      <div className="row">
+        
+        <div className="column">
+        <PreviewCompatibleImage
+            imageInfo={{imageInfo: edge.node.frontmatter.Project_Image,
+            alt: "Gatsby Docs are awesome",
+            }}/>
+
+          <h3>{edge.node.frontmatter.title}</h3>
+          <p>Tools Used: {edge.node.frontmatter.tools}</p>
+         
+          <div dangerouslySetInnerHTML={{__html:edge.node.html}}></div>
+        
+          <div className="toggle-buttons">
+            <button className="github-button"><a href={edge.node.frontmatter.GitHub_url}>GITHUB</a></button>
+            <button className="prototype-button"><a href={edge.node.frontmatter.Project_url}>Project Page</a></button>
+          </div>
+        </div>
+       
+      </div>
+      )
+      })}
+     
+     </ProjectStyle>
   )
 }
 
@@ -31,8 +76,7 @@ const ProjectStyle = styled.div`
   margin: 0;
   padding-bottom: 3rem;
   width: 100%;
-  /* padding-left: 20px;
-  padding-bottom: 20px; */
+  text-decoration: none;
   @media (min-width: 700px) {
 
     margin: 0 auto;
@@ -93,11 +137,12 @@ const ProjectStyle = styled.div`
           margin: 0;
           padding: 0;
         }
+        
       }
-        a {
-          color: black;
+      a {
           text-decoration: none;
-        }
+          color: black;
+      }
       @media  (min-width: 700px) {
         align-items: center;
         flex-direction: row;
@@ -133,5 +178,6 @@ const ProjectStyle = styled.div`
   }
 `
 
- export default ProjectsPage
+ export default Project
+
 

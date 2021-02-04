@@ -1,8 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import project1 from "../images/tempProjectImage1.png"
-import project2 from "../images/tempProjectImage2.png"
-import project3 from "../images/tempProjectImage3.png"
+
+import Project from "../components/Project"
 
 const Projects = () => (
   <ProjectsWrapper>
@@ -10,68 +9,10 @@ const Projects = () => (
       <h2>PROJECTS</h2>
       <div className="row">
         <div className="column">
-          <img
-            className="project-image"
-            src={project1}
-            alt="Cover for Project"
-          />
-          <h3>CAREER RETURNSHIP WEBSITE</h3>
-          <p>
-            A very short description describing the project. Project purpose
-            statement or tag line.
-            <br />
-            <br />
-            Tools Used: Figma, Adobe Photoshop, Javascript, HTML, CSS, RESTful
-            APIs, React, Node.JS, MongoDB
-          </p>
-          <div className="toggle-buttons">
-            <button className="github-button">GITHUB</button>
-            <button className="prototype-button">PROTOTYPE</button>
-          </div>
+          <Project />
+          
         </div>
-
-        <div className="column">
-          <img
-            className="project-image"
-            src={project2}
-            alt="Cover for Project"
-          />
-          <h3>CAREER RETURNSHIP WEBSITE</h3>
-          <p>
-            A very short description describing the project. Project purpose
-            statement or tag line.
-            <br />
-            <br />
-            Tools Used: Figma, Adobe Photoshop, Javascript, HTML, CSS, RESTful
-            APIs, React, Node.JS, MongoDB
-          </p>
-          <div className="toggle-buttons">
-            <button className="github-button">GITHUB</button>
-            <button className="prototype-button">PROTOTYPE</button>
-          </div>
-        </div>
-
-        <div className="column">
-          <img
-            className="project-image"
-            src={project3}
-            alt="Cover for Project"
-          />
-          <h3>CAREER RETURNSHIP WEBSITE</h3>
-          <p>
-            A very short description describing the project. Project purpose
-            statement or tag line.
-            <br />
-            <br />
-            Tools Used: Figma, Adobe Photoshop, Javascript, HTML, CSS, RESTful
-            APIs, React, Node.JS, MongoDB
-          </p>
-          <div className="toggle-buttons">
-            <button className="github-button">GITHUB</button>
-            <button className="prototype-button">PROTOTYPE</button>
-          </div>
-        </div>
-      </div>
+      </div> 
       <button className="project-button">HAVE A PROJECT FOR US?</button>
     </div>
   </ProjectsWrapper>
@@ -148,6 +89,10 @@ const ProjectsWrapper = styled.div`
           margin: 0;
           padding: 0;
         }
+      }
+      a {
+        color: black;
+        text-decoration: none;
       }
 
       @media  (min-width: 700px) {
