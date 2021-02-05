@@ -2,6 +2,7 @@
 import React from "react"
 import styled from "styled-components"
 
+import Slider from "../components/Testimonials"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import project1 from "../images/tempProjectImage1.png"
@@ -79,6 +80,7 @@ const Projects = () => (
         </div>
       </div>
       <a className="project-button" href="https://form.jotform.com/203324916543150">HAVE A PROJECT FOR US?</a>
+      <Slider className="slider" />
     </div>
     </ProjectPage>
   </Layout>
@@ -189,6 +191,10 @@ const ProjectPage = styled.div`
       padding: 20px;
       margin-top: 20px;
       text-decoration: none;
+  }
+  .slider {
+    width: 100%;
+    height: 500px;
   }
 `
 
