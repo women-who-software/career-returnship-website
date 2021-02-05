@@ -13,7 +13,7 @@ publish_mode: editorial_workflow
 # when using the local proxy server port (for debugging on local build set to 'true')
 # open another Terminal instance and excute this command to get it running:
 # npx netlify-cms-proxy-server
-local_backend: true
+local_backend: false
 
 media_folder: static/img
 public_folder: /img

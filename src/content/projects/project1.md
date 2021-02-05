@@ -1,7 +1,7 @@
 ---
 title: "My first project"
 date: "2019-05-04"
-Project Image: "roniollie.jpg"
+Project Image: "tempProjectImage1.png"
 slug: "project1"
 tools: "HTML, CSS, React"
 Project url: "https://career-returnship.netlify.app/"

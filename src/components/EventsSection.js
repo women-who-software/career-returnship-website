@@ -1,13 +1,13 @@
 import React from "react"
 import styled from "styled-components"
-// import EventBlurb from "../components/EventBlurb"
+
 import meetupInfo from "../images/tempMeetupInfo.png"
 import bkgImg from "../images/bkg-img.jpg"
-// import defaultEvents from '../components/defaultEvents'
+
 import Event from "../components/Event"
 
 export default function EventsSection() {
-  //  const eventItems = defaultEvents.map(event => <EventBlurb key={event.id} date={event.date} time={event.time} title={event.title} link={event.link} description={event.description} />)
+ 
   return (
     < EventsWrapper >
       <div className="content" style={{ backgroundImage: 'url(' + bkgImg + ')', backgroundSize: "cover" }}>
@@ -18,10 +18,7 @@ export default function EventsSection() {
 
           </div>
           <Event />
-          {/* <div className="eventItem">
-           {eventItems} 
-          </div> */}
-
+          
         </div>
         <a className="link-more" href="eventsPage">view more upcoming events</a>
       </div>

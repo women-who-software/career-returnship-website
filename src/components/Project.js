@@ -23,7 +23,7 @@ const Project = () => {
                         GitHub_url
                         Project_Image {
                             childImageSharp {
-                            fluid(maxWidth: 250, maxHeight: 250, quality: 100) {
+                            fluid(maxWidth: 250, maxHeight: 250) {
                             ...GatsbyImageSharpFluid
                             }
                   }
