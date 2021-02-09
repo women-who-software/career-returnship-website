@@ -46,29 +46,30 @@ module.exports = {
     },
     {
       resolve: "gatsby-transformer-remark",
-          options: {
-            "excerpt_separator": `<!-- endexcerpt -->`,
-            plugins: [
-              `gatsby-remark-relative-images-v2`,
-              {
-                resolve: `gatsby-remark-images`,
-                options: {
-                    maxWidth: 750,
-                    linkImagesToOriginal: false
-                },
-              },
-            ],
+      options: {
+        "excerpt_separator": `<!-- endexcerpt -->`,
+        plugins: [
+          `gatsby-remark-relative-images-v2`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 750,
+              linkImagesToOriginal: false
+            },
           },
-        },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-            'Montserrat\:400,700,900',
-            'Myriad Pro\:400,700,900'
+          'Montserrat\:400,700,900',
+          'Myriad Pro\:400,700,900'
         ],
         display: 'swap'
       }
     },
+
   ],
 }

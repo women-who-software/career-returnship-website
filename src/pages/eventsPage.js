@@ -2,29 +2,34 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import meetupInfo from "../images/tempMeetupInfo.png"
+import meetupInfo from "../images/wwcmeet.png"
 import Event from "../components/Event"
 
 
 const EventsPage = () => {
 
-    return (
-      <Layout>
+  return (
+    <Layout>
       <SEO title="Events" />
       < EventStyles >
-          <h1 >Networking/Events</h1>
-          <div className="row">
-              <div className="column" >
-                  < img className="meetup-info" src={meetupInfo} alt="Meetup logo with event information" />
-                  <a className="join-button" href="https://www.meetup.com/Women-Who-Code-Boulder-Denver">RSVP to the Next Event</a>
-              </div >
+        <h1 >Networking/Events</h1>
+        <div className="row">
+          <div className="column" >
+            < img className="meetup-info" src={meetupInfo} alt="Meetup logo with event information" />
+            <a className="join-button" href="https://www.meetup.com/Women-Who-Code-Boulder-Denver">RSVP to the Next Event</a>
+          </div >
 
-              <Event />
-          </div>
+
+          <eventItem>
+            <Event />
+          </eventItem>
+
+
+        </div>
       </ EventStyles>
 
-  </Layout >
-    )
+    </Layout >
+  )
 
 }
 
@@ -39,7 +44,7 @@ const EventStyles = styled.div`
     padding: 2rem 0;
   
   .column {
-    margin-left: o auto;
+    margin-left: 0;
     padding-bottom: 1rem;
   }
 .meetup-info {
@@ -58,7 +63,10 @@ const EventStyles = styled.div`
     padding: .5rem;
   }
   @media (min-width: 700px) {
-   
+   eventItem{
+     display: flex;
+     flex-wrap: wrap;
+   }
   .row {
     display: flex;
     align-items: center;
@@ -71,23 +79,14 @@ const EventStyles = styled.div`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-left: 6rem;
-    
+    margin-left: 2rem;
+    width: 30%
   }
-  .eventItem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 80%;
-   
-}
+  
 .join-button{
 padding: 1rem;
 }
-
   }
-  
 `
 
 export default EventsPage

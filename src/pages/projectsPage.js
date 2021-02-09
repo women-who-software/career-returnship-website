@@ -3,22 +3,23 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Project from "../components/Project"
+import Slider from "../components/Testimonials"
 
 
 const ProjectsPage = () => {
   return (
-  <Layout>
-    <SEO title="Projects" />
-    <ProjectStyle>
-    <h2>PROJECTS</h2>
-    <div className="content">
-    <Project />
-    
-       <a className="project-button" href="https://form.jotform.com/203324916543150">HAVE A PROJECT FOR US?</a>
-    </div>
-    </ProjectStyle>
-  </Layout>
-  
+    <Layout>
+      <SEO title="Projects" />
+      <ProjectStyle>
+        <h2>PROJECTS</h2>
+        <div className="content">
+          <Project />
+          <a className="project-button" href="https://form.jotform.com/203324916543150">HAVE A PROJECT FOR US?</a>
+          <Slider className="slider" />
+        </div>
+      </ProjectStyle>
+    </Layout>
+
   )
 }
 
@@ -31,8 +32,7 @@ const ProjectStyle = styled.div`
   margin: 0;
   padding-bottom: 3rem;
   width: 100%;
-  /* padding-left: 20px;
-  padding-bottom: 20px; */
+
   @media (min-width: 700px) {
 
     margin: 0 auto;
@@ -42,9 +42,10 @@ const ProjectStyle = styled.div`
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 20px 0;
+    margin: 0 2rem;
+    padding-bottom: 2rem;
     width: 100%;
+    
 
     h2 {
       
@@ -58,7 +59,7 @@ const ProjectStyle = styled.div`
 
     .row {
       display: flex;
-      flex-direction: column;
+      /* flex-direction: column; */
       justify-content: center;
       width: 95%;
       @media (min-width: 700px) {
@@ -78,7 +79,7 @@ const ProjectStyle = styled.div`
         padding-bottom: 20px;
         text-align: center;
         width: 100%;
-
+        
         img {
         border-radius: 15px 15px 0px 0px;
         object-fit: contain;
@@ -133,5 +134,5 @@ const ProjectStyle = styled.div`
   }
 `
 
- export default ProjectsPage
+export default ProjectsPage
 
