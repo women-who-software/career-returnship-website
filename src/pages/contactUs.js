@@ -49,6 +49,7 @@ const Contact = () => (
                         />
                     </label>
                 </p>
+                <p>God I hope this works</p>
                 <ReCAPTCHA sitekey="{process.env.GATSBY_RECAPTCHA_KEY}" />
                 <button className="submit" type="submit">Send Message</button>
             </form>
