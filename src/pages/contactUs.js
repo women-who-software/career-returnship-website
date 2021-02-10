@@ -1,4 +1,5 @@
 import React from "react"
+import ReCAPTCHA from "react-google-recaptcha"
 import { navigate } from "gatsby-link"
 import Styled from "styled-components"
 import Layout from "../components/layout"
@@ -89,8 +90,7 @@ export default function Contact() {
                             />
                         </label>
                     </p>
-                    <div data-netlify-recaptcha="true"></div>
-
+                    <ReCAPTCHA sitekey="{process.env.GATSBY_RECAPTCHA_KEY}" />
                     <button className="submit" type="submit">Send Message</button>
                 </form>
                 <div className="hidden">
