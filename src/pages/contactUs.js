@@ -30,7 +30,7 @@ const ContactFormPage = () => (
                   <textarea name="message" />
               </div>
               <br />
-              <ReCAPTCHA sitekey={process.env.GATSBY_RECAPTCHA_KEY} />
+              <ReCAPTCHA sitekey="6LcApVEaAAAAAK3zKHsFUEdfbusSF6yq1lvsbN1y" />
               <button type="submit">Send</button>
           </form>
         </div>
