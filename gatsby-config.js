@@ -1,3 +1,8 @@
+let env = process.env.NODE_ENV || 'development';
+
+// This adds dotenv (for storing environment variables) to gatsby
+require('dotenv').config({ path: `./.env.${env}` });
+
 module.exports = {
   siteMetadata: {
     title: `Career Returnship`,

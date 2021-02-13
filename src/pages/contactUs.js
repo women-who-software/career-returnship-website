@@ -1,118 +1,51 @@
 import React from "react"
-import { navigate } from "gatsby-link"
+import ReCAPTCHA from "react-google-recaptcha"
 import Styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+const ContactFormPage = () => (
+  <Layout>
+    <SEO title="Contact Us" />
+    <Wrapper>
 
-function encode(data) {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&")
-}
+      <h1>Contact US</h1>
 
-export default function Contact() {
-    const [state, setState] = React.useState({})
+      <form
+        name="Contact Form"
+        method="POST"
+        data-netlify="true"
+        action="/thank-you"
+        data-netlify-recaptcha="true"
+      >
+        <input type="hidden" name="form-name" value="Contact Form" />
+        <div className="info">
+          <label>
+            <input type="text" name="name" placeholder="Your name" />
+          </label>
 
-    const handleChange = e => {
-        setState({ ...state, [e.target.name]: e.target.value })
-    }
+          <label>
+            <input type="email" name="email" placeholder="Your email" />
+          </label>
+        </div>
+        <label>
+          <textarea name="message" placeholder="Write your message" />
+        </label>
+        <br />
+        <ReCAPTCHA className="ReCAPTCHA" sitekey="{process.env.GATSBY_RECAPTCHA_KEY}" />
+        <button className="submit" type="submit">Send</button>
+      </form>
 
-    const handleSubmit = e => {
-        e.preventDefault()
-        const form = e.target
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({
-                "form-name": form.getAttribute("name"),
-                ...state,
-            }),
-        })
-            .then(() => navigate(form.getAttribute("action")))
-            .catch(error => alert(error))
-    }
+    </Wrapper>
+  </Layout>
+)
 
-    return (
-        <Layout>
-            <SEO title="Contact Us" />
-            <Wrapper>
-                <h1>Contact Us</h1>
-                <form
-                    name="contact"
-                    method="POST"
-                    data-netlify-recaptcha="true"
-                    data-netlify="true"
-                    data-netlify-honeypot="bot-field"
-                    onSubmit={handleSubmit}
-                    action="/success"
-                >
-                    {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                    <input type="hidden" name="form-name" value="contact" />
-                    <p hidden>
-                        <label>
-                            Don’t fill this out:{" "}
-                            <input name="bot-field" onChange={handleChange} />
-                        </label>
-                    </p>
-                    <div className="info">
-                        <p>
-                            <label>
-                                <br />
-                                <input
-                                    type="text"
-                                    name="name"
-                                    onChange={handleChange}
-                                    placeholder="Your name"
-                                />
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <br />
-                                <input
-                                    type="email"
-                                    name="email"
-                                    onChange={handleChange}
-                                    placeholder="Your email"
-                                />
-                            </label>
-                        </p>
-                    </div>
-                    <p>
-                        <label>
-                            <br />
-                            <textarea
-                                name="message"
-                                onChange={handleChange}
-                                placeholder="Write your message"
-                            />
-                        </label>
-                    </p>
-                    <div data-netlify-recaptcha="true"></div>
-
-                    <button className="submit" type="submit">Send Message</button>
-                </form>
-                <div className="hidden">
-                    <p>
-                        {" "}
-            Lorem ipsum dolor sit amet, consectetur ipiscing elit, sed do
-            eiusmod tempor incididunut labore et dolore magna aliqua. Imperdiet
-            sed euismod nisi porta lorem. Sem fringilla ut morbi tincidunt
-            augue.
-          </p>
-                    <button className="email-btn">Email Us</button>
-                </div>
-            </Wrapper>
-        </Layout>
-    )
-}
 
 const Wrapper = Styled.div`
 margin: 0 auto;
 height: 65vh;
 padding-top: 50px;
-width: 100%;
+width: 80%;
     h1 {
       text-align: center;
       text-transform: uppercase;
@@ -126,26 +59,30 @@ width: 100%;
           width: 60%;
         }
 
-        input, textarea {
+        input{
           background: #E5E5E5;
           border: 1px solid #F4F4ED;
           box-sizing: border-box;
           color: #4C4C4C;
           font-size: 18px;
-          margin: 0 20px;
+          margin: 5px 20px;
           height: 5vh;
+        }
+        textarea {
+          background: #E5E5E5;
+          border: 1px solid #F4F4ED;
+          box-sizing: border-box;
+          color: #4C4C4C;
+          height: 20vh;
+          padding: 10px;
+          width: 20vw;
         }
         .info {
           width: 350px;
           margin: 0;
 
-}
-
-        textarea {
-          height: 100%;
-          padding: 10px;
-          width: 400px;
         }
+
         .submit {
           background: linear-gradient(180deg, #DA0D46 0%, #570018 100%), #DA0D46;
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -153,11 +90,14 @@ width: 100%;
           border: none;
           color: white;
           letter-spacing: 0.02em;
-          padding: 10px;
-          margin: 20px 0 0 180px;
+          padding: 10px 20px;
+          margin: 20px 0 0 40px;
           text-align: center;
           text-transform: uppercase;
-          width: 220px;
+          /* width: 220px; */
+        }
+        .ReCAPTCHA {
+          margin-right: 12rem;
         }
         .hidden {
           display: none;
@@ -166,13 +106,6 @@ width: 100%;
 
       @media (max-width: 400px) {
 
-          .hidden {
-            display: flex;
-            flex-direction: column;
-            margin: 20px;
-
-            width: 90%;
-          }
           form {
             display: none;
           }
@@ -183,6 +116,9 @@ width: 100%;
           }
           p {
               font-size: 18px;
+          }
+          textarea {
+            width: 500px;
           }
           .email-btn {
             color: white;
@@ -199,3 +135,4 @@ width: 100%;
   }
 }
 `
+export default ContactFormPage;
