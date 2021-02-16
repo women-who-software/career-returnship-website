@@ -1,79 +1,20 @@
 import React from "react"
 import styled from "styled-components"
-import project1 from "../images/tempProjectImage1.png"
-import project2 from "../images/tempProjectImage2.png"
-import project3 from "../images/tempProjectImage3.png"
+
+import Project from "./Project"
 
 const Projects = () => (
   <ProjectsWrapper>
-    <div className="content">
-      <h2>PROJECTS</h2>
-      <div className="row">
-        <div className="column">
-          <img
-            className="project-image"
-            src={project1}
-            alt="Cover for Project"
-          />
-          <h3>CAREER RETURNSHIP WEBSITE</h3>
-          <p>
-            A very short description describing the project. Project purpose
-            statement or tag line.
-            <br />
-            <br />
-            Tools Used: Figma, Adobe Photoshop, Javascript, HTML, CSS, RESTful
-            APIs, React, Node.JS, MongoDB
-          </p>
-          <div className="toggle-buttons">
-            <button className="github-button">GITHUB</button>
-            <button className="prototype-button">PROTOTYPE</button>
-          </div>
-        </div>
 
-        <div className="column">
-          <img
-            className="project-image"
-            src={project2}
-            alt="Cover for Project"
-          />
-          <h3>CAREER RETURNSHIP WEBSITE</h3>
-          <p>
-            A very short description describing the project. Project purpose
-            statement or tag line.
-            <br />
-            <br />
-            Tools Used: Figma, Adobe Photoshop, Javascript, HTML, CSS, RESTful
-            APIs, React, Node.JS, MongoDB
-          </p>
-          <div className="toggle-buttons">
-            <button className="github-button">GITHUB</button>
-            <button className="prototype-button">PROTOTYPE</button>
-          </div>
-        </div>
+    <h2>PROJECTS</h2>
+    <div className="row">
+      <div className="column">
+        <Project />
 
-        <div className="column">
-          <img
-            className="project-image"
-            src={project3}
-            alt="Cover for Project"
-          />
-          <h3>CAREER RETURNSHIP WEBSITE</h3>
-          <p>
-            A very short description describing the project. Project purpose
-            statement or tag line.
-            <br />
-            <br />
-            Tools Used: Figma, Adobe Photoshop, Javascript, HTML, CSS, RESTful
-            APIs, React, Node.JS, MongoDB
-          </p>
-          <div className="toggle-buttons">
-            <button className="github-button">GITHUB</button>
-            <button className="prototype-button">PROTOTYPE</button>
-          </div>
-        </div>
       </div>
-      <button className="project-button">HAVE A PROJECT FOR US?</button>
     </div>
+    <button className="project-button">HAVE A PROJECT FOR US?</button>
+
   </ProjectsWrapper>
 )
 
@@ -86,8 +27,7 @@ const ProjectsWrapper = styled.div`
   margin: 0;
   padding-bottom: 3rem;
   width: 100%;
-  /* padding-left: 20px;
-  padding-bottom: 20px; */
+ 
   @media (min-width: 700px) {
 
     margin: 0 auto;
@@ -97,9 +37,10 @@ const ProjectsWrapper = styled.div`
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 20px 0;
+    margin: 0 2rem;
+    padding-bottom: 2rem;
     width: 100%;
+    max-height: 60rem;
 
     h2 {
       
@@ -115,10 +56,10 @@ const ProjectsWrapper = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 95%;
-      @media (min-width: 700px) {
+      width: 100%;
+      @media (min-width: 900px) {
       margin-left: 3rem;
-      width: 78%;
+      
       }
       
 
@@ -139,18 +80,14 @@ const ProjectsWrapper = styled.div`
         object-fit: contain;
         width: 100%;
         }
-        p, h3 {
-         color: #000000;
-         padding: 20px;
-        }
-        h3 {
-          font-size: 16px;
-          margin: 0;
-          padding: 0;
-        }
+        
+      }
+      a {
+        color: black;
+        text-decoration: none;
       }
 
-      @media  (min-width: 700px) {
+      @media  (min-width: 900px) {
         align-items: center;
         flex-direction: row;
         h2 {
@@ -160,6 +97,7 @@ const ProjectsWrapper = styled.div`
           margin: 0 10px;
           width: 70%;
         }
+       
       }
     }
   }

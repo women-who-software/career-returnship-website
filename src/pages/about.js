@@ -32,20 +32,20 @@ const AboutPage = () => (
             for you. If you are currently working, we would love your insights to
             help the community.
           </div>
-          <a className="join-us-button" href="https://form.jotform.com/203243227290043" target="_blank">
+          <a className="join-us-button" href="https://form.jotform.com/203243227290043" target="_blank" rel="noreferrer">
             JOIN US
           </a>
-          <a className="become-sponsor-button" href="https://form.jotform.com/203324916543150" target="_blank">
+          <a className="become-sponsor-button" href="https://form.jotform.com/203324916543150" target="_blank" rel="noreferrer">
             SPONSOR/PARTNER
           </a>
           <div className="column gray-section">
             <img className="about-image" src={about} alt="women smiling" />
-            <a className="link" href="https://www.womenwhocode.com/" target="_blank">WOMEN WHO CODE</a>
-            <a className="link" href="https://www.womenwhocode.com/boulder-denver" target="_blank">WWC - DENVER/BOULDER</a>
+            <a className="link" href="https://www.womenwhocode.com/" target="_blank" rel="noreferrer">WOMEN WHO CODE</a>
+            <a className="link" href="https://www.womenwhocode.com/boulder-denver" target="_blank" rel="noreferrer">WWC - DENVER/BOULDER</a>
             <Link className="link" to="/contactUs">CONTACT US</Link>
           </div>
         </div>
-        <a className="find-meeting-button" href="https://www.meetup.com/Women-Who-Code-Boulder-Denver/events/" target="_blank">
+        <a className="find-meeting-button" href="https://www.meetup.com/Women-Who-Code-Boulder-Denver/events/" target="_blank" rel="noreferrer">
           FIND OUR NEXT MEETING
         </a>
       </div>
