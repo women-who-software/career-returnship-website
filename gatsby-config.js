@@ -1,4 +1,7 @@
-require('dotenv').config();
+let env = process.env.NODE_ENV || 'development';
+
+// This adds dotenv (for storing environment variables) to gatsby
+require('dotenv').config({ path: `./.env.${env}` });
 
 module.exports = {
   siteMetadata: {
@@ -7,6 +10,7 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
@@ -16,6 +20,21 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `events`,
+        path: `${__dirname}/src/content/events`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projects`,
+        path: `${__dirname}/src/content/projects`,
+      },
+    },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -31,13 +50,36 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        "excerpt_separator": `<!-- endexcerpt -->`,
+        plugins: [
+          `gatsby-remark-relative-images-v2`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 750,
+              linkImagesToOriginal: false
+            },
+          },
+        ],
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-            'Montserrat\:400,700,900',
-            'Myriad Pro\:400,700,900'
+          'Montserrat\:400,700,900',
+          'Myriad Pro\:400,700,900'
         ],
         display: 'swap'
+      }
+    },
+    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: "gatsby-plugin-netlify-cache",
+      options: {
+        cachePublic: true
       }
     },
   ],
