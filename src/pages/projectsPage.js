@@ -64,7 +64,7 @@ const ProjectStyle = styled.div`
       width: 95%;
       @media (min-width: 700px) {
       margin-left: 3rem;
-      width: 78%;
+      width: 88%;
       }
       
 

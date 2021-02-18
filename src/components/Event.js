@@ -18,7 +18,7 @@ const Event = () => {
                     slug
                     title
                     url
-                    date(formatString: "MMMM DD, YYYY")
+                    date(formatString: "MM DD, YYYY")
         }
       }
     }
@@ -32,7 +32,7 @@ const Event = () => {
         return (
           <EventStyle>
 
-            <h4>{edge.node.frontmatter.date} 6pm </h4>
+            <h4>{edge.node.frontmatter.date}</h4>
             <h4>{edge.node.frontmatter.title}</h4>
             <div dangerouslySetInnerHTML={{ __html: edge.node.html }}></div>
             <a href={edge.node.frontmatter.url}>More Info</a>

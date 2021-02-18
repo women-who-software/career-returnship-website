@@ -56,6 +56,7 @@ const ProjectsWrapper = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: center;
+      margin-left: 5rem;
       width: 100%;
       @media (min-width: 900px) {
       margin-left: 3rem;
@@ -70,7 +71,7 @@ const ProjectsWrapper = styled.div`
         background: #FFFFFF;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.5);
         border-radius: 15px;
-        margin: 20px auto;
+        margin: 20px 0;
         padding-bottom: 20px;
         text-align: center;
         width: 100%;
@@ -90,6 +91,7 @@ const ProjectsWrapper = styled.div`
       @media  (min-width: 900px) {
         align-items: center;
         flex-direction: row;
+        
         h2 {
           margin-left: 20rem; 
         }
