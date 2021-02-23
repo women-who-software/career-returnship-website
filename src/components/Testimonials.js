@@ -12,9 +12,9 @@ export default function Slider() {
       <Image src={bed} className="sliderimg" />
       <Text>
         <p className="quote">“Rafna put together and led an amazing team of people from Women Who Code to work on our website. We could not be more pleased with the result. It was a joy to work with Rafna and each of the team members throughout the process. They asked great questions to get clarity on the requirements, they had many useful suggestions, they came up with an impressive visual design, they kept us informed of their progress, and they created a website that surpassed my expectations, https://www.cv19everydayheroes.com/. I look forward to working with these detail-oriented, professional, and talented web developers again!
-        -- Michael T. Starks, Producer, Everyday Heroes: A COVID19 Podcast”</p>
+       </p>
         <br />
-        <p className="source">~Count Dracula</p>
+        <p className="source"> -- Michael T. Starks, Producer, Everyday Heroes: A COVID19 Podcast”</p>
       </Text>
       <Image src={happy} className="sliderimg" />
       <Text>
@@ -39,7 +39,7 @@ const Text = Styled.div`
   background: white;
   margin: 1em 0 0 14%;
   text-align: center;
-  font-size: 3em;
+  font-size: 1.5em;
   font-family: Myriad Pro;
   border: 5px solid #DA0D46;
   padding: 1em;
