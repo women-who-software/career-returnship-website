@@ -76,10 +76,10 @@ const ProjectStyle = styled.div`
   color: #DA0D46;
   display: flex;
   flex-direction: column;
-  margin: 0 ;
+  margin: 0;
   padding: 1.5rem;
   text-decoration: none;
-  width: 60%;
+  width: 65%;
 
   @media (min-width: 900px) {
     flex-direction: row;
@@ -87,7 +87,8 @@ const ProjectStyle = styled.div`
   }
 .imgBox {
   margin: 0;
-  width: 100%;
+  width: 450px;
+  
 }
       .content {
         align-items: center;
@@ -105,12 +106,12 @@ const ProjectStyle = styled.div`
         
         p, h3 {
          color: #000000;
-         padding: 20px;
+         padding: 5px;
          margin: 0;
         }
         h3 {
           font-size: 1rem;
-          margin: 1rem 0;
+          margin: .5rem 0;
           padding: 0;
         }
         

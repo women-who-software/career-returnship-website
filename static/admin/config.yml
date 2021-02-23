@@ -71,6 +71,7 @@ collections:
         name: "title"
         widget: "string"
       - {label: "Event Date", name: "date", widget: "datetime"}
+      - label: "Event Time", name: "time", widget: "string"
       - label: "Body"
         name: "body"
         widget: "markdown"

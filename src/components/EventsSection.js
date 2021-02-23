@@ -76,7 +76,7 @@ const EventsWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    margin-left: 5rem;
     width: 100%;
   }
   .column {
