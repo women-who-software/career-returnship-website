@@ -1,71 +1,94 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Styled from 'styled-components'
-import ReCAPTCHA from "react-google-recaptcha"
+import NetlifyForm from 'react-ssg-netlify-forms'
+import { navigate } from 'gatsby'
 
+const ContactForm = () => {
 
+  // Pre-Submit for validations and disabling button
+  const [processing, setProcessing] = useState(false)
+  const preSubmit = async () => {
+    if (formValues.name.length > 0 && formValues.email.length > 0) {
+      setProcessing(true)
+      // Wait 2 seconds to simulate async delay (maybe user confirmation? or 
+      // external checks?)
+      await (new Promise(resolve => setTimeout(resolve, 2000)))
+      return true
+    }
+    else {
+      return false
+    }
+  }
 
+  // Post-Submit for navigating to 'Thank You' page .. or maybe displaying 'sent!'
+  // text; totally up to you!
+  const postSubmit = () => {
+    console.log('Sent!')
+    setProcessing(false)
+    navigate('/success')
+  }
 
-const ContactFormPage = () => (
-   
-            <Wrapper>
-       
-        <div>
-          <h1>Contact</h1>
-  
-          <form 
-              name="Contact Form" 
-              method="POST" 
-              data-netlify="true"
-              action="/success"
-              data-netlify-recaptcha="true"
-          >
-              <input type="hidden" name="form-name" value="Contact Form" />
-              <div className="input_fields">
-                  <label>Your Name:</label>
-                  <input type="text" name="name" placeholder="Your Name"/>
-             
-                  <label>Your Email:</label>
-                  <input type="email" name="email" placeholder="Your Email"/>
-              </div>
-              <div>
-                  <label>Message:</label>
-                  <textarea name="message" placeholder="Your Message"/>
-              </div>
-            
-              <ReCAPTCHA className="ReCAPTCHA" sitekey="{process.env.GATSBY_RECAPTCHA_KEY}" />
-              <button className="submit" type="submit">Send</button>
-          </form>
+  // Simple controlled form setup
+  const handleChange = e => setFormValues({ ...formValues, [e.target.name]: e.target.value })
+  const [formValues, setFormValues] = useState({
+    name: '',
+    email: '',
+    message: ''
+  })
+
+  return (
+    <Wrapper>
+      <h1>Contact Us</h1>
+      <NetlifyForm
+        formName="Contact Form"
+        formValues={formValues}
+        preSubmit={preSubmit}
+        postSubmit={postSubmit}
+        automaticHoneypot={true}
+      >
+        <div class="info_fields">
+          <div style={{ padding: '10px' }}>
+            <input type="text" name="name" value={formValues.name} onChange={handleChange} placeholder="Your Name" />
+          </div>
+          <div style={{ padding: '10px' }}>
+            <input type="email" name="email" value={formValues.email} onChange={handleChange} placeholder="Your Email" />
+          </div>
         </div>
-        </Wrapper>
-       
+        <div style={{ padding: '10px' }}>
+          <textarea name="message" value={formValues.message} onChange={handleChange} placeholder="Your Message" />
+        </div>
+        <div style={{ padding: '10px' }}>
+          <button disabled={processing} type="submit" className="submit">Send</button>
+        </div>
+      </NetlifyForm>
+
+    </Wrapper>
   )
-  
-export default ContactFormPage
+}
+
+
+export default ContactForm
+
 
 const Wrapper = Styled.div`
     margin: 0 auto;
-    height: 65vh;
-    padding-top: 50px;
-    width: 80%;
+    height: 75vh;
+    padding: 50px 0;
+    text-align: center;
+    width: 100%;
     h1 {
+      font-size: 2rem;
       text-align: center;
       text-transform: uppercase;
     }
         form {
           margin: 0 auto;
-          display: flex;
-          flex-wrap: wrap; 
-          justify-content: center;
-          /* max-width: 1100px; */
-          width: 80%;
+          width: 100%;
         }
-        label{
-            display: none;
-        }
-        .input_fields {
-            width: 60%;
-        }
+       
+        
         input{
+          
           background: #E5E5E5;
           border: 1px solid #F4F4ED;
           box-sizing: border-box;
@@ -73,6 +96,7 @@ const Wrapper = Styled.div`
           font-size: 18px;
           margin: 5px 20px;
           height: 5vh;
+          
         }
         textarea {
           background: #E5E5E5;
@@ -80,8 +104,8 @@ const Wrapper = Styled.div`
           box-sizing: border-box;
           color: #4C4C4C;
           height: 20vh;
+          width: 20rem;
           padding: 10px;
-          width: 25vw;
         }
         .info {
           width: 350px;
@@ -94,11 +118,11 @@ const Wrapper = Styled.div`
           border: none;
           color: white;
           letter-spacing: 0.02em;
-          padding: 10px 20px;
-          margin: 20px 0 0 80px;
+          padding: 10px 0;
+          
           text-align: center;
           text-transform: uppercase;
-          width: 220px;
+          width: 8rem;
         }
         .ReCAPTCHA {
           margin:0;
@@ -106,37 +130,28 @@ const Wrapper = Styled.div`
         .hidden {
           display: none;
         }
-      @media (max-width: 700px) {
+      @media (min-width: 700px) {
          form{
-             flex-direction: column;
-             align-items: flex-start;
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: center;
+             max-width: 40rem;
          }
-          h1 {
-            margin: 0;
-            text-align: center;
-            font-size: 24px;
-          }
-          p {
-              font-size: 18px;
-          }
-          input {
-              margin: 0;
-          }
-          textarea {
-            width: 30vw;
-          }
+         .info_fields {
+           display: flex;
+           flex-direction: column;
+         }
+         input{
+           margin: 0;
+           padding: 0 1rem;
+           width: 15rem;
+         }
+         
           .submit {
-            color: white;
-            background: linear-gradient(180deg, #4C4C4C 0%, #000000 100%), #4C4C4C;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 15px;
-            margin: 0;
-            width: 40%;
-        }
+            
+            margin-left: 5rem;
+          }
       }
-    @media ( min-width: 700px){
-    input{
-        width: 300px;
-    }
+    
 }
 `

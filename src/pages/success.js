@@ -25,12 +25,12 @@ const Success = () => {
 
 
 const SuccessWrapper = styled.div`
-align-items: center;
+
 
   color: black;
   margin: 50px auto;
   text-align: center;
-  width: 70%;
+  width: 50%;
 
   .logo:hover {
     width: 80px;
