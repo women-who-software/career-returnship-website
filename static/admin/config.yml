@@ -1,0 +1,80 @@
+backend:
+  name: git-gateway
+  branch: master
+  commit_messages:
+    create: 'Create {{collection}} “{{slug}}”'
+    update: 'Update {{collection}} “{{slug}}”'
+    delete: 'Delete {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] Upload “{{path}}”'
+    deleteMedia: '[skip ci] Delete “{{path}}”'
+
+publish_mode: editorial_workflow
+
+# when using the local proxy server port (for debugging on local build set to 'true')
+# open another Terminal instance and excute this command to get it running:
+# npx netlify-cms-proxy-server
+local_backend: false
+
+media_folder: static/img
+public_folder: ''
+media_folder_relative: true
+
+
+collections:
+  - name: "project" # Used in routes, e.g., /admin/collections/blog
+    label: "Project" # Used in the UI
+    folder: "src/content/projects" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}"
+    path: "{{slug}}/{{slug}}"
+    preview_path: "projects/{{slug}}"
+    editor:
+      preview: true # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "project"}
+      # - {label: "Title", name: "title", widget: "string"}
+      - label: "Title of the project ex: 'Project 1'"
+        name: "title" 
+        widget: "string" 
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Project Image", name: "projectImage", widget: "image"}
+      - label: "Slug (please follow format of project and project number ex: 'project1'"
+        name: "slug"
+        widget: "string"
+        pattern: ['project\d{1,}', "Must be lowercase ep followed by a number"]
+      - label: "Tools Used:"
+        name: "tools"
+        widget: "text"
+      - label: "Project URL"
+        name: "projectURL"
+        widget: "string"
+      - label: "GitHub URL"
+        name: "githubURL"
+        widget: "string"
+      - label: "Description of project."
+        name: "body"
+        widget: "markdown"
+      
+  #Events
+  - name: "event" # Used in routes, e.g., /admin/collections/blog
+    label: "Event" # Used in the UI
+    folder: "src/content/events" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}"
+    path: "{{slug}}/{{slug}}"
+    preview_path: "events/{{slug}}"
+    editor:
+      preview: true  # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "event"}
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - {label: "Event Date", name: "date", widget: "datetime"}
+      - label: "Event Time"
+        name: "time" 
+        widget: "string"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+      - {label: "URL", name: "url", widget: "string"}
