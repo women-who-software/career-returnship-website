@@ -96,7 +96,7 @@ const Wrapper = Styled.div`
           font-size: 18px;
           margin: 5px 20px;
           height: 5vh;
-          
+           
         }
         textarea {
           background: #E5E5E5;
