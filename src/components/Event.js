@@ -17,7 +17,6 @@ const Event = () => {
                 frontmatter {
                     slug
                     title
-                   
                     url
                     date(formatString: "MM DD, YYYY")
         }

@@ -46,20 +46,10 @@ const EventsWrapper = styled.div`
   background: #fff;
   border-radius: 10px;
   margin-top: 1rem;
-  padding: 2rem;
+  padding: .5rem; 
   width: 100%;
 }
-.join-button{
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size:.8rem;
-    text-decoration: none;
-    background: linear-gradient(180deg, #4C4C4C 0%, #000000 100%), #4C4C4C;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-    color: #fff;
-    padding: .5rem;
-  }
+
   a {
     color: white;
   }
@@ -71,12 +61,12 @@ const EventsWrapper = styled.div`
    eventItem{
      display: flex;
      flex-wrap: wrap;
+     margin-left: 2rem;
    }
   .row {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-left: 5rem;
+    margin-left: 2rem;
     width: 100%;
   }
   .column {
@@ -84,14 +74,12 @@ const EventsWrapper = styled.div`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-left: 6rem;
-    width: 30%;
+    margin-left: 1rem;
+    width: 50%;
     padding: 2rem;
   }
   
-.join-button{
-padding: 1rem;
-}
+
   }
 `
 
