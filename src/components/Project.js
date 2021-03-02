@@ -87,7 +87,7 @@ const ProjectStyle = styled.div`
   }
 .imgBox {
   margin: 0;
-  width: 450px;
+  width: 400px;
   
 }
       .content {
