@@ -70,10 +70,7 @@ collections:
       - label: "Title"
         name: "title"
         widget: "string"
-      - {label: "Event Date", name: "date", widget: "datetime"}
-      - label: "Event Time"
-        name: "time" 
-        widget: "string"
+      - {label: "Event Date", name: "date", widget: "datetime", date_format: "MM-DD-YY", time_format: "HH:mm" format: "LLL"}
       - label: "Body"
         name: "body"
         widget: "markdown"
