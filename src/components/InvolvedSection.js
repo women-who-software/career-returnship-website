@@ -149,13 +149,20 @@ const InvolvedWrapper = styled.div`
         width: 80%;
 
       @media ( min-width: 700px) {
+        display: flex;
         padding: .5rem 1.2rem;
-        color: white;
+        font-weight: 700;
+        font-size: 16px;
+        font-family: Myriad Pro, sans-serif;
+        color: #4C4C4C;
         margin: 0;
         text-align: center;
-        width: 70%;
-        background: none;
-        border: 1px solid #FFFFFF;
+        align-items: center;
+        width: 75%;
+        height: 52px;
+        background: linear-gradient(180deg, #FFFFFF 0%, #E9CFD6 100%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
       }
     }
 
