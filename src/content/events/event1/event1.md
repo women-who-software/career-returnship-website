@@ -1,7 +1,7 @@
 ---
 slug: event01
 title: My first event
-date: 2021-05-05T00:00:00.000Z
+date: 05-05-2021 6:00pm
 time: 6pm
 url: https://www.meetup.com/Women-Who-Code-Boulder-Denver/events/lfwzcsyccdbvb/
 ---

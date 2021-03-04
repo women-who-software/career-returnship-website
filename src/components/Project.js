@@ -16,7 +16,6 @@ const Project = () => {
                     id
                     frontmatter {
                         title
-                        date(formatString: "MMMM DD, YYYY")
                         slug
                         tools
                         projectURL 
