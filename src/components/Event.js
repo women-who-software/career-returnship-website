@@ -18,7 +18,7 @@ const Event = () => {
                     slug
                     title
                     url
-                    date(formatString: "MM DD, YYYY")
+                    date
         }
       }
     }

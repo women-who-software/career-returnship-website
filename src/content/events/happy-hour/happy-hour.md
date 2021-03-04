@@ -1,7 +1,7 @@
 ---
 layout: event
 title: Happy Hour
-date: 2021-03-12T01:00:00.000Z
+date: 03-12-2021 6:00pm
 time: 6:00pm
 url: https://www.meetup.com/Women-Who-Code-Boulder-Denver/events/276544582/
 ---
