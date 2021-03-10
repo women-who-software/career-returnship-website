@@ -16,7 +16,7 @@ const EventsPage = () => {
         <div className="row">
           <div className="column" >
             < img className="meetup-info" src={meetupInfo} alt="Meetup logo with event information" />
-            <a className="join-button" href="https://www.meetup.com/Women-Who-Code-Boulder-Denver">RSVP to the Next Event</a>
+            <a className="join-button" href="https://www.meetup.com/Women-Who-Code-Boulder-Denver" target="_blank" rel="noreferrer">RSVP to the Next Event</a>
           </div >
 
 
@@ -44,28 +44,34 @@ const EventStyles = styled.div`
     padding: 2rem 0;
   
   .column {
-    margin-left: 0;
+    margin-left: 1rem;
     padding-bottom: 1rem;
   }
 .meetup-info {
-  padding-top: 2rem;
-    width: 70%;
+  background: white;
+  border-radius: 10px;
+  margin: 2rem 1rem 0 ;
+  padding: 2rem;
+  width: 90%;
 }
 .join-button{
     text-transform: uppercase;
     font-weight: 700;
-    font-size:.8rem;
+    font-size:.5rem;
     text-decoration: none;
     background: linear-gradient(180deg, #4C4C4C 0%, #000000 100%), #4C4C4C;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
     color: #fff;
     padding: .5rem;
+    margin-top: .5rem;
   }
   @media (min-width: 700px) {
    eventItem{
      display: flex;
      flex-wrap: wrap;
+     justify-content: center;
+     
    }
   .row {
     display: flex;
