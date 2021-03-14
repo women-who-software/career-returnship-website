@@ -30,10 +30,10 @@ const Event = () => {
     <>
       {data.allMarkdownRemark.edges.map((edge) => {
         return (
-          <EventStyle>
+          <EventStyle key={edge.node.id}>
 
             <h4>{edge.node.frontmatter.date} {edge.node.frontmatter.time}</h4>
-            <h4>{edge.node.frontmatter.title}</h4>
+            <h3>{edge.node.frontmatter.title}</h3>
             <div dangerouslySetInnerHTML={{ __html: edge.node.html }}></div>
             <a href={edge.node.frontmatter.url} target="_blank" rel="noreferrer">More Info</a>
 
@@ -52,12 +52,14 @@ const EventStyle = Styled.div`
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
-  width: 318px;
-  height: 152px; 
-  h2{
-  font-size: 14px;
-  font-weight: 700;
-  color: #017A8E;
+  width: 19rem;
+  height: 9.5rem; 
+  
+  h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #017A8E;
+    text-align: center;
   }
   h4{
     color: #017A8E;

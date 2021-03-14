@@ -51,7 +51,7 @@ collections:
       - label: "GitHub URL"
         name: "githubURL"
         widget: "string"
-      - label: "Description of project."
+      - label: "Description of project"
         name: "body"
         widget: "markdown"
       
@@ -70,7 +70,7 @@ collections:
       - label: "Title"
         name: "title"
         widget: "string"
-      - {label: "Event Date", name: "date", widget: "datetime", date_format: "MM-DD-YY", time_format: "HH:mm", format: "LLL"}
+      - {label: "Event Date", name: "date", widget: "datetime", date_format: "MM-DD-YY", time_format: "hh:mm", format: "LLL"}
      
       - label: "Body"
         name: "body"

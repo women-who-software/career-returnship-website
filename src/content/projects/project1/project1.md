@@ -8,7 +8,5 @@ tools: HTML, CSS, React
 projectURL: https://career-returnship.netlify.app/
 githubURL: https://github.com/wwcodecolorado/career-returnship-website/tree/master/src/components
 ---
+A very short description describing the project. Project purpose statement or tag line.
 
-
-this is the first project the group has done.
-#turned out great!

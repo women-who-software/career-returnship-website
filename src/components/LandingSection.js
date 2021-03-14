@@ -134,13 +134,24 @@ const LandingWrapper = styled.div`
             box-sizing: border-box;
             color: #da0d46;
             display: flex;
+            align-items: center;
+            justify-content: center;
             font-size: 1.05rem;
             font-weight: bold;
             margin-top: 20px;
             padding: 10px  25px;
             text-align: center;
             text-decoration: none;
-            width: 25%;
+            width: 55%;
+          :hover {
+            background: #da0d46;
+            color: white;
+          }
+            @media (min-width: 900px) {
+              width: 30%;
+              margin-left: 15rem;
+              
+            }
           }
         }
 
