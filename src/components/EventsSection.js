@@ -52,9 +52,9 @@ const EventsWrapper = styled.div`
   width: 50%;
 }
 @media (min-width: 900px){
-  width: 10rem;
+  width: 12rem;
   position: absolute;
-  margin: 0 2rem;
+  margin: 0 6rem;
   left: 0;
   top: 28%;
   
@@ -74,10 +74,12 @@ const EventsWrapper = styled.div`
       justify-content: center;
       align-items: center;
       margin: 0 auto;
+      
     }
     @media (min-width: 900px) {
       left: 10%;
       position: relative;
+      width: 80%;
       max-width: 1100px;
       
     }
