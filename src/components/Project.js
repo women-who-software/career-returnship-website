@@ -53,7 +53,7 @@ const Project = () => {
 
 
             <div dangerouslySetInnerHTML={{ __html: edge.node.html }}></div>
-            <p className="tools">Tools Used: {edge.node.frontmatter.tools}</p>
+            <h5 className="tools">Tools Used: {edge.node.frontmatter.tools}</h5>
             <div className="toggle-buttons">
               <a as="a" className="github-button" href={edge.node.frontmatter.githubURL} key={edge.node.frontmatter.id} target="_blank" rel="noreferrer" >GITHUB</a>
               <a className="prototype-button" href={edge.node.frontmatter.projectURL} key={edge.node.frontmatter.id} target="_blank" rel="noreferrer" >Prototype</a>
@@ -71,7 +71,17 @@ const Project = () => {
 export default Project
 
 const ProjectStyle = styled.div`
- 
+h3 {
+  margin-bottom: .2rem;
+}
+h5 {
+  margin: 0;
+}
+ P {
+   font-size: .85rem;
+   line-height: 1;
+   padding: .4rem;
+ }
   @media (min-width:700px) {
     display: flex;
     justify-content: center;
@@ -89,7 +99,7 @@ const ProjectStyle = styled.div`
   margin-bottom: 2rem;
   @media (min-width:700px) {
     flex: 1;
-    margin: 2rem 5rem;
+    margin: 2rem 3rem;
     max-width: 25rem;
     
   }
@@ -132,7 +142,7 @@ const ProjectStyle = styled.div`
 .prototype-button {
   border: 2px solid #C4C4C4;
   box-sizing: border-box;
-  padding: .5rem .2rem;
+  padding: .4rem .2rem;
 }
   @media (min-width: 700px) {
    

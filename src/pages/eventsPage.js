@@ -81,7 +81,7 @@ const EventStyles = styled.div`
     position: relative;
     top: 2%;
     left: 1%;
-    margin:0 1rem;
+    margin:0;
     @media (min-width: 700px) {
       display: flex;
       flex-wrap: wrap;

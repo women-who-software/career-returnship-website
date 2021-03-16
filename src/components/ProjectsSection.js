@@ -26,7 +26,7 @@ const ProjectsWrapper = styled.div`
   width: 80%;
   position: relative;
 @media (min-width: 700px){
-  width: 90%;
+  width: 100%;
   height: 42rem;
 }
 @media (min-width: 900px){

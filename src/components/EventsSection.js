@@ -52,9 +52,9 @@ const EventsWrapper = styled.div`
   width: 50%;
 }
 @media (min-width: 900px){
-  width: 12rem;
+  width: 10rem;
   position: absolute;
-  margin: 0 12rem;
+  margin: 0 2rem;
   left: 0;
   top: 28%;
   
@@ -67,7 +67,7 @@ const EventsWrapper = styled.div`
     text-decoration: none;
   }
   .content {
-    margin: 0 1rem;
+    margin: 0 .5rem;
     @media (min-width: 700px) {
       display: flex;
       flex-wrap: wrap;
