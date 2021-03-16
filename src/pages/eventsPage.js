@@ -11,89 +11,118 @@ const EventsPage = () => {
   return (
     <Layout>
       <SEO title="Events" />
-      < EventStyles >
-        <h1 >Networking/Events</h1>
-        <div className="row">
-          <div className="column" >
-            < img className="meetup-info" src={meetupInfo} alt="Meetup logo with event information" />
-            <a className="join-button" href="https://www.meetup.com/Women-Who-Code-Boulder-Denver" target="_blank" rel="noreferrer">RSVP to the Next Event</a>
-          </div >
+      <EventStyles>
+        <h2 >Networking/Events</h2>
 
-
-          <eventItem>
-            <Event />
-          </eventItem>
+        <div className="column">
+          < img className="meetup-info" src={meetupInfo} alt="Meetup logo with event information" />
+          <a className="join-button" href="https://www.meetup.com/Women-Who-Code-Boulder-Denver" target="_blank" rel="noreferrer">RSVP to the Next Event</a>
+        </div>
+        <div className="content">
+          <Event />
 
 
         </div>
+
       </ EventStyles>
 
     </Layout >
   )
 
 }
-
+export default EventsPage
 
 const EventStyles = styled.div`
-    margin: 0;
-    width: 100%;
-    color: #fff;
     background: #DA0D46;
-    height: 100%;
-    text-align: center;
     padding: 2rem 0;
-  
-  .column {
-    margin-left: 1rem;
-    padding-bottom: 1rem;
+    position: relative;
+    @media (min-width: 900px) {
+      height: 40rem;
+      width: 100%;
+    }
+  h2 {
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  .meetup-info{
+    background: white;
+    border-radius: 10px;
+    padding: .8rem;
+    
+    width: 90%;
+    @media (min-width: 700px) {
+      width: 50%;
+    }
+    @media (min-width: 900px){
+      width: 80%;
+      margin-top: 2rem;
+    }
   }
-.meetup-info {
-  background: white;
-  border-radius: 10px;
-  margin: 2rem 1rem 0 ;
-  padding: 2rem;
-  width: 90%;
+  .column {
+    margin: 2rem 0;
+    padding-left: 2rem;
+    
+    @media (min-width: 700px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 70%;
+      margin: 3rem auto;
+    }
+    @media (min-width: 900px){
+      width: 18rem;
+      padding-right: 1rem;
+      margin: 0 2rem;
+    }
+  }
+  .content {
+    position: relative;
+    top: 2%;
+    left: 1%;
+    margin:0;
+    @media (min-width: 700px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @media (min-width: 900px){    
+      margin-left: 24rem;
+      margin-top: -20rem;
+      width: 60%;
 }
-.join-button{
+    }
+    a {
+      margin: 0 0 0 2.5rem;
+      @media (min-width: 700px){
+        margin: 0;
+      }
+    }
+  .join-button{
+    text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    font-size:.5rem;
+    font-size:.8rem;
     text-decoration: none;
     background: linear-gradient(180deg, #4C4C4C 0%, #000000 100%), #4C4C4C;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
     color: #fff;
-    padding: .5rem;
-    margin-top: .5rem;
-  }
-  @media (min-width: 700px) {
-   eventItem{
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     
-   }
-  .row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    width: 100%;
-  }
-  .column {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-left: 2rem;
-    width: 30%
+    padding: 1rem .8rem;
+   @media (min-width: 700px){
+        width: 50%;
+      }
+      @media (min-width: 900px){
+        font-size: 0.6rem;
+        width: 80%;
+        
+      }
   }
   
-.join-button{
-padding: 1rem;
-}
-  }
+  
+  
 `
 
-export default EventsPage
+
 

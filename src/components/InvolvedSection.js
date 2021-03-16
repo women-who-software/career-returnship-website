@@ -14,19 +14,20 @@ const InvolvedSection = () => (
       <h2 className="page_title">WANT TO GET INVOLVED?</h2>
       <div className="row">
         <div className="column">
-          <a className="become-member-button" type="button"  rel="noreferrer" href="https://form.jotform.com/203243227290043" target="_blank">
+          <a className="become-member-button" type="button" rel="noreferrer" href="https://form.jotform.com/203243227290043" target="_blank">
             BECOME A MEMBER
+          </a><a className="become-member-button-mobile" type="button" rel="noreferrer" href="https://form.jotform.com/203243227290043" target="_blank">
+            Join Us
           </a>
           <p>
-            We meet every 2 weeks on Wednesday. <br />
-            <br /> 6:00-8:00pm
+            We meet every 2 weeks <br />6:00-8:00pm.
 
           </p>
         </div>
         <div className="column">
-         <a className="become-sponsor-button" type="button"  rel="noreferrer" href="https://form.jotform.com/203324916543150" target="_blank">BE A SPONSOR/VOLUNTEER</a>
-            
-      
+          <a className="become-sponsor-button" type="button" rel="noreferrer" href="https://form.jotform.com/203324916543150" target="_blank">BE A SPONSOR/VOLUNTEER</a>
+
+
           <p>Interested in partnering with us? A few options we are currently looking to fill. </p>
           <ul>
             <li>Weekly Food Sponsors</li>
@@ -64,17 +65,23 @@ const InvolvedWrapper = styled.div`
     flex-direction: column;
     padding-top: 2rem;
     width: 100%;  
-    @media (min-width: 700px) {
+    @media (min-width: 900px) {
       display: flex;
-      margin: 0;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
       width: 100%;
+      max-width: 1100px;
     }
   }
 .page_title {
- margin-left: 1rem;
+ margin-left: 2rem;
  font-size: 1.4rem;
   @media (min-width: 700px) {
-  margin-left: 20rem;
+  margin-left: 13rem;
+  }
+  @media (min-width: 900px) {
+    margin-left: 5rem;
   }
 }
   .row {
@@ -93,75 +100,94 @@ const InvolvedWrapper = styled.div`
       flex-direction: column;
       margin: 0;
       text-align: justify;
-      width: 80%;
+      width: 100%;
     }
-    @media(min-width: 700px) {
-        margin-left: 12rem;
+    @media(min-width: 900px) {
+        margin-left: 9rem;
         flex-direction: row;
         width: 70%;
       }
     p{
-      font-size: .8rem;
-     
-      
+      margin-top: 1rem;
+      font-size: 1rem;
       @media(min-width: 700px) {
-      text-align: justify;
-      padding-top: 2rem;
-      padding-left:2rem;
-      margin: 0 7rem;
-      width: 80%;
-     
+        text-align: justify;
+        padding-top: 1rem;
+        padding-left: 2rem;
+        margin: 0 7rem;
+        width: 80%; 
     }
     
     }
 
      .become-member-button {
-        
-        background: linear-gradient(180deg, #4C4C4C 0%, #000000 100%), #4C4C4C;
-        border-radius: 15px;
-        border: none;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        color: #FFFFFF;
-        padding: .2rem .5rem;
-        outline: none;
-        width: 70%;
-        text-decoration: none;
-        
-        
+        display: none;
         @media ( min-width: 700px) {
-          padding: .5rem .2rem;
-          margin: 0 ;
-          width: 65%;
+          display: block;
           text-align: center;
+          background: linear-gradient(180deg, #4C4C4C 0%, #000000 100%), #4C4C4C;
+          border-radius: 15px;
+          border: none;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          color: #FFFFFF;
+          padding: .5rem;
+          outline: none;
+          width: 70%;
+          text-decoration: none;
+           :hover {
+            background: none;
+            color: white;
+            border: 2px solid white;
+        }
       }
+      
+      }
+      .become-member-button-mobile {
+          display: block;
+          text-align: center;
+          text-transform: uppercase;
+          background: linear-gradient(180deg, #4C4C4C 0%, #000000 100%), #4C4C4C;
+          border-radius: 15px;
+          border: none;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          color: #FFFFFF;
+          padding: .5rem;
+          width: 85%;
+          text-decoration: none;
+         
+        @media (min-width: 700px){
+          display: none;
+        }
       }
       
       .become-sponsor-button {
+        color: black;
         font-size: 15px;  
-        border-radius: 15px;
-        border: none;
+        background: linear-gradient(180deg, #FFFFFF 0%, #E9CFD6 100%);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
         text-decoration: none;
-        line-height: 123.4%;
-        margin: 0 0 30px;
+        text-align: center;
         outline: none;
-        padding: .5rem 0;
-        width: 80%;
+        padding: .5rem .7rem;
+        width: 85%;
 
       @media ( min-width: 700px) {
-        padding: .5rem 1.2rem;
-        color: white;
+        padding: .5rem 1.2rem;     
         margin: 0;
         text-align: center;
         width: 70%;
-        background: none;
         border: 1px solid #FFFFFF;
+      }
+      :hover {
+        background: none;
+        color: white;
       }
     }
 
       .logos {
         display: flex;
-        flex-flow: row wrap;
+        flex-wrap: wrap;
         justify-content: center;
         margin: 0 0 30px 0;
         padding-top: 20px;
@@ -171,7 +197,6 @@ const InvolvedWrapper = styled.div`
           box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
           border-radius: 5px;
           height: 40px;
-          /* margin: 0 5px 5px; */
           overflow: hidden;
           width: 125px;
         }

@@ -19,7 +19,7 @@ const Navigation = Styled.nav`
   .project-image {
     margin: 10px 0;
   }
-  @media (max-width: 700px) {
+  @media (max-width: 900px) {
     position: sticky;
     height: 8vh;
     top: 0;
@@ -34,9 +34,11 @@ const Toggle = Styled.div`
   height: 100%;
   cursor: pointer;
   padding: 0 10vw;
+ 
 
-  @media (max-width: 700px) {
+  @media (max-width: 900px) {
     display: flex;
+     
   }
 `
 
@@ -46,16 +48,32 @@ const Navbox = Styled.div`
   justify-content: flex-end;
   align-items: center;
 
-  @media (max-width: 700px) {
+  @media (max-width: 900px) {
     flex-direction: column;
     position: fixed;
-    width: 100%;
+    width: 60%;
     justify-content: flex-start;
-    padding-top: 10vh;
-    background-color: #fff;
+    padding-top: 12vh;
+    background-color: #da0d46;
+    opacity: 0.9;
+    color: white;
     transition: all 0.3s ease-in;
     top: 8vh;
-    left: ${props => (props.open ? "-100%" : "0")};
+    left: ${props => (props.open ? "-100%" : "45%")};
+    a{
+      color: white;
+      font-size: 1.5rem;
+      margin: 0;
+      padding: 1.5rem 0;
+      text-transform: uppercase;
+      
+    }
+    
+    @media (max-width: 700px) {
+      left: ${props => (props.open ? "-100%" : "0")};
+      width: 80%;
+      
+    }
   }
 `
 
@@ -102,7 +120,7 @@ const Navbar = () => {
         className="project-image"
         src={Logo}
         alt="Cover for Project"
-        
+
       /></a>
       <Toggle
         navbarOpen={navbarOpen}
@@ -115,10 +133,10 @@ const Navbar = () => {
           <NavbarLinks />
         </Navbox>
       ) : (
-          <Navbox open>
-            <NavbarLinks />
-          </Navbox>
-        )}
+        <Navbox open>
+          <NavbarLinks />
+        </Navbox>
+      )}
     </Navigation>
   )
 }

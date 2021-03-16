@@ -3,5 +3,6 @@
         "activityBar.background": "#492411",
         "titleBar.activeBackground": "#663218",
         "titleBar.activeForeground": "#FEFBFA"
-    }
+    },
+    "cssrem.hover": "always"
 }
