@@ -1,12 +1,11 @@
 ---
 layout: project
-title: Project 2
-date: 2021-02-06T16:43:49.397Z
-projectImage: tempProjectImage2.png
+title: "Everyday Heroes: A Covid19 Podcast"
+date: 2021-03-22T13:27:56.936Z
+projectImage: screen-shot-2021-03-15-at-10.23.16-pm.png
 slug: project2
-tools: react, gatsby
-projectURL: https://olliesworld.rocks
-githubURL: https://github.com/olliesworld
-
+tools: Figma, Gatsby, Netlify, NetlifyCMS
+projectURL: " https://www.cv19everydayheroes.com/"
+githubURL: https://github.com/wwcodecolorado/returnship-everydayheroes
 ---
-This project included 3 teammembers. It had multiple sections and included CMS and multiple images that could have slowed down the site but we used Gatsby to speed things up.
+A main home for a local Denver based podcasting project celebrating everyday heroes during the COVID-19 pandemic. Designed in Figma, build in Gatsby (React, GraphQL, SCSS)  hosted on Netlify, with added NetlifyCMS functionality to add new podcast episodes.
