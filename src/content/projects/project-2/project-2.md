@@ -2,7 +2,7 @@
 layout: project
 title: "Everyday Heroes: A Covid19 Podcast"
 date: 2021-03-22T13:27:56.936Z
-projectImage: screen-shot-2021-03-15-at-10.23.16-pm.png
+projectImage: everyday_heroes_podcast.jpg
 slug: project2
 tools: Figma, Gatsby, Netlify, NetlifyCMS
 projectURL: " https://www.cv19everydayheroes.com/"
