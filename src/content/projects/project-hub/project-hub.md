@@ -8,4 +8,4 @@ tools: Python, Frontend Framework
 projectURL: test.com
 githubURL: https://github.com/wwcodecolorado/returnship-project-voting
 ---
-this site will be for members to vote on the next project to work on.
+This site is built by Career Returnship members. And will be for members to vote on the next project to work on.
