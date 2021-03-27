@@ -4,7 +4,7 @@ title: Project Hub
 date: 2021-03-24T01:35:26.911Z
 projectImage: tempprojectimage1.png
 slug: project4
-tools: Python, Frontend Framework
+tools: Python, ReactJS, Figma
 projectURL: test.com
 githubURL: https://github.com/wwcodecolorado/returnship-project-voting
 ---
