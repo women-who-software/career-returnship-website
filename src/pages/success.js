@@ -2,10 +2,12 @@ import React from "react"
 import Logo from "../images/logoColor.png"
 import Icon from "../images/iconColor.png"
 import styled from "styled-components"
+import SEO from "../components/seo"
 
 const Success = () => {
   return (
     <SuccessWrapper>
+      <SEO title="Successfully submitted contact us form" />
       <img
         className="logo"
         src={Logo}

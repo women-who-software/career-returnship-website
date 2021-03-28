@@ -8,7 +8,7 @@ import about from "../images/aboutMountains.png"
 
 const AboutPage = () => (
   <Layout>
-    <SEO title="About" />
+    <SEO title="About Career Returnship" />
     <Wrapper>
       <div className="description">
         <h2 className="title">ABOUT US</h2>
@@ -21,7 +21,7 @@ const AboutPage = () => (
             <br />
             <br />
             Join us in this biweekly event series where we learn, network, engage
-            in 
+            in
           </div>
           <div className="column text">
             meaningful projects and crack the interviews together.
@@ -64,25 +64,25 @@ width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 20px;
-  margin: 0 0 50px;
-  max-width: 900px;
+  padding: 0 1.25rem;
+  margin: 0 0 3.125rem;
+  max-width: 56.25rem;
   width: 100%;
 
   h2 {
     color: #DA0D46;
     font-family: Myriad Pro, sans-serif;
     font-weight: 700;
-    font-size: 30px;
-    margin: 0px;
-    padding: 30px 0px 30px;
+    font-size: 1.875rem;
+    margin: 0rem;
+    padding: 1.875rem 0rem 1.875rem;
 
-    @media ( min-width: 700px) {
+    @media ( min-width: 43.75rem) {
       align-self: flex-start;
-      padding-left: 20px;
-      padding-top: 100px;
-      padding-bottom: 35px;
-      font-size: 46px;
+      padding-left: 1.25rem;
+      padding-top: 6.25rem;
+      padding-bottom: 2.1875rem;
+      font-size: 2.875rem;
     }
   }
 
@@ -90,17 +90,17 @@ width: 100%;
     display: flex;
     flex-direction: column;
 
-    @media ( min-width: 700px) {
+    @media ( min-width: 43.75rem) {
       flex-direction: row;
       flex-basis: auto;
     }
 
     .text {
       font-family: Montserrat, sans-serif;
-      font-size: 18px;
+      font-size: 1.125rem;
       font-weight: 400;
-      line-height: 22px;
-      margin: 0px 20px 0px;
+      line-height: 1.375rem;
+      margin: 0rem 1.25rem 0rem;
     
       .strong {
         font-weight: 700;
@@ -110,23 +110,23 @@ width: 100%;
     .join-us-button {
       align-items: center;
       background: linear-gradient(180deg, #4C4C4C 0%, #000000 100%), #4C4C4C;
-      border-radius: 15px;
+      border-radius: .9375rem;
       border: none;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
       color: #FFFFFF;
       display: flex;
       font-family: Myriad Pro, sans-serif;
-      font-size: 15px;
+      font-size: .9375rem;
       font-weight: 700;
-      height: 50px;
+      height: 3.125rem;
       justify-content: center;
-      margin: 35px auto 15px;
+      margin: 2.1875rem auto .9375rem;
       padding: 0;
       outline: none;
       text-decoration: none;
-      width: 230px;
+      width: 14.375rem;
 
-      @media ( min-width: 700px) {
+      @media ( min-width: 43.75rem) {
         display: none;
       }
     }
@@ -134,24 +134,24 @@ width: 100%;
     .become-sponsor-button {
       align-items: center;
       background: linear-gradient(180deg, #DA0D46 0%, #570018 100%), #DA0D46;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 15px;
+      box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
+      border-radius: .9375rem;
       color: #ffffff;
       display: flex;
       font-family: Myriad Pro, sans-serif;
-      font-size: 15px;
+      font-size: .9375rem;
       font-weight: 700;
-      height: 50px;
+      height: 3.125rem;
       justify-content: center;
       line-height: 123.4%;
       letter-spacing: 0.02em;
-      margin: 15px auto 15px;
+      margin: .9375rem auto .9375rem;
       outline: none;
-      padding: 20px;
+      padding: 1.25rem;
       text-decoration: none;
-      width: 230px;
+      width: 14.375rem;
 
-      @media ( min-width: 700px) {
+      @media ( min-width: 43.75rem) {
         display: none;
       }
     }
@@ -162,24 +162,24 @@ width: 100%;
     flex-direction: column;
 
     .about-image {
-      width: 375px;
-      height: 204px;
-      margin: 30px 0px 5px;
-      top-left-radius: 15px;
-      top-right-radius: 15px;
+      width: 23.4375rem;
+      height: 12.75rem;
+      margin: 1.875rem 0rem .3125rem;
+      top-left-radius: .9375rem;
+      top-right-radius: .9375rem;
 
-      @media ( min-width: 700px) {
-        width: 230px;
-        height: 124px;
-        margin-bottom: 3px;
-        margin-left: 20px;
-        margin-top: 0px;
+      @media ( min-width: 43.75rem) {
+        width: 14.375rem;
+        height: 7.75rem;
+        margin-bottom: .1875rem;
+        margin-left: 1.25rem;
+        margin-top: 0rem;
       }
     }
 
     .link {
       width: 100%;
-      height: 85px;
+      height: 5.3125rem;
       background-color: #A8C4C8;
       display: flex;
       justify-content: center;
@@ -187,15 +187,15 @@ width: 100%;
       text-decoration: none;
       color: #000000;
       font-family: Myriad Pro, sans-serif;
-      font-size: 15px;
+      font-size: .9375rem;
       font-weight: 700;
-      margin: 0px 0px 4px;
+      margin: 0rem 0rem .25rem;
 
-      @media ( min-width: 700px) {
-        width: 230px;
-        height: 52px;
-        margin-bottom: 2px;
-        margin-left: 20px;
+      @media ( min-width: 43.75rem) {
+        width: 14.375rem;
+        height: 3.25rem;
+        margin-bottom: .125rem;
+        margin-left: 1.25rem;
       }
     }
   }
@@ -203,23 +203,23 @@ width: 100%;
   .find-meeting-button {
     align-items: center;
     background: linear-gradient(180deg, #4C4C4C 0%, #000000 100%), #4C4C4C;
-    border-radius: 15px;
+    border-radius: .9375rem;
     border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
     color: #FFFFFF;
     display: flex;
     font-family: Myriad Pro, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
-    height: 60px;
+    height: 3.75rem;
     justify-content: center;
-    margin: 80px auto 40px;
+    margin: 5rem auto 2.5rem;
     padding: 0;
     text-decoration: none;
     outline: none;
-    width: 300px;    
+    width: 18.75rem;    
 
-    @media ( max-width: 700px) {
+    @media ( max-width: 43.75rem) {
       display: none;
     }
   }

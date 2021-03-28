@@ -20,7 +20,7 @@ const NavItem = Styled(Link)`
     content: ".";
     color: transparent;
     background: #DA0D46;
-    height: 1px;
+    height: .0625rem;
     transition: all 0.4s ease-in;
   }
 
@@ -32,14 +32,14 @@ const NavItem = Styled(Link)`
     }
   }
 
-  @media (max-width: 768px) {
-    padding: 20px 0;
+  @media (max-width: 48rem) {
+    padding: 1.25rem 0;
     font-size: 1.5rem;
     z-index: 6;
   }
   .become {
   color: yellow;
-  border: 2px solid #DA0D46;
+  border: .125rem solid #DA0D46;
 }
 `
 const ExtProjects = Styled.a`
@@ -52,13 +52,13 @@ const ExtProjects = Styled.a`
   transition: all 200ms ease-in;
   :hover{
     background: white;
-    border: 5px solid #da0d46;
+    border: .3125rem solid #da0d46;
     color: #da0d46;
   }
 `
 const ExtMember = Styled.a`
   color: #da0d46;
-  border: 5px solid #da0d46;
+  border: .3125rem solid #da0d46;
   padding: .25rem;
   text-decoration: none;
   transition: all 200ms ease-in;
@@ -85,7 +85,7 @@ const ExtSponsor = Styled.a`
     content: ".";
     color: transparent;
     background: #DA0D46;
-    height: 1px;
+    height: .0625rem;
     transition: all 0.4s ease-in;
   }
 

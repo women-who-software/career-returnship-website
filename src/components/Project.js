@@ -96,7 +96,7 @@ h5 {
   height: 30.56rem;
   min-width: 17rem;
   background: #FFFFFF;
-  box-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.25), 0 .125rem .25rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25), 0rem .125rem .25rem rgba(0, 0, 0, 0.5);
   border-radius: .9375rem;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
@@ -153,7 +153,7 @@ h5 {
       background: #017A8E;
       border: .125rem solid #017A8E;
       color: white;
-      padding: .4rem .8rem;
+      padding: .5rem .8rem;
     }
     .prototype-button {
       border: .125rem solid #017A8E;

@@ -36,7 +36,7 @@ const EventStyles = styled.div`
     background: #DA0D46;
     padding: 2rem 0;
     position: relative;
-    @media (min-width: 900px) {
+    @media (min-width: 56.25rem) {
       height: 40rem;
       width: 100%;
     }
@@ -47,14 +47,14 @@ const EventStyles = styled.div`
     }
   .meetup-info{
     background: white;
-    border-radius: 10px;
+    border-radius: .625rem;
     padding: .8rem;
     
     width: 90%;
-    @media (min-width: 700px) {
+    @media (min-width: 43.75rem) {
       width: 50%;
     }
-    @media (min-width: 900px){
+    @media (min-width: 56.25rem){
       width: 80%;
       margin-top: 2rem;
     }
@@ -63,7 +63,7 @@ const EventStyles = styled.div`
     margin: 2rem 0;
     padding-left: 2rem;
     
-    @media (min-width: 700px) {
+    @media (min-width: 43.75rem) {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -71,7 +71,7 @@ const EventStyles = styled.div`
       width: 70%;
       margin: 3rem auto;
     }
-    @media (min-width: 900px){
+    @media (min-width: 56.25rem){
       width: 18rem;
       padding-right: 1rem;
       margin: 0 2rem;
@@ -82,12 +82,12 @@ const EventStyles = styled.div`
     top: 2%;
     left: 1%;
     margin:0;
-    @media (min-width: 700px) {
+    @media (min-width: 43.75rem) {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
-    @media (min-width: 900px){    
+    @media (min-width: 56.25rem){    
       margin-left: 24rem;
       margin-top: -20rem;
       width: 60%;
@@ -95,7 +95,7 @@ const EventStyles = styled.div`
     }
     a {
       margin: 0 0 0 2.5rem;
-      @media (min-width: 700px){
+      @media (min-width: 43.75rem){
         margin: 0;
       }
     }
@@ -106,14 +106,14 @@ const EventStyles = styled.div`
     font-size:.8rem;
     text-decoration: none;
     background: linear-gradient(180deg, #4C4C4C 0%, #000000 100%), #4C4C4C;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
+    box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
+    border-radius: .9375rem;
     color: #fff;
     padding: 1rem .8rem;
-   @media (min-width: 700px){
+   @media (min-width: 43.75rem){
         width: 50%;
       }
-      @media (min-width: 900px){
+      @media (min-width: 56.25rem){
         font-size: 0.6rem;
         width: 80%;
         

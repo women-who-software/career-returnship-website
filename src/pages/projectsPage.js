@@ -9,7 +9,7 @@ import Slider from "../components/Testimonials"
 const ProjectsPage = () => {
   return (
     <Layout>
-      <SEO title="Projects" />
+      <SEO title="Projects by Career Returnship" />
       <ProjectStyle>
         <h2>PROJECTS</h2>
         <div className="content">

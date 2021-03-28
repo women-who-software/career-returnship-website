@@ -11,15 +11,15 @@ const Navigation = Styled.nav`
   justify-content: space-between;
   font-family: Montserrat, Myriad Pro, sans-serif;
   text-transform: capitalize;
-  border-bottom: 2px solid #33333320;
+  border-bottom: .125rem solid #33333320;
   margin: 0 auto;
   padding: 0 5vw;
   z-index: 2;
   align-self: center;
   .project-image {
-    margin: 10px 0;
+    margin: .625rem 0;
   }
-  @media (max-width: 900px) {
+  @media (max-width: 56.25rem) {
     position: sticky;
     height: 8vh;
     top: 0;

@@ -110,7 +110,7 @@ const InvolvedWrapper = styled.div`
     p{
       margin-top: 1rem;
       font-size: 1rem;
-      @media(min-width: 700px) {
+      @media(min-width: 43.75rem) {
         text-align: justify;
         padding-top: 1rem;
         padding-left: 2rem;
@@ -128,7 +128,7 @@ const InvolvedWrapper = styled.div`
           background: linear-gradient(180deg, #4C4C4C 0%, #000000 100%), #4C4C4C;
           border-radius: .9375rem;
           border: none;
-          box-shadow: 0px .25rem .25rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
           color: #FFFFFF;
           padding: .5rem 2rem;
           outline: none;
@@ -148,7 +148,7 @@ const InvolvedWrapper = styled.div`
           background: linear-gradient(180deg, #4C4C4C 0%, #000000 100%), #4C4C4C;
           border-radius: .9375rem;
           border: none;
-          box-shadow: 0px .25rem .25rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
           color: #FFFFFF;
           padding: .5rem 2rem;
           text-decoration: none;
@@ -162,7 +162,7 @@ const InvolvedWrapper = styled.div`
         color: black;
         font-size: .9375rem;  
         background: linear-gradient(180deg, #FFFFFF 0%, #E9CFD6 100%);
-        box-shadow: 0px .25rem .25rem rgba(0, 0, 0, 0.25);
+        box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
         border-radius: .9375rem;
         text-decoration: none;
         text-align: center;
