@@ -2,7 +2,7 @@
 layout: project
 title: Career Returnship Website
 date: 2021-03-13T16:38:22.295Z
-projectImage: logocolor.jpeg
+projectImage: iconwbackground.jpeg
 slug: project1
 tools: React, Gatsby, Netlify CMS, Figma
 projectURL: https://career-returnship.netlify.app/
