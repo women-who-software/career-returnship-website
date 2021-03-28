@@ -21,16 +21,17 @@ const Projects = () => (
 export default Projects
 const ProjectsWrapper = styled.div`
   margin-bottom: 2rem;
-  height: 72rem;
+  height: 102rem;
   text-align: center;
   width: 80%;
   position: relative;
 @media (min-width: 700px){
-  width: 100%;
-  height: 42rem;
+  
+  height: 105rem;
 }
 @media (min-width: 900px){
   width: 80%;
+  height: 40rem;
 }
   h2{
     color: #DA0D46;

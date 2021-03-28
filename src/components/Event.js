@@ -54,6 +54,7 @@ const EventStyle = Styled.div`
   margin: 10px;
   width: 19rem;
   height: 9.5rem; 
+  overflow: hidden;
   
   h3 {
     margin: 0;

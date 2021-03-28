@@ -28,13 +28,12 @@ const ProjectsPage = () => {
 const ProjectStyle = styled.div`
 text-align: center;
 margin: 0 2rem;
-position: relative;
 
-@media (min-width: 700px) {
+@media (min-width: 43.75rem) {
 margin: 2rem 2rem;
-height: 80rem;
 }
-@media (min-width: 900px) {
+
+@media (min-width: 56.25rem) {
   height: 85rem;
   margin: 0 auto;
   width: 80%;
@@ -45,26 +44,21 @@ h2{
 
 .project-button {
       background: linear-gradient(180deg, #DA0D46 0%, #570018 100%), #DA0D46;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 15px;
-      font-size: 16px;
+      box-shadow: 0px .25rem .25rem rgba(0, 0, 0, 0.25);
+      border-radius: .9375rem;
+      font-size: 1rem;
       line-height: 123.4%;
       letter-spacing: 0.02em;
       color: #ffffff;
       align-self: center;
       padding: 1.25rem;
-      margin-top: 1.25rem;
+      margin-top: 1rem;
       text-decoration: none;
 
-      @media (min-width: 700px){
-
-      position: absolute;
-      bottom: 45%;
-      right: 30%;
-      }
-      @media (min-width: 900px){
+      @media (min-width: 56.25rem){
         right: 38%;
-        margin: .8rem;
+        margin-bottom: 2rem;
+        margin-top: 0;
       }
     }  
       
