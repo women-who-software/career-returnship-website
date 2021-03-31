@@ -21,7 +21,7 @@ const Project = () => {
                         githubURL
                         projectImage {
                             childImageSharp {
-                              fluid(maxWidth: 250, maxHeight: 250) {
+                              fluid(maxWidth: 300, maxHeight: 250, fit: FILL) {
                                 ...GatsbyImageSharpFluid
                             }
                   }
@@ -82,7 +82,10 @@ h5 {
    line-height: 1;
    padding: .4rem;
  }
-  @media (min-width:700px) {
+ @media (min-width: 43.75rem) {
+   margin: 0 4rem;
+ }
+  @media (min-width: 56.25rem) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,22 +94,22 @@ h5 {
 .content{
   position: relative;
   height: 30.56rem;
-  width: 17rem;
+  min-width: 17rem;
   background: #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
+  box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25), 0rem .125rem .25rem rgba(0, 0, 0, 0.5);
+  border-radius: .9375rem;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
-  @media (min-width:700px) {
+  @media (min-width: 43.75rem) {
     flex: 1;
-    margin: 2rem 3rem;
-    max-width: 25rem;
+    margin: 2rem .5rem;
+    max-width: 30rem;
     
   }
   }
   .gatsby-image-wrapper {
     height: 12.625rem;
-   
+  
   }
   .tools {
     position: absolute;
@@ -114,10 +117,10 @@ h5 {
     right: 0;
     left: 0;
     margin: 4rem;
-    @media (min-width: 700px) {
+    @media (min-width: 43.75rem) {
       margin: 3rem 1rem;
     }
-    @media (min-width: 900px) {
+    @media (min-width: 56.25rem) {
       margin-bottom: 5rem;
     }
   }
@@ -137,23 +140,23 @@ h5 {
   }
 .github-button {
   background: #C4C4C4;
-  padding: .5rem  1.3rem;
+  padding: .4rem  1.3rem;
 }
 .prototype-button {
-  border: 2px solid #C4C4C4;
+  border: .125rem solid #C4C4C4;
   box-sizing: border-box;
   padding: .4rem .2rem;
 }
-  @media (min-width: 700px) {
+  @media (min-width: 43.75rem) {
    
     .github-button {
       background: #017A8E;
-      border: 2px solid #017A8E;
+      border: .125rem solid #017A8E;
       color: white;
       padding: .5rem .8rem;
     }
     .prototype-button {
-      border: 2px solid #017A8E;
+      border: .125rem solid #017A8E;
       color: #017A8E;
     }
   }

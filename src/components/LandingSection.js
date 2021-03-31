@@ -54,24 +54,24 @@ const LandingWrapper = styled.div`
       }
 
       .logo {
-        max-width: 800px;
-        padding: 0 20px;
+        max-width: 50rem;
+        padding: 0 1.25rem;
         position: absolute;
-        margin: 50px auto;
+        margin: 3.125rem auto;
         width: 80%;
         z-index: 2;
       }
     }
     .about {
           display: none;
-          @media (max-width: 700px) {
+          @media (max-width: 43.75rem) {
           display:block;
           margin: 0 auto;
           }
         }
           .kick {
             display: block;
-          @media (max-width: 700px) {
+          @media (max-width: 43.75rem) {
           display: none;
 
           }
@@ -81,9 +81,9 @@ const LandingWrapper = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      padding: 0 15px;
-      margin: 0 0 50px;
-      max-width: 1100px;
+      padding: 0 .9375rem;
+      margin: 0 0 3.125rem;
+      max-width: 68.75rem;
       width: 100%;
 
         
@@ -96,7 +96,7 @@ const LandingWrapper = styled.div`
       .row {
         display: flex;
         
-        @media (max-width: 700px) {
+        @media (max-width: 43.75rem) {
           align-items: center;
           flex-direction: column;
           width: 100%;
@@ -105,7 +105,7 @@ const LandingWrapper = styled.div`
         .column {
           padding-top: 1rem;
           
-          @media (max-width: 700px) {
+          @media (max-width: 43.75rem) {
           align-items: center;
           display: flex;
           flex-direction: column;
@@ -117,7 +117,7 @@ const LandingWrapper = styled.div`
             letter-spacing: 0.02em;
             width: 100%;
             
-            @media (min-width: 700px) {
+            @media (min-width: 43.75rem) {
             margin-left: 0;
             width: 90%;
             strong {
@@ -129,8 +129,8 @@ const LandingWrapper = styled.div`
           .button {
             align-self: center;
             background: #ffffff;
-            border-radius: 15px;
-            border: 1px solid #da0d46;
+            border-radius: .9375rem;
+            border: .0625rem solid #da0d46;
             box-sizing: border-box;
             color: #da0d46;
             display: flex;
@@ -138,8 +138,8 @@ const LandingWrapper = styled.div`
             justify-content: center;
             font-size: 1.05rem;
             font-weight: bold;
-            margin-top: 20px;
-            padding: 10px  25px;
+            margin-top: 1.25rem;
+            padding: .625rem  1.5625rem;
             text-align: center;
             text-decoration: none;
             width: 55%;
@@ -147,7 +147,7 @@ const LandingWrapper = styled.div`
             background: #da0d46;
             color: white;
           }
-            @media (min-width: 900px) {
+            @media (min-width: 56.25rem) {
               width: 30%;
               margin-left: 15rem;
               
@@ -156,19 +156,19 @@ const LandingWrapper = styled.div`
         }
 
         .card {
-          border-radius: 15px;
-          height: 172px;
+          border-radius: .9375rem;
+          height: 10.75rem;
 
-          @media screen and (max-width: 600px) {
+          @media screen and (max-width: 37.5rem) {
             display: none;
           }
         }
 
         .card-mobile {
-          border-radius: 15px;
-          height: 172px;
+          border-radius: .9375rem;
+          height: 10.75rem;
 
-          @media screen and (min-width: 600px) {
+          @media screen and (min-width: 37.5rem) {
             display: none;
           }
         }

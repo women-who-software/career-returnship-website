@@ -65,22 +65,22 @@ const InvolvedWrapper = styled.div`
     flex-direction: column;
     padding-top: 2rem;
     width: 100%;  
-    @media (min-width: 900px) {
+    @media (min-width: 56.25rem) {
       display: flex;
       justify-content: center;
       align-items: center;
       margin: 0 auto;
       width: 100%;
-      max-width: 1100px;
+      max-width: 68.75rem;
     }
   }
 .page_title {
  margin-left: 2rem;
  font-size: 1.4rem;
-  @media (min-width: 700px) {
+  @media (min-width: 43.75rem) {
   margin-left: 13rem;
   }
-  @media (min-width: 900px) {
+  @media (min-width: 56.25rem) {
     margin-left: 5rem;
   }
 }
@@ -102,7 +102,7 @@ const InvolvedWrapper = styled.div`
       text-align: justify;
       width: 100%;
     }
-    @media(min-width: 900px) {
+    @media(min-width: 56.25rem) {
         margin-left: 9rem;
         flex-direction: row;
         width: 70%;
@@ -110,7 +110,7 @@ const InvolvedWrapper = styled.div`
     p{
       margin-top: 1rem;
       font-size: 1rem;
-      @media(min-width: 700px) {
+      @media(min-width: 43.75rem) {
         text-align: justify;
         padding-top: 1rem;
         padding-left: 2rem;
@@ -122,22 +122,21 @@ const InvolvedWrapper = styled.div`
 
      .become-member-button {
         display: none;
-        @media ( min-width: 700px) {
+        @media ( min-width: 37.5rem) {
           display: block;
           text-align: center;
           background: linear-gradient(180deg, #4C4C4C 0%, #000000 100%), #4C4C4C;
-          border-radius: 15px;
+          border-radius: .9375rem;
           border: none;
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
           color: #FFFFFF;
-          padding: .5rem;
+          padding: .5rem 2rem;
           outline: none;
-          width: 70%;
           text-decoration: none;
            :hover {
             background: none;
             color: white;
-            border: 2px solid white;
+            border: .125rem solid white;
         }
       }
       
@@ -147,37 +146,35 @@ const InvolvedWrapper = styled.div`
           text-align: center;
           text-transform: uppercase;
           background: linear-gradient(180deg, #4C4C4C 0%, #000000 100%), #4C4C4C;
-          border-radius: 15px;
+          border-radius: .9375rem;
           border: none;
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
           color: #FFFFFF;
-          padding: .5rem;
-          width: 85%;
+          padding: .5rem 2rem;
           text-decoration: none;
          
-        @media (min-width: 700px){
+        @media (min-width: 43.75rem){
           display: none;
         }
       }
       
       .become-sponsor-button {
         color: black;
-        font-size: 15px;  
+        font-size: .9375rem;  
         background: linear-gradient(180deg, #FFFFFF 0%, #E9CFD6 100%);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 15px;
+        box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
+        border-radius: .9375rem;
         text-decoration: none;
         text-align: center;
         outline: none;
-        padding: .5rem .7rem;
-        width: 85%;
+        padding: .5rem 1rem;
+        
 
-      @media ( min-width: 700px) {
+      @media ( min-width: 43.75rem) {
         padding: .5rem 1.2rem;     
         margin: 0;
         text-align: center;
-        width: 70%;
-        border: 1px solid #FFFFFF;
+        border: .0625rem solid #FFFFFF;
       }
       :hover {
         background: none;
@@ -189,16 +186,16 @@ const InvolvedWrapper = styled.div`
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 0 0 30px 0;
-        padding-top: 20px;
+        margin: 0 0 1.875rem 0;
+        padding-top: 1.25rem;
         width: 95%;
 
         img {
-          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
-          border-radius: 5px;
-          height: 40px;
+          box-shadow: 0rem 0rem .0625rem rgba(0, 0, 0, 0.25);
+          border-radius: .3125rem;
+          height: 2.5rem;
           overflow: hidden;
-          width: 125px;
+          width: 7.8125rem;
         }
       }
 
@@ -214,9 +211,9 @@ const InvolvedWrapper = styled.div`
 
       li {
         list-style-type: '□';
-        margin-right: 18px;
+        margin-right: 1.125rem;
         font-size: .9rem;
-        padding: 0 0 0 10px;
+        padding: 0 0 0 .625rem;
         text-align: justify;
       } 
     }

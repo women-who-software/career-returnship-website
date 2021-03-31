@@ -73,7 +73,7 @@ export default ContactForm
 const Wrapper = Styled.div`
     margin: 0 auto;
     height: 75vh;
-    padding: 50px 0;
+    padding: 3.125rem 0;
     text-align: center;
     width: 100%;
     h1 {
@@ -90,35 +90,35 @@ const Wrapper = Styled.div`
         input{
           
           background: #E5E5E5;
-          border: 1px solid #F4F4ED;
+          border: .0625rem solid #F4F4ED;
           box-sizing: border-box;
           color: #4C4C4C;
-          font-size: 18px;
-          margin: 5px 20px;
+          font-size: 1.125rem;
+          margin: .3125rem 1.25rem;
           height: 5vh;
            
         }
         textarea {
           background: #E5E5E5;
-          border: 1px solid #F4F4ED;
+          border: .0625rem solid #F4F4ED;
           box-sizing: border-box;
           color: #4C4C4C;
           height: 20vh;
           width: 20rem;
-          padding: 10px;
+          padding: .625rem;
         }
         .info {
-          width: 350px;
+          width: 21.875rem;
           margin: 0;
         }
         .submit {
           background: linear-gradient(180deg, #DA0D46 0%, #570018 100%), #DA0D46;
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          border-radius: 15px;
+          box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
+          border-radius: .9375rem;
           border: none;
           color: white;
           letter-spacing: 0.02em;
-          padding: 10px 0;
+          padding: .625rem 0;
           
           text-align: center;
           text-transform: uppercase;
@@ -130,7 +130,7 @@ const Wrapper = Styled.div`
         .hidden {
           display: none;
         }
-      @media (min-width: 700px) {
+      @media (min-width: 43.75rem) {
          form{
              display: flex;
              flex-wrap: wrap;

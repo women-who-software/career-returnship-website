@@ -49,17 +49,19 @@ const Event = () => {
 const EventStyle = Styled.div`
   
   background-color: #FFFFFF;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
+  border-radius: .625rem;
+  padding: .625rem;
+  margin: .625rem;
   width: 19rem;
   height: 9.5rem; 
+  overflow: hidden;
   
   h3 {
     margin: 0;
     font-size: 1.5rem;
     color: #017A8E;
     text-align: center;
+    
   }
   h4{
     color: #017A8E;
@@ -68,15 +70,16 @@ const EventStyle = Styled.div`
   p {
     font-family: Montserrat, sans-serif;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 17px;
+    font-size: .75rem;
+    line-height: 1.0625rem;
     letter-spacing: 0.02em;
     color: #000000;
     margin: 0;
+    
   }
   a {
     color: #017A8E;
-    font-size: 12px;
+    font-size: .75rem;
   }
 `
 

@@ -38,20 +38,21 @@ const EventsWrapper = styled.div`
     text-align: center;
     padding: 2rem 0;
     position: relative;
+    
   h2{
     color: #54BBCE;
   }
  
 .meetup-info {
   background: #fff;
-  border-radius: 10px;
+  border-radius: .625rem;
   margin-top: 1rem;
   padding: .5rem; 
   width: 80%;
-@media (min-width: 700px) {
+@media (min-width: 43.75rem) {
   width: 50%;
 }
-@media (min-width: 900px){
+@media (min-width: 56.25rem){
   width: 12rem;
   position: absolute;
   margin: 0 6rem;
@@ -67,8 +68,9 @@ const EventsWrapper = styled.div`
     text-decoration: none;
   }
   .content {
+
     margin: 0 .5rem;
-    @media (min-width: 700px) {
+    @media (min-width: 43.75rem) {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -76,11 +78,11 @@ const EventsWrapper = styled.div`
       margin: 0 auto;
       
     }
-    @media (min-width: 900px) {
+    @media (min-width: 56.25rem) {
       left: 10%;
       position: relative;
       width: 80%;
-      max-width: 1100px;
+      max-width: 68.75rem;
       
     }
   }
