@@ -39,7 +39,7 @@ const AboutPage = () => (
             SPONSOR/PARTNER
           </a>
           <div className="column gray-section">
-            <img className="about-image" src={about} alt="women smiling" />
+            <img className="about-image" src={about} alt="women smiling and networking" />
             <a className="link" href="https://www.womenwhocode.com/" target="_blank" rel="noreferrer">WOMEN WHO CODE</a>
             <a className="link" href="https://www.womenwhocode.com/boulder-denver" target="_blank" rel="noreferrer">WWC - DENVER/BOULDER</a>
             <Link className="link" to="/contactUs">CONTACT US</Link>

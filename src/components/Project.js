@@ -45,7 +45,7 @@ const Project = () => {
               <PreviewCompatibleImage key={edge.node.frontmatter.id}
                 imageInfo={{
                   image: edge.node.frontmatter.projectImage,
-                  alt: "photo of project"
+                  alt: edge.node.frontmatter.title
                 }} />
             </div>
 

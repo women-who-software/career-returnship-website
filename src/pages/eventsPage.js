@@ -15,7 +15,7 @@ const EventsPage = () => {
         <h2 >Networking/Events</h2>
 
         <div className="column">
-          < img className="meetup-info" src={meetupInfo} alt="Meetup logo with event information" />
+          < img className="meetup-info" src={meetupInfo} alt="Meetup with Women Who Code event information" />
           <a className="join-button" href="https://www.meetup.com/Women-Who-Code-Boulder-Denver" target="_blank" rel="noreferrer">RSVP to the Next Event</a>
         </div>
         <div className="content">

@@ -11,14 +11,14 @@ const Success = () => {
       <img
         className="logo"
         src={Logo}
-        alt="Returnship Logo"
+        alt="Career Returnship"
       />
       <h1>Thanks for being awesome! </h1>
       <h3>We have received your message and would like to thank you for writing to us. We will reply by email as soon as possible.</h3>
-      <a href="/" alt="Return to Home Page" ><img
+      <a href="/" alt="Home Page" ><img
         className="logo"
         src={Icon}
-        alt="Returnship Icon"
+        alt="Career Returnship"
       /></a>
       <p>Go Home</p>
     </SuccessWrapper>

@@ -41,11 +41,11 @@ const InvolvedSection = () => (
         </div>
         <div className="column">
           <div className="logos">
-            <img className="logo" src={nanno} alt="Nanno logo" />
-            <img className="logo" src={snapdocs} alt="Snapdocs logo" />
-            <img className="logo" src={workability} alt="WWC Returnship ad" />
-            <img className="logo" src={namecom} alt="WWC Returnship ad" />
-            <img className="logo" src={radial} alt="WWC Returnship ad" />
+            <img className="logo" src={nanno} alt="Nanno" />
+            <img className="logo" src={snapdocs} alt="Snapdocs" />
+            <img className="logo" src={workability} alt="Women Who Code Returnship ad" />
+            <img className="logo" src={namecom} alt="Women Who Code Returnship ad" />
+            <img className="logo" src={radial} alt="Women Who Code Returnship ad" />
           </div>
           <p className="thank-you">Thank you Sponsors!</p>
         </div>

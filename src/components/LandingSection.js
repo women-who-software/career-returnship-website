@@ -9,8 +9,8 @@ import logo from '../images/logoWhite.svg'
 const LandingSection = () => (
   <LandingWrapper>
     <div className="hero">
-      <img className="hero-image" src={hero} alt="background" />
-      <img className="logo" src={logo} alt="WWC Returnship icon" />
+      <img className="hero-image" src={hero} alt="woman looking at computer screen" />
+      <img className="logo" src={logo} alt="Women Who Code Returnship" />
     </div>
     <div className="about-us">
       <h2 className="kick">KICKSTARTING YOUR CAREER?</h2>
@@ -22,10 +22,10 @@ const LandingSection = () => (
             <strong>together we can</strong> make this a lot easier. This initiative is a small step towards empowering
             those of us in technology as we relaunch our careers.
           </p>
-          <img alt="WWC Returnship ad" className="card-mobile" src={card} />
+          <img alt="Women Who Code Returnship ad" className="card-mobile" src={card} />
           <a className="button" type="button" href="/about">LEARN MORE</a>
         </div>
-        <img alt="WWC Returnship ad" className="card" src={card} />
+        <img alt="Women Who Code Returnship ad" className="card" src={card} />
       </div>
     </div>
   </LandingWrapper>

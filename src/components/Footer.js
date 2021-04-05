@@ -10,12 +10,12 @@ export default function Footer() {
     return (
         <FooterWrapper>
             <div className="icons">
-                <a href="https://www.meetup.com/Women-Who-Code-Boulder-Denver/events/"><img src={Meetup} className="logo" alt="Meetup Logo" /></a>
-                <a href="https://github.com/wwcodecolorado"><img src={GitHub} className="logo" alt="GitHub Logo" /></a>
-                <a href="https://linktr.ee/wwcodecolorado"><img src={LinkTree} className="logo" alt="LinkTree Logo" /></a>
+                <a href="https://www.meetup.com/Women-Who-Code-Boulder-Denver/events/"><img src={Meetup} className="logo" alt="Meetup with Women Who Code" /></a>
+                <a href="https://github.com/wwcodecolorado"><img src={GitHub} className="logo" alt="GitHub" /></a>
+                <a href="https://linktr.ee/wwcodecolorado"><img src={LinkTree} className="logo" alt="LinkTree for more Women Who Code Links" /></a>
             </div>
             <div className="lower-footer">
-                <img src={Logo} className="return-logo" alt="Returnship Logo" />
+                <img src={Logo} className="return-logo" alt="Career Returnship" />
                 <ul>
                     <li><a href="https://www.womenwhocode.com/codeofconduct">Disclaimers</a></li>
                     <li><a href="https://www.womenwhocode.com/privacy-policy">Privacy Policy</a></li>
