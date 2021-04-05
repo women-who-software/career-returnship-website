@@ -12,7 +12,7 @@ export default function EventsSection() {
     <EventsWrapper EventsWrapper style={{ backgroundImage: 'url(' + bkgImg + ')', backgroundSize: "cover" }}>
       <h2 className="title_Page">NETWORKING / EVENTS</h2>
 
-      <img className="meetup-info" src={meetupInfo} alt="Meetup logo with event information" />
+      <img className="meetup-info" src={meetupInfo} alt="Women Who Code and Meetup" />
       <div className="content">
 
 
@@ -53,11 +53,11 @@ const EventsWrapper = styled.div`
   width: 50%;
 }
 @media (min-width: 56.25rem){
-  width: 12rem;
+  width: 20%;
   position: absolute;
   margin: 0 6rem;
   left: 0;
-  top: 28%;
+  top: 18%;
   
 }
 }

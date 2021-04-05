@@ -53,7 +53,7 @@ const Project = () => {
 
 
             <div dangerouslySetInnerHTML={{ __html: edge.node.html }}></div>
-            <h5 className="tools">Tools Used: {edge.node.frontmatter.tools}</h5>
+            <h4 className="tools">Tools Used: {edge.node.frontmatter.tools}</h4>
             <div className="toggle-buttons">
               <a as="a" className="github-button" href={edge.node.frontmatter.githubURL} key={edge.node.frontmatter.id} target="_blank" rel="noreferrer" >GITHUB</a>
               <a className="prototype-button" href={edge.node.frontmatter.projectURL} key={edge.node.frontmatter.id} target="_blank" rel="noreferrer" >Prototype</a>
@@ -89,7 +89,7 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    flex-wrap: wrap;
   }
 .content{
   position: relative;
@@ -100,30 +100,32 @@ h5 {
   border-radius: .9375rem;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
-  @media (min-width: 43.75rem) {
-    flex: 1;
-    margin: 2rem .5rem;
-    max-width: 30rem;
-    
+    @media (min-width: 43.75rem) {
+      flex: 1;
+      margin: 2rem .5rem;
+      max-width: 30rem;
+      
+    }
   }
-  }
+
   .gatsby-image-wrapper {
     height: 12.625rem;
-  
   }
+
   .tools {
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
     margin: 4rem;
-    @media (min-width: 43.75rem) {
-      margin: 3rem 1rem;
-    }
-    @media (min-width: 56.25rem) {
-      margin-bottom: 5rem;
-    }
+      @media (min-width: 43.75rem) {
+        margin: 3rem 1rem;
+      }
+      @media (min-width: 56.25rem) {
+        margin-bottom: 5rem;
+      }
   }
+
   a {
     text-decoration: none;
     text-transform: uppercase;
@@ -138,9 +140,10 @@ h5 {
     left: 0;
     margin: 1rem;
   }
+  
 .github-button {
   background: #C4C4C4;
-  padding: .4rem  1.3rem;
+  padding: .5rem  1.3rem;
 }
 .prototype-button {
   border: .125rem solid #C4C4C4;

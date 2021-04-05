@@ -61,7 +61,8 @@ width: 100%;
     }
     .return-logo {
         margin: 1.25rem;
-        
+        max-width: 15.95rem;
+        max-height: 2.625rem;
     }
     ul {
         display: flex;

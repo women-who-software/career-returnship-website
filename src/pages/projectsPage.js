@@ -14,7 +14,7 @@ const ProjectsPage = () => {
         <h2>PROJECTS</h2>
         <div className="content">
           <Project />
-          <a className="project-button" href="https://form.jotform.com/203324916543150">HAVE A PROJECT FOR US?</a>
+          <a className="project-button" href="https://form.jotform.com/203324916543150" target="_blank" rel="noreferrer">HAVE A PROJECT FOR US?</a>
         </div>
 
         <Slider className="slider" />
@@ -27,20 +27,23 @@ const ProjectsPage = () => {
 
 const ProjectStyle = styled.div`
 text-align: center;
-margin: 0 2rem;
+margin: 0 1rem;
 
-@media (min-width: 43.75rem) {
-margin: 2rem 2rem;
-}
+  h2{
+    color: #DA0D46;
+  }
+  @media (min-width: 43.75rem) {
+  margin: 2rem 2rem;
+  }
 
-@media (min-width: 56.25rem) {
-  height: 85rem;
-  margin: 0 auto;
-  width: 80%;
-}
-h2{
-  color: #DA0D46;
-}
+  @media (min-width: 56.25rem) {
+    height: 85rem;
+    margin-top: 2rem;
+    margin-bottom: 24rem;
+    margin-left: 7rem;
+    width: 80%;
+  }
+
 
 .project-button {
       background: linear-gradient(180deg, #DA0D46 0%, #570018 100%), #DA0D46;

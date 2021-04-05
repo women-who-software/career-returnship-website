@@ -17,7 +17,7 @@ width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-article,
+/* article,
 aside,
 details,
 figcaption,
@@ -25,7 +25,7 @@ figure,
 footer {
   background-color: #F4F4F4;
   text-align:center;
-  },
+  } */
 header,
 main,
 menu,
@@ -34,7 +34,7 @@ section,
 summary {
   display: block;
 }
-audio,
+/* audio,
 canvas,
 progress,
 video {
@@ -50,7 +50,7 @@ progress {
 [hidden],
 template {
   display: none;
-}
+} */
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -59,17 +59,17 @@ a:active,
 a:hover {
   outline-width: 0;
 }
-abbr[title] {
+/* abbr[title] {
   border-bottom: none;
   text-decoration: underline;
   text-decoration: underline dotted;
-}
+} */
 b,
 strong {
   font-weight: inherit;
   font-weight: bolder;
 }
-dfn {
+/* dfn {
   font-style: italic;
 }
 h1 {
@@ -95,11 +95,11 @@ sub {
 }
 sup {
   top: -0.5em;
-}
+} */
 img {
   border-style: none;
 }
-svg:not(:root) {
+/* svg:not(:root) {
   overflow: hidden;
 }
 code,
@@ -134,18 +134,18 @@ button {
 button,
 input {
   overflow: visible;
-}
-button,
+} */
+/* button,
 select {
   text-transform: none;
-}
+} */
 [type="reset"],
 [type="submit"],
 button,
 html [type="button"] {
   -webkit-appearance: button;
 }
-[type="button"]::-moz-focus-inner,
+/* [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner,
 button::-moz-focus-inner {
@@ -198,7 +198,7 @@ textarea {
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit;
-}
+} */
 html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
@@ -320,7 +320,7 @@ h5 {
   font-size: 0.85028rem;
   line-height: 1.1;
 }
-h6 {
+/* h6 {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -346,7 +346,7 @@ hgroup {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-}
+} */
 ul {
   margin-left: 1.45rem;
   margin-right: 0;
@@ -411,7 +411,7 @@ figure {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
-pre {
+/* pre {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -501,7 +501,7 @@ address {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-}
+} */
 b {
   font-weight: bold;
 }
@@ -545,7 +545,7 @@ p *:last-child {
 li > p {
   margin-bottom: calc(1.45rem / 2);
 }
-code {
+/* code {
   font-size: 0.85rem;
   line-height: 1.45rem;
 }
@@ -620,7 +620,7 @@ pre code:after,
 pre tt:before,
 pre tt:after {
   content: "";
-}
+} */
 
 /**Footer**/
 
