@@ -39,7 +39,7 @@ const AboutPage = () => (
             SPONSOR/PARTNER
           </a>
           <div className="column gray-section">
-            <img className="about-image" src={about} alt="women smiling" />
+            <img className="about-image" src={about} alt="women smiling and networking" />
             <a className="link" href="https://www.womenwhocode.com/" target="_blank" rel="noreferrer">WOMEN WHO CODE</a>
             <a className="link" href="https://www.womenwhocode.com/boulder-denver" target="_blank" rel="noreferrer">WWC - DENVER/BOULDER</a>
             <Link className="link" to="/contactUs">CONTACT US</Link>
@@ -58,6 +58,7 @@ align-items: center;
 display: flex;
 flex-direction: column;
 width: 100%;
+font-family: Myriad Pro, sans-serif;
 
 .description {
   align-items: center;
@@ -70,8 +71,7 @@ width: 100%;
   width: 100%;
 
   h2 {
-    color: #DA0D46;
-    font-family: Myriad Pro, sans-serif;
+    color: #DA0D46;  
     font-weight: 700;
     font-size: 1.875rem;
     margin: 0rem;
@@ -115,7 +115,6 @@ width: 100%;
       box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
       color: #FFFFFF;
       display: flex;
-      font-family: Myriad Pro, sans-serif;
       font-size: .9375rem;
       font-weight: 700;
       height: 3.125rem;
@@ -138,7 +137,6 @@ width: 100%;
       border-radius: .9375rem;
       color: #ffffff;
       display: flex;
-      font-family: Myriad Pro, sans-serif;
       font-size: .9375rem;
       font-weight: 700;
       height: 3.125rem;
@@ -186,7 +184,6 @@ width: 100%;
       align-items: center;
       text-decoration: none;
       color: #000000;
-      font-family: Myriad Pro, sans-serif;
       font-size: .9375rem;
       font-weight: 700;
       margin: 0rem 0rem .25rem;
@@ -208,7 +205,6 @@ width: 100%;
     box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
     color: #FFFFFF;
     display: flex;
-    font-family: Myriad Pro, sans-serif;
     font-size: 1.125rem;
     font-weight: 700;
     height: 3.75rem;

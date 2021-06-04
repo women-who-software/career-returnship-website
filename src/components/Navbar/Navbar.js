@@ -18,6 +18,8 @@ const Navigation = Styled.nav`
   align-self: center;
   .project-image {
     margin: .625rem 0;
+    max-width: 15.95rem;
+    max-height: 2.625rem;
   }
   @media (max-width: 56.25rem) {
     position: sticky;
@@ -119,7 +121,7 @@ const Navbar = () => {
       <a href="/"><img
         className="project-image"
         src={Logo}
-        alt="Cover for Project"
+        alt="Career Returnship Logo"
 
       /></a>
       <Toggle

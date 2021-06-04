@@ -20,19 +20,15 @@ const Projects = () => (
 
 export default Projects
 const ProjectsWrapper = styled.div`
-  margin-bottom: 2rem;
-  height: 102rem;
+  margin-bottom: 5rem;
   text-align: center;
   width: 80%;
   position: relative;
-@media (min-width: 43.75rem){
   
-  height: 105rem;
-}
-@media (min-width: 56.25rem){
-  width: 80%;
-  height: 40rem;
-}
+  @media (min-width: 56.25rem){
+    width: 80%;
+  
+  }
   h2{
     color: #DA0D46;
     margin-bottom: 1rem;
@@ -48,18 +44,19 @@ const ProjectsWrapper = styled.div`
       color: #ffffff;
       align-self: center;
       padding: 1.25rem;
-      margin-top: 1.25rem;
+      margin-top: 12.25rem;
       text-decoration: none;
       
       @media (min-width: 43.75rem){
 
       position: absolute; 
-      bottom: 0;
+      bottom: -2%;
       right: 30%;
       }
       @media (min-width: 56.25rem){
-font-size: 1rem;
-        right: 28%;
+        font-size: 1rem;
+        right: 38%;
+        bottom: -5%;
       }
   }
 `
